@@ -71,9 +71,6 @@ var config = {
       }
     ]
   },
-  eslint: {
-    configFile: './.eslintrc'
-  },
   postcss: function () {
       // The context of this function is the webpack loader-context
       // see: http://webpack.github.io/docs/loaders.html#loader-context

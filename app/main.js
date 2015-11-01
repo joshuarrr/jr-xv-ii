@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
-import { Router, Route, Link, IndexRoute } from 'react-router'
+import { Router, Route, Link, IndexRoute } from 'react-router';
 import { Home } from './content/home';
 import { About } from './content/about';
-require("./styles/app.css");
+require('./styles/app.css');
 
 export class App extends Component {
+  static propTypes = {
+    children: React.PropTypes.node
+  }
   render() {
     return (
 			<div>
 				<nav>
-				  <ul>
-				    <li><Link to="/home">Home</Link></li>
-				    <li><Link to="/about">About</Link></li>
-				  </ul>
+					<ul>
+				  	<li><Link to="/home">Home</Link></li>
+				  	<li><Link to="/about">About</Link></li>
+					</ul>
 				</nav>
 				{this.props.children}
 			</div>
@@ -32,4 +35,4 @@ render((
       <Route path="/home" component={Home} />
     </Route>
   </Router>
-), document.getElementById('root'))
+), document.getElementById('root'));
