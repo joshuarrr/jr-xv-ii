@@ -2,8 +2,10 @@
 
 React starter site.
 
-npm install
-npm run dev
+1. npm install
+2. npm run dev
+
+----------
 
 - [React Transform Boilerplate](https://github.com/gaearon/react-transform-boilerplate)
 - [Webpack](http://webpack.github.io/)
