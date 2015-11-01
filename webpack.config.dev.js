@@ -46,6 +46,13 @@ var config = {
     extensions: ['', '.js', '.jsx']
   },
   module: {
+    preLoaders: [
+      {
+        test: /\.jsx?$/,
+        loaders: ['eslint'],
+        exclude: /node_modules/,
+      }
+    ],
     loaders: [
     {
       test: /\.jsx?$/,
@@ -63,6 +70,9 @@ var config = {
       loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
       }
     ]
+  },
+  eslint: {
+    configFile: './.eslintrc'
   },
   postcss: function () {
       // The context of this function is the webpack loader-context
