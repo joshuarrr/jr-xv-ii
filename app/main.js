@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import { Router, Route, Link } from 'react-router'
+import createBrowserHistory from 'history/lib/createBrowserHistory';
+import { Router, Route, Link, IndexRoute } from 'react-router'
 import { Home } from './content/home';
 import { About } from './content/about';
 require("./styles/app.css");
@@ -22,10 +23,13 @@ export class App extends Component {
 }
 
 render((
-  <Router>
+	// createBrowserHistory removes ULR cruft but eliminates persistent state
+	// See: http://rackt.org/history/stable/HashHistoryCaveats.html
+  <Router history={createBrowserHistory({queryKey: false})}>
     <Route path="/" component={App}>
-      <Route path="about" component={About} />
-      <Route path="home" component={Home} />
+      <IndexRoute component={Home} />
+      <Route path="/about" component={About} />
+      <Route path="/home" component={Home} />
     </Route>
   </Router>
 ), document.getElementById('root'))
