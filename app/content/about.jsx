@@ -3,12 +3,12 @@ import { Nav } from './components/nav';
 import { PageWrapper } from './components/page-wrapper';
 
 export class About extends Component {
-  render() {
-    return (
-      <PageWrapper>
-    		<Nav />
+	render() {
+		return (
+			<PageWrapper>
+				<Nav />
 				<h1>About</h1>
-      </PageWrapper>
-    );
-  }
+			</PageWrapper>
+		);
+	}
 }
