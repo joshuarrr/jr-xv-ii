@@ -8,7 +8,7 @@ export class About extends Component {
       <PageWrapper>
     		<Nav />
 				<h1>About</h1>
-      </SiteWrapper>
+      </PageWrapper>
     );
   }
 }
