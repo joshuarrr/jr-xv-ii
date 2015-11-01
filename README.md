@@ -1,4 +1,10 @@
-# jr-mmxv-ii | jr 2015 2.0
+# React Base
+
+Personal react starter site
+
+npm install
+npm run dev
+
 - [React Transform Boilerplate](https://github.com/gaearon/react-transform-boilerplate)
 - [React Webpack Cookbook](https://christianalfoni.github.io/react-webpack-cookbook/Configuring-react-js.html)
 - [Webpack](http://webpack.github.io/)
