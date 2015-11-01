@@ -19,7 +19,7 @@ export class App extends Component {
 				  	<li><Link to="/about">About</Link></li>
 					</ul>
 				</nav>
-				{this.props.children}
+				{ this.props.children }
 			</div>
     );
   }
@@ -28,11 +28,11 @@ export class App extends Component {
 render((
 	// createBrowserHistory removes ULR cruft but eliminates persistent state
 	// See: http://rackt.org/history/stable/HashHistoryCaveats.html
-  <Router history={createBrowserHistory({queryKey: false})}>
-    <Route path="/" component={App}>
-      <IndexRoute component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/home" component={Home} />
+  <Router history={ createBrowserHistory({ queryKey: false }) }>
+    <Route path="/" component={ App }>
+      <IndexRoute component={ Home } />
+      <Route path="/about" component={ About } />
+      <Route path="/home" component={ Home } />
     </Route>
   </Router>
 ), document.getElementById('root'));
