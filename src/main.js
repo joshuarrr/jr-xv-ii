@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import { Logo } from './content/logo.jsx';
+import { Home } from './content/home.jsx';
 
 export class App extends Component {
   render() {
     return (
       <div>
-        <Logo />
+        <Home />
       </div>
     );
   }
