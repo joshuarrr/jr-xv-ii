@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import { Nav } from './components/nav';
 
 export class About extends Component {
   render() {
     return (
-      <h1 className="about">
-        About
-      </h1>
+			<main className="about">
+    		<Nav />
+				<h1>About</h1>
+			</main>
     );
   }
 }
