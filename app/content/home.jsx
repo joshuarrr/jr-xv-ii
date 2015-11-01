@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import { Nav } from './components/nav';
+import { PageWrapper } from './components/page-wrapper';
+import Helmet from 'react-helmet';
 
 export class Home extends Component {
 	render() {
 		return (
-			<main className="home">
-    		<Nav />
+			<PageWrapper>
+				<Helmet title="Home" />
 				<h1>Hello.</h1>
-			</main>
+			</PageWrapper>
 		);
 	}
 }

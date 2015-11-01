@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { Nav } from './components/nav';
-import { PageWrapper } from './components/page-wrapper';
+import Helmet from 'react-helmet';
 
 export class About extends Component {
 	render() {
 		return (
-			<PageWrapper>
-				<Nav />
+			<div>
+				<Helmet title="About" />
 				<h1>About</h1>
-			</PageWrapper>
+			</div>
 		);
 	}
 }
