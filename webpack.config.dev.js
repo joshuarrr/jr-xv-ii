@@ -50,8 +50,12 @@ var config = {
       {
         test: /\.jsx?$/,
         loaders: ['eslint'],
-        exclude: /node_modules/,
-      }
+        exclude: /node_modules/
+      }, {
+        test: /\.css$/,
+        loaders: ['csslint-loader'],
+        exclude: /node_modules/
+      },
     ],
     loaders: [
     {
