@@ -5,14 +5,13 @@ require('../../styles/components/page-wrapper.css');
 
 export class PageWrapper extends Component {
 	static propTypes = {
-		children: React.PropTypes.node,
-		color: React.PropTypes.string
+		children: React.PropTypes.node
 	}
 	render() {
 		return (
 			<div className="page-wrapper">
 				<Helmet titleTemplate="%s | React Base" />
-    		<Nav style={ { color: this.props.color } }/>
+    		<Nav />
 				{ this.props.children }
 			</div>
 		);

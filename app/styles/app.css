@@ -8,8 +8,6 @@
   height: 100%;
 }
 
-a{}
-
 /* Eslint */
 body > div:last-child {
   letter-spacing: .5px !important;
