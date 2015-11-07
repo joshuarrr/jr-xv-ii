@@ -8,7 +8,7 @@
     "build": "npm run clean && npm run build:webpack",
     "dev": "node devServer.js",
     "lint": "eslint app"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gaearon/react-transform-boilerplate.git"
@@ -37,6 +37,7 @@
     "file-loader": "^0.8.4",
     "history": "^1.13.0",
     "postcss": "^5.0.10",
+    "postcss-browser-reporter": "^0.4.0",
     "postcss-calc": "^5.0.0",
     "postcss-color-function": "^2.0.0",
     "postcss-conditionals": "^2.0.0",

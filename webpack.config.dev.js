@@ -15,6 +15,7 @@ var discardComments = require('postcss-discard-comments');
 var mediaMinMax = require('postcss-media-minmax');
 var mixins = require('postcss-mixins');
 var nested = require('postcss-nested');
+var browserReporter = require('postcss-browser-reporter');
 var reporter = require('postcss-reporter');
 var simpleExtend = require('postcss-simple-extend');
 var simpleVars = require('postcss-simple-vars');
@@ -78,33 +79,36 @@ var config = {
       // The context of this function is the webpack loader-context
       // see: http://webpack.github.io/docs/loaders.html#loader-context
       return [
-          cssimport({
-              // see postcss-import docs to learn about onImport callback
-              // https://github.com/postcss/postcss-import
-              onImport: function (files) {
-                  files.forEach(this.addDependency);
-              }.bind(this)
-          }),
-          stylelint,
-          reporter({
-            clearMessages: true,
-            noPlugin: true
-          }),
-          discardComments,
-          colorFunction,
-          mixins,
-          simpleExtend,
-          customProperties,
-          cssVariables,
-          simpleVars,
-          customMedia,
-          mediaMinMax,
-          nested,
-          calc,
-          conditionals,
-          autoprefixer(AUTOPREFIXER_BROWSERS)
+        cssimport({
+          // see postcss-import docs to learn about onImport callback
+          // https://github.com/postcss/postcss-import
+          onImport: function (files) {
+            files.forEach(this.addDependency);
+          }.bind(this)
+        }),
+        stylelint,
+        discardComments,
+        colorFunction,
+        mixins,
+        simpleExtend,
+        customProperties,
+        cssVariables,
+        simpleVars,
+        customMedia,
+        mediaMinMax,
+        nested,
+        calc,
+        conditionals,
+        autoprefixer(AUTOPREFIXER_BROWSERS),
+        browserReporter({
+          selector: 'body:before'
+        }),
+        reporter({
+          clearMessages: true,
+          noPlugin: true
+        }),
       ];
-  }
-};
+    }
+  };
 
 module.exports = config;
