@@ -18,6 +18,5 @@ Thumbs.db
 
 # react-base
 node_modules
-npm-debug.log
 react-base.sublime-project
 react-base.sublime-workspace
