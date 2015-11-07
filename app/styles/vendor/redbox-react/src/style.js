@@ -1,37 +1,56 @@
-export default {
+'use strict';
+
+exports.__esModule = true;
+exports['default'] = {
   redbox: {
-    background: 'rgb(204, 0, 0)',
-    bottom: 0,
     boxSizing: 'border-box',
-    color: 'white',
-    fontFamily: 'sans-serif',
-    fontSize: '16px',
-    left: 0,
-    lineHeight: 1.2,
-    padding: 10,
-    position: 'fixed',
-    right: 0,
+    fontFamily: '"Fira Mono", sans-serif',
+    position: 'absolute',
+    background: 'rgba(0, 0, 0, .2)',
+    padding: '3rem',
+    left:  '0',
+    right: '0',
+    top: '0',
+    bototm: '0',
+    zIndex: 9999,
     textAlign: 'left',
-    top: 0,
-    width: '100%',
-    zIndex: 9999
+    fontSize: '16px',
+    lineHeight: 1.5,
+    overflow: 'auto',
+    textRendering: 'optimizeLegibility'
   },
   message: {
-    fontWeight: 'bold'
+    color: 'rgba(255, 255, 255, .93)',
+    position: 'relative',
+    background: 'rgba(0, 0, 0, .5)',
+    borderBottom: '1px solid rgba(0, 0, 0, .2)',
+    margin: '-3rem -3rem 0',
+    padding: '3rem 3rem 2rem',
+    fontWeight: '200',
+    textRendering: 'optimizeLegibility',
+    fontSize: '20px',
+    letterSpacing: '.5px',
+    textShadow: '0px .2rem 0  rgba(0, 0, 0, .5)'
   },
   stack: {
-    fontFamily: 'monospace',
-    marginTop: '2em'
+    marginTop: '3rem',
   },
   frame: {
-    marginTop: '1em'
+    marginTop: '2em',
+    overflowWrap: 'break-word',
+    wordWrap: 'break-word',
+    wordBreak: 'break-word',
+    hyphens: 'auto',
+    fontSize: '16px',
+    letterSpacing: '.5px',
+    color: 'rgba(0, 0, 0, 0.7)'
   },
   file: {
-    color: 'rgba(255, 255, 255, 0.7)',
-    fontSize: '0.8em'
+    fontSize: '12px'
   },
   linkToFile: {
-    color: 'rgba(255, 255, 255, 0.7)',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    color: 'rgba(0, 0, 0, 0.5)'
   }
 };
+module.exports = exports['default'];

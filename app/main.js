@@ -4,7 +4,6 @@ import createBrowserHistory from 'history/lib/createBrowserHistory';
 import { Router, Route, IndexRoute } from 'react-router';
 import { Home } from './content/home';
 import { About } from './content/about';
-require('./styles/app.css');
 
 export class App extends Component {
 	static propTypes = {
@@ -15,7 +14,7 @@ export class App extends Component {
 			<div className="react-wrapper">
 				{ this.props.children }
 			</div>
-			);
+		);
 	}
 }
 

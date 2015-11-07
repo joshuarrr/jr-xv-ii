@@ -1,0 +1,95 @@
+/* Forms ---------------------------------------------------------------------*/
+input,
+textarea,
+button,
+select {
+    font-family: $primary-font-family; /* Necessary to override default browser font */
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+    white-space: normal;
+    *margin-left: -7px;
+}
+
+textarea {
+    vertical-align: top;
+    resize: none;
+}
+
+/* Remove default styling on inputs */
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=search],
+input[type=tel],
+textarea {
+    appearance: none; /* Remove Default Browser Behaviour for Firefox */
+}
+
+/* defaultify search inputs */
+input[type="search"] {
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration {
+    appearance: none;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    *height: 13px;
+    *width: 13px;
+}
+
+.checkbox {
+    margin: .2rem 0;
+}
+
+/*Buttons*/
+button,
+select {
+    vertical-align: baseline;
+
+    /* remove default focus outline */
+    &:active,
+    &:focus {
+        outline: none !important;
+    }
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/* Remove default focus state (ff) */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+button:active,
+button:focus { outline: none !important; }
+
+/* Make selection color pretty */
+/*::-moz-selection { color: black;  background: lighten($blue,50%); }
+::selection { color: black;  background: lighten($blue,50%); }
+*/

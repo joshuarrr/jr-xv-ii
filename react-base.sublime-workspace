@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-family"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"te",
+				"textRendering"
+			],
+			[
 				"÷",
 				"÷section	Idiomatic CSS - Section Comment Block"
 			],
@@ -68,10 +92,6 @@
 				"isColophonShowing"
 			],
 			[
-				"tex",
-				"text-rendering"
-			],
-			[
 				"d",
 				"default-duration"
 			],
@@ -88,16 +108,8 @@
 				"width"
 			],
 			[
-				"bac",
-				"background-color"
-			],
-			[
 				"ba",
 				"background-color"
-			],
-			[
-				"te",
-				"text-align"
 			],
 			[
 				"up",
@@ -372,16 +384,8 @@
 				"logo-style"
 			],
 			[
-				"border",
-				"border-radius"
-			],
-			[
 				"m",
 				"margin"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"bl",
@@ -456,10 +460,6 @@
 				"table-cell"
 			],
 			[
-				"text",
-				"text-align"
-			],
-			[
 				"ov",
 				"overflow"
 			],
@@ -519,14 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 165,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -535,10 +527,34 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 251.0,
-		"last_filter": "remo",
+		"height": 75.0,
+		"last_filter": "sni long",
 		"selected_items":
 		[
+			[
+				"sni long",
+				"Snippet: Idiomatic CSS - Longer Descriptor Comment"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"proje",
+				"Project: Edit Project"
+			],
+			[
+				"prefscss",
+				"Preferences: CSSLint Settings – Default"
+			],
+			[
+				"prefs",
+				"Preferences: CSSLint Settings – User"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
 			[
 				"remo",
 				"Package Control: Remove Package"
@@ -562,10 +578,6 @@
 			[
 				"in",
 				"Package Control: Install Package"
-			],
-			[
-				"inst",
-				"Indentation: Convert to Spaces"
 			],
 			[
 				"packa",
@@ -602,10 +614,6 @@
 			[
 				"map",
 				"View: Toggle Minimap"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"install",
@@ -680,13 +688,15 @@
 				"Package Control: Discover Packages"
 			]
 		],
-		"width": 507.0
+		"width": 453.0
 	},
 	"console":
 	{
 		"height": 125.0,
 		"history":
 		[
+			"ls",
+			"prefs",
 			"cd",
 			"ls",
 			"jr",
@@ -706,10 +716,67 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/joshuar/Projects/react-base"
+		"/Users/joshuar/Projects/react-base",
+		"/Users/joshuar/Projects/react-base/app",
+		"/Users/joshuar/Projects/react-base/app/content",
+		"/Users/joshuar/Projects/react-base/app/content/components",
+		"/Users/joshuar/Projects/react-base/app/styles",
+		"/Users/joshuar/Projects/react-base/app/styles/vendor/redbox-react",
+		"/Users/joshuar/Projects/react-base/app/styles/vendor/redbox-react/src",
+		"/Users/joshuar/Projects/react-base/node_modules/postcss-css-variables",
+		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/dist",
+		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/lib"
 	],
 	"file_history":
 	[
+		"/Users/joshuar/Projects/react-base/app/styles/app.css",
+		"/Users/joshuar/Projects/react-base/app/styles/@_lib.css",
+		"/Users/joshuar/Projects/react-base/app/styles/elements/reset-forms.css",
+		"/Users/joshuar/Projects/react-base/app/content/components/page-wrapper.jsx",
+		"/Users/joshuar/Projects/react-base/app/main.js",
+		"/Users/joshuar/Projects/react-base/app/content/home.jsx",
+		"/Users/joshuar/Projects/react-base/app/content/components/nav.jsx",
+		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/lib/style.js",
+		"/Users/joshuar/Projects/react-base/app/content/contact.jsx",
+		"/Users/joshuar/Projects/react-base/app/styles/components/page-wrapper.css",
+		"/Users/joshuar/Projects/react-base/app/styles/vendor/redbox-react/src/style.js",
+		"/Users/joshuar/Projects/react-base/app/styles/elements/reset.css",
+		"/Users/joshuar/Projects/react-base/app/styles/components/nav.css",
+		"/Users/joshuar/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/joshuar/Projects/react-base/devServer.js",
+		"/Users/joshuar/Projects/react-base/node_modules/webpack-dev-middleware/package.json",
+		"/Users/joshuar/Projects/react-base/webpack.config.dev.js",
+		"/Users/joshuar/Projects/react-base/.eslintrc",
+		"/Users/joshuar/Projects/react-base/app/content/about.jsx",
+		"/Users/joshuar/Projects/react-base/index.html",
+		"/Users/joshuar/Projects/react-base/node_modules/stylelint/src/rules/value-no-vendor-prefix/README.md",
+		"/Users/joshuar/Projects/react-base/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/plugins/_collections.js",
+		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/src/redbox.css",
+		"/Users/joshuar/Projects/react-base/node_modules/webpack/node_modules/node-libs-browser/node_modules/browserify-zlib/node_modules/pako/doc/index.html",
+		"/Users/joshuar/Projects/react-base/node_modules/babel-core/node_modules/regenerator/node_modules/commoner/node_modules/install/docs/docco.css",
+		"/Users/joshuar/Projects/react-base/package.json",
+		"/Users/joshuar/Projects/react-base/node_modules/stylelint/dist/ruleSeverities.js",
+		"/Users/joshuar/Projects/react-base/app/styles/@_elements.css",
+		"/Users/joshuar/Projects/react-base/app/styles/vendor/@imports",
+		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/src/style.js",
+		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/examples/react-transform-catch-errors/App.js",
+		"/Users/joshuar/Projects/react-base/.stylelintrc",
+		"/Users/joshuar/Projects/react-base/README.md",
+		"/Users/joshuar/Projects/react-base/.babelrc",
+		"/Users/joshuar/Projects/react-base/node_modules/eslint/node_modules/handlebars/print-script",
+		"/Users/joshuar/Projects/react-base/.csslintrc",
+		"/Users/joshuar/Library/Application Support/Sublime Text 3/Packages/CSSLint/CSSLint.sublime-settings",
+		"/Users/joshuar/Library/Application Support/Sublime Text 3/Packages/User/CSSLint.sublime-settings",
+		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/README.md",
+		"/Users/joshuar/Projects/react-base/react-base.sublime-project",
+		"/Users/joshuar/Projects/react-base/node_modules/webpack/node_modules/watchpack/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_object_wrap.h",
+		"/Users/joshuar/Projects/react-base/app/styles/vendor/redbox.css",
+		"/Users/joshuar/Projects/jr-xv-i/webpack.config.js",
+		"/Users/joshuar/Projects/react-base/src/content/logo.jsx",
+		"/Users/joshuar/Projects/react-base/src/content/counter.jsx",
+		"/Users/joshuar/Projects/react-base/src/colors.js",
+		"/Users/joshuar/.bash_profile",
+		"/Users/joshuar/Projects/react-base/.gitignore",
 		"/Users/joshuar/Projects/jr-mmxv-ii/webpack.production.config.js",
 		"/Users/joshuar/Projects/jr-mmxv-ii/build/index.html",
 		"/Users/joshuar/Projects/jr-mmxv-ii/README.md",
@@ -754,7 +821,6 @@
 		"/Users/joshuar/Projects/jr-xv-i/app/components/header.jsx",
 		"/Users/joshuar/Projects/jr-xv-i/package.json",
 		"/Users/joshuar/Projects/jr-xv-i/app/components/ResponsiveContainer.js",
-		"/Users/joshuar/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/joshuar/Projects/jr-xv-i/dist/bundle.js",
 		"/Users/joshuar/Projects/jr-xv-i/build/bundle.js",
 		"/Users/joshuar/Projects/jr-xv-i/app/styles/_elements/logo.css",
@@ -770,7 +836,6 @@
 		"/Users/joshuar/Projects/react-fullscreen-component/webpack.config.js",
 		"/Users/joshuar/Projects/jr-xv-i/app/styles/_elements/icons.css",
 		"/Users/joshuar/Projects/jr-xv-i/app/styles/design.css",
-		"/Users/joshuar/Projects/jr-xv-i/webpack.config.js",
 		"/Users/joshuar/Projects/jr-xv-i/.gitignore",
 		"/Users/joshuar/Projects/jr-xv-i/app/data/art.js",
 		"/Users/joshuar/Projects/jr-xv-i/build/index.html",
@@ -778,7 +843,6 @@
 		"/Users/joshuar/Projects/jr-xv-i/app/main.js",
 		"/Users/joshuar/Projects/jr-xv-i/app/styles/infinigram.css",
 		"/Users/joshuar/Projects/jr-xv-i/README.md",
-		"/Users/joshuar/.bash_profile",
 		"/Users/joshuar/Projects/xvi/README.md",
 		"/Users/joshuar/Projects/jr-xv-i/app/content/home.jsx",
 		"/Users/joshuar/Projects/jr-xv-i/app/content/infinigram.jsx",
@@ -792,62 +856,18 @@
 		"/Users/joshuar/Projects/jr-xv-i/_process/icons.css",
 		"/Users/joshuar/Projects/jr-xv-i/app/components/ResponsiveImage.js",
 		"/Users/joshuar/Projects/jr-xv-i/app/styles/_elements/links.css",
-		"/Users/joshuar/Projects/jr-xv-i/_process/WAYPOINT enter hide header etc.js",
-		"/Users/joshuar/Projects/jr-xv-i/_process/velocity-manipulation-in-react.js",
-		"/Users/joshuar/Projects/jr-xv-i/_process/requestAnimation.jsx",
-		"/Users/joshuar/Projects/jr-xv-i/_process/design.js",
-		"/Users/joshuar/Projects/jr-xv-i/_process/loading component - jsfiddle",
-		"/Users/joshuar/Projects/jr-xv-i/node_modules/velocitytransitiongroup/dist/VelocityTransitionGroup.js",
-		"/Users/joshuar/Projects/jr-xv-i/node_modules/velocitytransitiongroup/scripts/TransitionChildMapping.jsx",
-		"/Users/joshuar/Projects/jr-xv-i/node_modules/velocitytransitiongroup/scripts/VelocityTransitionGroup.jsx",
-		"/Users/joshuar/Projects/jr-xv-i/app/content/style-guide/colors.jsx",
-		"/Users/joshuar/Projects/jr-xv-i/app/content/style-guide.jsx",
-		"/Users/joshuar/Projects/jr-xv-i/_process/-- QUESTIONS --",
-		"/Users/joshuar/Projects/jr-xv-i/node_modules/react-imageloader/lib/index.js",
-		"/Users/joshuar/Projects/jr-xv-i/_process/Carls-non-working-design-projects.js",
-		"/Users/joshuar/Projects/jr-xv-i/_process/class_manipulation.jsx",
-		"/Users/joshuar/Projects/jr-xv-i/app/styles/_lib/_media.css",
-		"/Users/joshuar/Projects/jr-xv-i/app/content/design-1.jsx",
-		"/Users/joshuar/Projects/jr-xv-i/node_modules/loader-utils/node_modules/.bin/json5",
-		"/Users/joshuar/Projects/jr-xv-i/app/styles/design-1.css",
-		"/Users/joshuar/Projects/jr-xv-i/app/styles/_lib/_mixins.css",
-		"/Users/joshuar/Projects/jr-xv-i/app/styles/_lib.css",
-		"/Users/joshuar/Projects/jr-xv-i/_process/show object contents.js",
-		"/Users/joshuar/Projects/Codepen/Section Breaks/section-breaks.css",
-		"/Users/joshuar/Projects/Codepen/Section Breaks/section-breaks.html",
-		"/Users/joshuar/Library/Application Support/Sublime Text 3/Packages/User/Snipppets/mediaqueries.sublime-snippet",
-		"/Users/joshuar/Library/Application Support/Sublime Text 3/Packages/User/Snipppets/mediaquery-Fablet.sublime-snippet",
-		"/Users/joshuar/Projects/jr-xv-i/app/components/TiltingImage-dist.js",
-		"/Users/joshuar/Projects/jr-xv-i/app/components/TiltingImage.js",
-		"/Users/joshuar/Projects/jr-xv-i/app/components/TiltingImage.jsx",
-		"/Users/joshuar/Projects/jr-xv-i/app/data/social_links.js",
-		"/Users/joshuar/Projects/jr-xv-i/app/components/loader.jsx",
-		"/Users/joshuar/Projects/jr-xv-i/_process/spring-example.jsx",
-		"/Users/joshuar/Projects/jr-xv-i/_process/react event handling.jsx",
-		"/Users/joshuar/Projects/jr-xv-i/app/styles/about.css",
-		"/Users/joshuar/Projects/jr-xv-i/build/favicon.png",
-		"/Users/joshuar/Projects/jr-xv-i/app/build/favicon.png",
-		"/Users/joshuar/Projects/jr-xv-i/build/9a4c273f5c64f9dc7642fa4bfdf535d5.png",
-		"/Users/joshuar/Projects/jr-xv-i/app/fonts/icons.svg",
-		"/Users/joshuar/Projects/jr-xv-i/app/styles/_lib/_element-vars.css",
-		"/Users/joshuar/Projects/jr-xv-i/app/content/not_found.jsx",
-		"/Users/joshuar/Projects/jr-xv-i/app/img/ios/iPhone 5/5S/5C.png",
-		"/Users/joshuar/Projects/jr-xv-i/_process/header-svg.svg",
-		"/Users/joshuar/Projects/jr-xv-i/app/content/thoughts.jsx",
-		"/Users/joshuar/Projects/jr-xv-i/node_modules/react-motion/lib/Spring.js",
-		"/Users/joshuar/Desktop/logo.css",
-		"/Users/joshuar/Desktop/header.css",
-		"/Users/joshuar/Desktop/nav.css"
+		"/Users/joshuar/Projects/jr-xv-i/_process/WAYPOINT enter hide header etc.js"
 	],
 	"find":
 	{
-		"height": 33.0
+		"height": 43.0
 	},
 	"find_in_files":
 	{
 		"height": 122.0,
 		"where_history":
 		[
+			"/Users/joshuar/Projects/react-base",
 			"/Users/joshuar/Projects/jr-xv-i",
 			"/Users/joshuar/Projects/jr-xiv-ii",
 			"/Users/joshuar/Projects/jr-xiv",
@@ -908,6 +928,34 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"About",
+			",",
+			"'",
+			"bottom: 0px",
+			"color: rgb(0, 0, 0)",
+			"color: \"rgb(0, 0, 0)\"",
+			"div",
+			"display:",
+			"position: fixed",
+			"255, 221, 221",
+			"zIndex: 9999",
+			"rgb(255, 221, 221)",
+			"app.css",
+			"'",
+			"font",
+			"mono",
+			"css",
+			"lint",
+			"css",
+			"cssimport",
+			"<RedBox",
+			"SiteWrapper",
+			"this",
+			"'",
+			"\"",
+			"quotes",
+			"redbox",
+			"Gainsboro",
 			"main",
 			"htacc",
 			"react-imageloader",
@@ -1007,35 +1055,7 @@
 			"etc",
 			"et cet",
 			"et c",
-			"et ",
-			"et c",
-			"et ",
-			"sub-",
-			"force",
-			"this",
-			"colop",
-			"this",
-			"isNavExpanded",
-			"showWaypoints",
-			"  hideHeader: function() {\n    store.isNavShowing = false;\n    store.register(() => this.forceUpdate());\n    // console.log('(hideHeader) isNavShowing = ' + store.isNavShowing);\n  },\n\n  showHeader: function() {\n    if (store.isInifigramming) {\n      // console.log('(showHeader) Inifigramming. isNavShowing = ' + store.isNavShowing);\n    } else {\n      store.isNavShowing = true;\n      store.register(() => this.forceUpdate());\n      // console.log('(showHeader) Not infinigramming. isNavShowing = ' + store.isNavShowing);\n    }\n  },\n",
-			"isNavShowing",
-			"this",
-			"isHeaderShowing",
-			"Nav",
-			"Colophon",
-			"isColophonShowing",
-			"hidden-text",
-			"hide",
-			"hidden",
-			"class",
-			"}\n",
-			"-webkit-",
-			".card",
-			"this",
-			"Nav",
-			"expandedProjectId",
-			" $dark-gray;",
-			"$gray;"
+			"et "
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1043,6 +1063,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\"",
+			"'",
 			"Projects",
 			"nav-is-expanded",
 			"artList",
@@ -1168,9 +1190,7 @@
 			"font-weight: 500;",
 			"font-weight:500;",
 			"borders",
-			"&",
-			"20",
-			"339aee"
+			"&"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1181,37 +1201,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 165,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								131,
-								131
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1258,7 +1249,7 @@
 	"project": "react-base.sublime-project",
 	"replace":
 	{
-		"height": 62.0
+		"height": 78.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1268,8 +1259,116 @@
 		"selected_items":
 		[
 			[
+				"page",
+				"app/styles/components/page-wrapper.css"
+			],
+			[
+				"resetf",
+				"app/styles/elements/reset-forms.css"
+			],
+			[
+				"hom",
+				"app/content/home.jsx"
+			],
+			[
+				"docco.css",
+				"node_modules/babel-core/node_modules/regenerator/node_modules/commoner/node_modules/install/docs/docco.css"
+			],
+			[
+				"pa",
+				"package.json"
+			],
+			[
+				"home",
+				"app/content/home.jsx"
+			],
+			[
+				"reset",
+				"app/styles/elements/reset-forms.css"
+			],
+			[
+				"about",
+				"app/content/about.jsx"
+			],
+			[
+				"res",
+				"node_modules/stylelint/dist/ruleSeverities.js"
+			],
+			[
+				"web",
+				"webpack.config.dev.js"
+			],
+			[
+				"mai",
+				"app/main.js"
+			],
+			[
+				"a",
+				"app/styles/app.css"
+			],
+			[
+				"abou",
+				"app/content/about.jsx"
+			],
+			[
+				"appcss",
+				"app/styles/app.css"
+			],
+			[
+				"ab",
+				"app/content/about.jsx"
+			],
+			[
+				"ho",
+				"app/content/home.jsx"
+			],
+			[
+				"h",
+				"app/content/home.jsx"
+			],
+			[
+				"dvs",
+				"devServer.js"
+			],
+			[
+				"abo",
+				"app/content/about.jsx"
+			],
+			[
+				"hoem",
+				"app/content/home.jsx"
+			],
+			[
+				"devs",
+				"devServer.js"
+			],
+			[
+				"dev",
+				"devServer.js"
+			],
+			[
 				"app",
-				"app/app.jsx"
+				"node_modules/redbox-react/examples/react-transform-catch-errors/App.js"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"ps",
+				"node_modules/eslint/node_modules/handlebars/print-script"
+			],
+			[
+				"weconfig",
+				"webpack.config.dev.js"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"ser",
+				"devServer.js"
 			],
 			[
 				"nav",
@@ -1368,28 +1467,12 @@
 				"app/styles/app.css"
 			],
 			[
-				"pac",
-				"package.json"
-			],
-			[
 				"pho",
 				"app/content/photography.jsx"
 			],
 			[
-				"pa",
-				"package.json"
-			],
-			[
-				"web",
-				"webpack.config.js"
-			],
-			[
 				"icon",
 				"app/styles/_elements/icons.css"
-			],
-			[
-				"home",
-				"app/content/home.jsx"
 			],
 			[
 				"route",
@@ -1580,10 +1663,6 @@
 				"app/components/ResponsiveImage.js"
 			],
 			[
-				"res",
-				"app/components/ResponsiveContainer.js"
-			],
-			[
 				"design-1",
 				"app/content/design-1.jsx"
 			],
@@ -1676,16 +1755,8 @@
 				"webpack.config.js"
 			],
 			[
-				"about",
-				"app/styles/about.css"
-			],
-			[
 				"appcs",
 				"app/styles/app.css"
-			],
-			[
-				"h",
-				"app/content/home.jsx"
 			],
 			[
 				"navj",
@@ -1698,86 +1769,6 @@
 			[
 				"js",
 				"package.json"
-			],
-			[
-				"link",
-				"app/styles/_elements/links.css"
-			],
-			[
-				"webp",
-				"webpack.config.js"
-			],
-			[
-				"tr",
-				"app/styles/_elements/transitions.css"
-			],
-			[
-				"tog",
-				"app/styles/_elements/nav-toggle.css"
-			],
-			[
-				"pp",
-				"app/app.jsx"
-			],
-			[
-				"app.j",
-				"app/app.jsx"
-			],
-			[
-				"ee",
-				"app/styles/_lib/_element-vars.css"
-			],
-			[
-				"eleme",
-				"app/styles/_elements.css"
-			],
-			[
-				"logo.c",
-				"app/styles/_elements/logo.css"
-			],
-			[
-				"a",
-				"app/app.jsx"
-			],
-			[
-				"togl",
-				"app/styles/_elements/nav-toggle.css"
-			],
-			[
-				"nav.c",
-				"app/styles/_elements/nav.css"
-			],
-			[
-				"mixin",
-				"app/styles/_lib/_mixins.css"
-			],
-			[
-				"th",
-				"app/content/thoughts.jsx"
-			],
-			[
-				"main",
-				"app/main.js"
-			],
-			[
-				"routes",
-				"app/routes.jsx"
-			],
-			[
-				"e",
-				"app/styles/_elements.css"
-			],
-			[
-				"ele",
-				"app/styles/_lib/_element-vars.css"
-			],
-			[
-				"spri",
-				"node_modules/react-motion/lib/Spring.js"
-			],
-			[
-				"jso",
-				"node_modules/loader-utils/node_modules/.bin/json5"
 			]
 		],
 		"width": 0.0
@@ -1812,7 +1803,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 331.0,
+	"side_bar_width": 213.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

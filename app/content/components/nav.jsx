@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+require('../../styles/components/nav.css');
 
 export class Nav extends Component {
 	render() {
@@ -8,18 +9,18 @@ export class Nav extends Component {
 				<ul className="site-nav">
 					<li>
 						<Link
-						to="/home"
-						className="site-nav-link"
-						activeClassName="active"
+							to="/home"
+							className="site-nav-link"
+							activeClassName="active"
 						>
 							Home
 						</Link>
 					</li>
 					<li>
 						<Link
-						to="/about"
-						className="site-nav-link"
-						activeClassName="active"
+							to="/about"
+							className="site-nav-link"
+							activeClassName="active"
 						>
 							About
 						</Link>
