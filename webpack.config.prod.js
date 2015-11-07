@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var node_modules_dir = path.join(__dirname, 'node_modules');
 
 // PostCSS
 var cssimport = require('postcss-import');
