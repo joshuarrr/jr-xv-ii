@@ -1,0 +1,64 @@
+@import "../@_lib.css";
+
+$box-sizing: "border-box";
+$reset-all-borders: true;
+$reset-all-margins: true;
+$reset-all-padding: true;
+
+$reset-forms: false;
+
+/* Global Reset --------------------------------------------------------------*/
+html {
+    box-sizing: $box-sizing;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+* {
+    @if $reset-all-borders == true {
+        border: 0;
+    }
+    @if $reset-all-margins == true {
+        margin: 0;
+    }
+    @if $reset-all-padding == true {
+        padding: 0;
+    }
+    box-sizing: inherit;
+}
+
+/* Typography ---------------------------------------------------------------*/
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Images --------------------------------------------------------------------*/
+img {
+    /* In case images don't load */
+    font-style: italic;
+}
+
+/* Remove image link borders */
+a img,
+:link img,
+:visited img {
+    border: 0;
+}
+
+@if ($reset-forms == true) {
+    @import "./reset-forms.css";
+}

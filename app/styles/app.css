@@ -1,0 +1,44 @@
+/* App.css */
+/* These styles effect the entire domain.*/
+
+@import "./elements/reset.css";
+
+.root,
+.react-wrapper {
+  height: 100%;
+}
+
+/* Eslint */
+body > div:last-child {
+  letter-spacing: .5px !important;
+  color: rgba(0, 0, 0, .5) !important;
+  background-color: Gainsboro !important;
+  padding: 3rem;
+  font-size: 13px;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+
+  > pre {
+  	font-family: $primary-font-family;
+	  overflow-wrap: break-word !important;
+	  word-wrap: break-word !important;
+	  word-break: break-word !important;
+	  hyphens: auto !important;
+  }
+}
+
+/* PostCSS Browser Reporter / Stylelint */
+  body:before {
+    font-family: $primary-font-family !important;
+    background: Gainsboro !important;
+    bottom: 0;
+    color: rgba(0, 0, 0, .5) !important;
+    text-shadow: none !important;
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 3rem !important;
+    text-rendering: optimizeLegibility;
+}
