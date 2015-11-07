@@ -1,7 +1,7 @@
 {
-  "name": "react-base",
-  "version": "1.0.0",
-  "description": "React Base is a minimal React.js starter site built on React Tranform Boilerplate, adding ESLint, a basic React Router implementation, and lots of PostCSS plugins.",
+  "name": "joshuar-has-a-website",
+  "version": "0.0.2",
+  "description": "Ugh.",
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
@@ -18,7 +18,7 @@
     "react"
   ],
   "author": "Joshuar",
-  "license": "CC0-1.0",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/joshuarrr/react-base/issues"
   },
@@ -68,8 +68,16 @@
     "webpack-hot-middleware": "^2.0.0"
   },
   "dependencies": {
+    "express": "~3.4.4",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-helmet": "^2.1.1"
   }
+
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "private": true,
+  "main": "server.js"
 }
