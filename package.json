@@ -1,7 +1,7 @@
 {
-  "name": "react-transform-boilerplate",
+  "name": "react-base",
   "version": "1.0.0",
-  "description": "Joshuar has a website.",
+  "description": "React Base is a minimal React.js starter site built on React Tranform Boilerplate, adding ESLint, a basic React Router implementation, and lots of PostCSS plugins.",
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
@@ -16,12 +16,12 @@
   "keywords": [
     "react"
   ],
-  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "author": "Joshuar",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/gaearon/react-transform-boilerplate/issues"
+    "url": "https://github.com/joshuarrr/react-base/issues"
   },
-  "homepage": "https://github.com/gaearon/react-transform-boilerplate",
+  "homepage": "https://github.com/joshuarrr/react-base",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "babel-core": "^5.4.7",

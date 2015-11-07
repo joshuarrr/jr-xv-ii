@@ -9,7 +9,7 @@ React starter site.
 ----------
 
 - [Webpack](http://webpack.github.io/)
-- [React Transform Boilerplate](https://github.com/gaearon/react-transform-boilerplate) - Provides hot reloading and pretty errors via Redbox.
+- [React Transform Boilerplate](https://github.com/gaearon/react-transform-boilerplate)
 - [React](http://facebook.github.io/react/) - 0.14.1
 - [React Router](https://github.com/rackt/react-router) - 1.0.0-rc3
 - [ESLint](https://github.com/eslint/eslintlint) - Extends the AirBnB config.
