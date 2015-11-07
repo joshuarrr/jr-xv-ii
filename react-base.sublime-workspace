@@ -527,10 +527,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 75.0,
-		"last_filter": "sni long",
+		"height": 375.0,
+		"last_filter": "pac",
 		"selected_items":
 		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
 			[
 				"sni long",
 				"Snippet: Idiomatic CSS - Longer Descriptor Comment"
@@ -672,10 +676,6 @@
 				"Set Syntax: Sublime Hg CLI (New)"
 			],
 			[
-				"pac",
-				"Package Control: Install Package"
-			],
-			[
 				"install ",
 				"Package Control: Install Package"
 			],
@@ -688,7 +688,7 @@
 				"Package Control: Discover Packages"
 			]
 		],
-		"width": 453.0
+		"width": 460.0
 	},
 	"console":
 	{
@@ -719,49 +719,55 @@
 		"/Users/joshuar/Projects/react-base",
 		"/Users/joshuar/Projects/react-base/app",
 		"/Users/joshuar/Projects/react-base/app/content",
-		"/Users/joshuar/Projects/react-base/app/content/components",
 		"/Users/joshuar/Projects/react-base/app/styles",
+		"/Users/joshuar/Projects/react-base/app/styles/vendor",
 		"/Users/joshuar/Projects/react-base/app/styles/vendor/redbox-react",
 		"/Users/joshuar/Projects/react-base/app/styles/vendor/redbox-react/src",
-		"/Users/joshuar/Projects/react-base/node_modules/postcss-css-variables",
-		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/dist",
-		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/lib"
+		"/Users/joshuar/Projects/react-base/node_modules",
+		"/Users/joshuar/Projects/react-base/node_modules/postcss-reporter",
+		"/Users/joshuar/Projects/react-base/node_modules/postcss-reporter/lib",
+		"/Users/joshuar/Projects/react-base/node_modules/redbox-react",
+		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/src"
 	],
 	"file_history":
 	[
+		"/Users/joshuar/Projects/react-base/app/content/components/page-wrapper.jsx",
 		"/Users/joshuar/Projects/react-base/app/styles/app.css",
+		"/Users/joshuar/Projects/react-base/node_modules/postcss-browser-reporter/index.js",
+		"/Users/joshuar/Projects/react-base/app/styles/vendor/redbox-react/src/style.js",
+		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/src/style.js",
+		"/Users/joshuar/Projects/react-base/app/styles/components/page-wrapper.css",
+		"/Users/joshuar/Projects/react-base/webpack.config.dev.js",
+		"/Users/joshuar/Projects/react-base/.stylelintrc",
+		"/Users/joshuar/Projects/react-base/README.md",
+		"/Users/joshuar/Projects/react-base/terminal.glue",
+		"/Users/joshuar/Projects/react-base/npm-debug.log",
+		"/Users/joshuar/Projects/react-base/index.html",
+		"/Users/joshuar/Projects/react-base/.gitignore",
+		"/Users/joshuar/Projects/react-base/package.json",
 		"/Users/joshuar/Projects/react-base/app/styles/@_lib.css",
 		"/Users/joshuar/Projects/react-base/app/styles/elements/reset-forms.css",
-		"/Users/joshuar/Projects/react-base/app/content/components/page-wrapper.jsx",
 		"/Users/joshuar/Projects/react-base/app/main.js",
 		"/Users/joshuar/Projects/react-base/app/content/home.jsx",
 		"/Users/joshuar/Projects/react-base/app/content/components/nav.jsx",
 		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/lib/style.js",
 		"/Users/joshuar/Projects/react-base/app/content/contact.jsx",
-		"/Users/joshuar/Projects/react-base/app/styles/components/page-wrapper.css",
-		"/Users/joshuar/Projects/react-base/app/styles/vendor/redbox-react/src/style.js",
 		"/Users/joshuar/Projects/react-base/app/styles/elements/reset.css",
 		"/Users/joshuar/Projects/react-base/app/styles/components/nav.css",
 		"/Users/joshuar/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/joshuar/Projects/react-base/devServer.js",
 		"/Users/joshuar/Projects/react-base/node_modules/webpack-dev-middleware/package.json",
-		"/Users/joshuar/Projects/react-base/webpack.config.dev.js",
 		"/Users/joshuar/Projects/react-base/.eslintrc",
 		"/Users/joshuar/Projects/react-base/app/content/about.jsx",
-		"/Users/joshuar/Projects/react-base/index.html",
 		"/Users/joshuar/Projects/react-base/node_modules/stylelint/src/rules/value-no-vendor-prefix/README.md",
 		"/Users/joshuar/Projects/react-base/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/plugins/_collections.js",
 		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/src/redbox.css",
 		"/Users/joshuar/Projects/react-base/node_modules/webpack/node_modules/node-libs-browser/node_modules/browserify-zlib/node_modules/pako/doc/index.html",
 		"/Users/joshuar/Projects/react-base/node_modules/babel-core/node_modules/regenerator/node_modules/commoner/node_modules/install/docs/docco.css",
-		"/Users/joshuar/Projects/react-base/package.json",
 		"/Users/joshuar/Projects/react-base/node_modules/stylelint/dist/ruleSeverities.js",
 		"/Users/joshuar/Projects/react-base/app/styles/@_elements.css",
 		"/Users/joshuar/Projects/react-base/app/styles/vendor/@imports",
-		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/src/style.js",
 		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/examples/react-transform-catch-errors/App.js",
-		"/Users/joshuar/Projects/react-base/.stylelintrc",
-		"/Users/joshuar/Projects/react-base/README.md",
 		"/Users/joshuar/Projects/react-base/.babelrc",
 		"/Users/joshuar/Projects/react-base/node_modules/eslint/node_modules/handlebars/print-script",
 		"/Users/joshuar/Projects/react-base/.csslintrc",
@@ -776,7 +782,6 @@
 		"/Users/joshuar/Projects/react-base/src/content/counter.jsx",
 		"/Users/joshuar/Projects/react-base/src/colors.js",
 		"/Users/joshuar/.bash_profile",
-		"/Users/joshuar/Projects/react-base/.gitignore",
 		"/Users/joshuar/Projects/jr-mmxv-ii/webpack.production.config.js",
 		"/Users/joshuar/Projects/jr-mmxv-ii/build/index.html",
 		"/Users/joshuar/Projects/jr-mmxv-ii/README.md",
@@ -853,10 +858,7 @@
 		"/Users/joshuar/Projects/jr-xv-i/node_modules/react-waypoint/build/npm/waypoint.js",
 		"/Users/joshuar/Projects/jr-xv-i/app/styles/_elements/waypoints-example.css",
 		"/Users/joshuar/Projects/jr-xv-i/app/styles/_elements/type.css",
-		"/Users/joshuar/Projects/jr-xv-i/_process/icons.css",
-		"/Users/joshuar/Projects/jr-xv-i/app/components/ResponsiveImage.js",
-		"/Users/joshuar/Projects/jr-xv-i/app/styles/_elements/links.css",
-		"/Users/joshuar/Projects/jr-xv-i/_process/WAYPOINT enter hide header etc.js"
+		"/Users/joshuar/Projects/jr-xv-i/_process/icons.css"
 	],
 	"find":
 	{
@@ -928,6 +930,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"warning",
+			"this",
+			"warnings",
+			"\\",
+			"before",
+			"this",
 			"About",
 			",",
 			"'",
@@ -1049,12 +1057,6 @@
 			"etcp",
 			"et c",
 			"et v",
-			"et ",
-			"sub",
-			"imageHeight",
-			"etc",
-			"et cet",
-			"et c",
 			"et "
 		],
 		"highlight": false,
@@ -1212,7 +1214,7 @@
 	},
 	"input":
 	{
-		"height": 42.0
+		"height": 145.0
 	},
 	"layout":
 	{
@@ -1259,8 +1261,28 @@
 		"selected_items":
 		[
 			[
+				"redbox-reactsrcstyl",
+				"node_modules/redbox-react/src/style.js"
+			],
+			[
 				"page",
-				"app/styles/components/page-wrapper.css"
+				"app/content/components/page-wrapper.jsx"
+			],
+			[
+				"web",
+				"webpack.config.dev.js"
+			],
+			[
+				"pa",
+				"package.json"
+			],
+			[
+				"app",
+				"app/styles/app.css"
+			],
+			[
+				"pagew",
+				"app/content/components/page-wrapper.jsx"
 			],
 			[
 				"resetf",
@@ -1273,10 +1295,6 @@
 			[
 				"docco.css",
 				"node_modules/babel-core/node_modules/regenerator/node_modules/commoner/node_modules/install/docs/docco.css"
-			],
-			[
-				"pa",
-				"package.json"
 			],
 			[
 				"home",
@@ -1293,10 +1311,6 @@
 			[
 				"res",
 				"node_modules/stylelint/dist/ruleSeverities.js"
-			],
-			[
-				"web",
-				"webpack.config.dev.js"
 			],
 			[
 				"mai",
@@ -1345,10 +1359,6 @@
 			[
 				"dev",
 				"devServer.js"
-			],
-			[
-				"app",
-				"node_modules/redbox-react/examples/react-transform-catch-errors/App.js"
 			],
 			[
 				"pac",
@@ -1761,14 +1771,6 @@
 			[
 				"navj",
 				"app/components/nav.jsx"
-			],
-			[
-				"headerc",
-				"app/styles/components/header.css"
-			],
-			[
-				"js",
-				"package.json"
 			]
 		],
 		"width": 0.0
@@ -1802,8 +1804,8 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 213.0,
+	"side_bar_visible": false,
+	"side_bar_width": 205.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
