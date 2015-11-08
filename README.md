@@ -1,9 +1,6 @@
-# React Base
+# Joshuar has a website.
 
-React starter site with in-browser errors & linting.
-
-1. npm install
-2. npm run dev
+Ugh.
 
 ----------
 
