@@ -96,14 +96,7 @@ var config = {
       nested,
       calc,
       conditionals,
-      autoprefixer(AUTOPREFIXER_BROWSERS),
-      browserReporter({
-        selector: 'body:before'
-      }),
-      reporter({
-        clearMessages: true,
-        noPlugin: true
-      }),
+      autoprefixer(AUTOPREFIXER_BROWSERS)
     ];
   }
 };
