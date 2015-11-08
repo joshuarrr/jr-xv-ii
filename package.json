@@ -1,7 +1,7 @@
 {
-  "name": "joshuar-has-a-website",
-  "version": "0.0.2",
-  "description": "Ugh.",
+  "name": "react-base",
+  "version": "1.0.0",
+  "description": "React Base is a minimal React.js starter site built on React Tranform Boilerplate, adding ESLint, a basic React Router implementation, and lots of PostCSS plugins.",
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/openshift/origin-server"
+    "url": "https://github.com/joshuarrr/react-base"
   },
   "keywords": [
     "react"
