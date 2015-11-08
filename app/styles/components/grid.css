@@ -5,3 +5,85 @@ $guide-color: red;
 .guides {
 	display: flex;
 }
+
+/* Flex Grid */
+$block-size: 1.5rem;
+$page-margin: 0;
+$grid-border: 0;
+$grid-padding: $block-size;
+$gutter: $block-size / 2;
+$block-padding: $block-size / 1.5;
+
+$default-border: 1px solid rgba(0, 0, 0, .35);
+$darker-border: 1px solid rgba(black, .5);
+$block-border: $default-border;
+$grid-border: 0;
+
+.grid {
+  /* Column flexbox for sticky footer */
+  display: flex;
+  flex-direction: column;
+  padding: $grid-padding;
+  border: $grid-border;
+}
+
+.grid-row {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+/*
+  @media #{$w320} {
+    flex-direction: row;
+  }*/
+}
+
+.block {
+  box-shadow: 0 0 0 1px rgba(SlateGray, .35);
+  padding: $block-padding;
+  margin-bottom: $block-size;
+  overflow: hidden;
+}
+
+.col-1 {
+  & > .block {
+    flex-basis: 100%;
+  }
+}
+
+.col-1-1 {
+  & > .block {
+    flex-basis: calc(50% - #{$gutter});
+  }
+}
+
+.col-1-1-1 {
+  & > .block {
+    flex-basis: calc(33.3% - ((#{$gutter} * 4) / 3));
+  }
+}
+
+.col-1-2 {
+  & > .block {
+      flex: 0 1 calc(33.3% - #{$gutter});
+
+    &:last-of-type {
+      flex: 0 1 calc(66.6% - #{$gutter});
+    }
+  }
+}
+
+.col-2-1 {
+  & > .block {
+      flex: 0 1 calc(66.6% - #{$gutter});
+
+    &:last-of-type {
+      flex: 0 1 calc(33.3% - #{$gutter});
+    }
+  }
+}

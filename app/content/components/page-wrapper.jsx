@@ -17,14 +17,17 @@ export class PageWrapper extends Component {
 		const hasNav = this.props.hasNav;
 		return (
 			<div className="page-wrapper">
-				<Logo />
-				<Helmet titleTemplate="Joshuar has a website. %s" />
-				{
-					hasNav &&
-	    		<Nav />
-				}
-				{ this.props.children }
-				<DevMode showDevMode />
+				<header>
+					<Logo />
+					<Helmet titleTemplate="Joshuar has a website. %s" />
+					{ hasNav && <Nav /> }
+				</header>
+				<main className="grid">
+					{ this.props.children }
+				</main>
+				<DevMode showDevMode={ false } />
+				<footer>
+				</footer>
 			</div>
 		);
 	}
