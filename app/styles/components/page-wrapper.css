@@ -1,12 +1,12 @@
 /* Don't style the body. */
 /* body {} */
 @import "../@lib.css";
+@import "./grid.css";
 
 .page-wrapper {
     font-family: $primary-font-family;
     background-color: Gainsboro;
     overflow: auto;
-    padding: 4rem 5rem;
     position: absolute;
     top: 0;
     right: 0;

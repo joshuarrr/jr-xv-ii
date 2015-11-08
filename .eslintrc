@@ -8,6 +8,9 @@
   "extends": "airbnb",
   "rules": {
     "comma-dangle": [2, "never"],
+    "constructor-super": 0,
+    "comma-spacing": [2, {"before": false, "after": true}],
+    "no-unused-vars": [1, { "vars": "all", "args": "none" }],
     "react/jsx-curly-spacing": [1, "always"],
     "no-console": [0],
     "indent": [1, "tab"]

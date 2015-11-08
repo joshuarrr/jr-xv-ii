@@ -4,12 +4,11 @@ import Helmet from 'react-helmet';
 require('../styles/app.css');
 
 export class Home extends Component {
+
 	render() {
 		return (
-			<PageWrapper>
+			<PageWrapper hasNav={ false }>
 				<Helmet title="Home" />
-				<h1>Hello.</h1>
-				<p>I am Joshuar.</p>
 			</PageWrapper>
 		);
 	}

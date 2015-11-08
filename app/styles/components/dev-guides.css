@@ -1,0 +1,21 @@
+/* Guides */
+
+$guide-color: red;
+$page-margin: 0;
+
+.guide {
+  background-color: $guide-color;
+  position: absolute;
+  width: 1px;
+  height: 100vh;
+  top: 0;
+  z-index: 9999;
+}
+
+.v.center {
+  left: 50%;
+}
+
+.v.right {
+  right: $page-margin;
+}

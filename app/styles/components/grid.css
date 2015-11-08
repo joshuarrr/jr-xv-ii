@@ -1,0 +1,7 @@
+$show-guides: false;
+/* $show-guides: true; */
+$guide-color: red;
+
+.guides {
+	display: flex;
+}

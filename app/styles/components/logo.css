@@ -1,0 +1,15 @@
+@import "../lib/mixins.css";
+
+$logo-size: 5rem;
+
+.site-logo {
+  background-color: black;
+  border-radius: 50%;
+  display: block;
+  width: $logo-size;
+  height: $logo-size;
+}
+
+.site-logo-link-text {
+	@mixin hidden-text;
+}
