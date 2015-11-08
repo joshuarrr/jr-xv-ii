@@ -1,8 +1,9 @@
-@import "../lib/mixins.css";
+@import "../@lib.css";
 
 $logo-size: 5rem;
 
 .site-logo {
+	@mixin font-family serif;
   background-color: black;
   border-radius: 50%;
   display: block;

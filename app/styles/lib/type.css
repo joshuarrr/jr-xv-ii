@@ -1,0 +1,24 @@
+/* Type Vars */
+$base-font-size: 10px;
+$base-font-size: 1rem;
+$base-line-height: 1;
+
+/* Font Families */
+$font-family: "Fira Sans", sans-serif;
+$sans-serif-font-family: 'Fira Sans', sans-serif;
+$serif-font-family: 'EB Garamond', serif;
+$mono-font-family: 'Fira Mono', monospace, sans-serif;
+
+@define-mixin font-family $ff: $font-family {
+	@if $ff == serif {
+ 		font-family: $serif-font-family;
+	}
+	@if $ff == sans-serif {
+ 		font-family: $sans-serif-font-family;
+	}
+	@if $ff == mono {
+ 		font-family: $mono-font-family;
+	}
+  font-feature-settings: "liga", "clig";
+  font-variant-ligatures: common-ligatures;
+}

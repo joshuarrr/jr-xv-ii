@@ -19,7 +19,7 @@ export class PageWrapper extends Component {
 			<div className="page-wrapper">
 				<header>
 					<Logo />
-					<Helmet titleTemplate="Joshuar has a website. %s" />
+					<Helmet titleTemplate="Joshuar has a website. - %s" />
 					{ hasNav && <Nav /> }
 				</header>
 				<main className="grid">
