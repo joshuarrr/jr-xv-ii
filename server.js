@@ -113,6 +113,7 @@ var OSServer = function() {
         Object.keys(self.zcache).forEach(function(assetName) {
             if (assetName !== 'index.html') {
                 self.routes['/' + assetName] = function(req, res) {
+                    res.setHeader('Content-Type', 'application/javascript');
                     res.send(self.cache_get(assetName));
                 };
             }
