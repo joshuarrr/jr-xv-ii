@@ -62,10 +62,12 @@ var config = {
       test: /\.jsx?$/,
       loaders: ['babel'],
       include: path.join(__dirname, 'app')
-      }, {
+      },
+      {
         test: /\.css$/,
         loader: 'style-loader!css-loader!postcss-loader'
-      }, {
+      },
+      {
         test: /\.(png|jpeg|woff|woff2|eot|ttf)$/,
         loader: 'url-loader?limit=8192'
       },
@@ -76,38 +78,34 @@ var config = {
     ]
   },
   postcss: function () {
-      // The context of this function is the webpack loader-context
-      // see: http://webpack.github.io/docs/loaders.html#loader-context
-      return [
-        cssimport({
-          // see postcss-import docs to learn about onImport callback
-          // https://github.com/postcss/postcss-import
-          onImport: function (files) {
-            files.forEach(this.addDependency);
-          }.bind(this)
-        }),
-        stylelint,
-        discardComments,
-        colorFunction,
-        mixins,
-        simpleExtend,
-        customProperties,
-        cssVariables,
-        simpleVars,
-        customMedia,
-        mediaMinMax,
-        nested,
-        calc,
-        conditionals,
-        autoprefixer(AUTOPREFIXER_BROWSERS),
-        browserReporter({
-          selector: 'body:before'
-        }),
-        reporter({
-          clearMessages: true,
-          noPlugin: true
-        }),
-      ];
+    return [
+      cssimport({
+        onImport: function (files) {
+          files.forEach(this.addDependency);
+        }.bind(this)
+      }),
+      stylelint,
+      discardComments,
+      colorFunction,
+      mixins,
+      simpleExtend,
+      customProperties,
+      cssVariables,
+      simpleVars,
+      customMedia,
+      mediaMinMax,
+      nested,
+      calc,
+      conditionals,
+      autoprefixer(AUTOPREFIXER_BROWSERS),
+      browserReporter({
+        selector: 'body:before'
+      }),
+      reporter({
+        clearMessages: true,
+        noPlugin: true
+      }),
+    ];
   }
 };
 
