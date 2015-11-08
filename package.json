@@ -5,19 +5,20 @@
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "deploy": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",
     "dev": "node devServer.js",
     "lint": "eslint app"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/react-transform-boilerplate.git"
+    "url": "https://github.com/joshuarrr/react-base"
   },
   "keywords": [
     "react"
   ],
   "author": "Joshuar",
-  "license": "CC0-1.0",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/joshuarrr/react-base/issues"
   },
@@ -67,8 +68,15 @@
     "webpack-hot-middleware": "^2.0.0"
   },
   "dependencies": {
+    "express": "~3.4.4",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-helmet": "^2.1.1"
-  }
+  },
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "private": true,
+  "main": "server.js"
 }

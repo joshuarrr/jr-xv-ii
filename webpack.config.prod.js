@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var node_modules_dir = path.join(__dirname, 'node_modules');
 
 // PostCSS
 var cssimport = require('postcss-import');
@@ -36,9 +37,9 @@ var config = {
     './app/main.js'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, './dist/'),
     filename: 'bundle.js',
-    publicPath: '/static/'
+    publicPath: '/'
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),

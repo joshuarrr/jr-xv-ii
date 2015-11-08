@@ -1,7 +1,6 @@
 # React Base
 
-React starter site.
-
+React starter site with in-browser errors & linting.
 
 1. npm install
 2. npm run dev
