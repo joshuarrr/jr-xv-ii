@@ -11,6 +11,7 @@ export class PageWrapper extends Component {
 		return (
 			<div className="page-wrapper">
 				<Helmet titleTemplate="Joshuar has a website. %s" />
+
     		<Nav />
 				{ this.props.children }
 			</div>

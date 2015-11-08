@@ -1,4 +1,4 @@
-@import "../@_lib.css";
+@import "../@lib.css";
 
 $box-sizing: "border-box";
 $reset-all-borders: true;
@@ -9,56 +9,69 @@ $reset-forms: false;
 
 /* Global Reset --------------------------------------------------------------*/
 html {
-    box-sizing: $box-sizing;
+  box-sizing: $box-sizing;
 }
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 * {
-    @if $reset-all-borders == true {
-        border: 0;
-    }
-    @if $reset-all-margins == true {
-        margin: 0;
-    }
-    @if $reset-all-padding == true {
-        padding: 0;
-    }
-    box-sizing: inherit;
+  @if $reset-all-borders == true {
+    border: 0;
+  }
+  @if $reset-all-margins == true {
+    margin: 0;
+  }
+  @if $reset-all-padding == true {
+    padding: 0;
+  }
+  box-sizing: inherit;
 }
 
 /* Typography ---------------------------------------------------------------*/
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:focus {
-    outline: none;
+  outline: none;
 }
 
 ul,
 ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Images --------------------------------------------------------------------*/
 img {
-    /* In case images don't load */
-    font-style: italic;
+  /* In case images don't load */
+  font-style: italic;
 }
 
 /* Remove image link borders */
 a img,
 :link img,
 :visited img {
-    border: 0;
+  border: 0;
 }
 
 @if ($reset-forms == true) {
-    @import "./reset-forms.css";
+  @import "./reset-forms.css";
+}
+
+
+/* Etc -----------------------------------------------------------------------*/
+
+/* Make the selection color pretty */
+::-moz-selection {
+  color: Gainsboro;
+  background: SlateGray;
+}
+::selection {
+  color: Gainsboro;
+  background: SlateGray;
 }

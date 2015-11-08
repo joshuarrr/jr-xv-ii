@@ -1,6 +1,6 @@
 /* Don't style the body. */
 /* body {} */
-@import "../@_lib.css";
+@import "../@lib.css";
 
 .page-wrapper {
     font-family: $primary-font-family;
