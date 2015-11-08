@@ -7,6 +7,7 @@ var cssimport = require('postcss-import');
 var autoprefixer = require('autoprefixer');
 var calc = require('postcss-calc');
 var colorFunction = require('postcss-color-function');
+var colorGray = require('postcss-color-gray');
 var conditionals = require('postcss-conditionals');
 var cssVariables = require('postcss-css-variables');
 var customMedia = require('postcss-custom-media');
@@ -87,6 +88,7 @@ var config = {
       stylelint,
       discardComments,
       colorFunction,
+      colorGray,
       mixins,
       simpleExtend,
       customProperties,

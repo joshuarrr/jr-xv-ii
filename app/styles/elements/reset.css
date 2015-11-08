@@ -4,12 +4,16 @@ $box-sizing: "border-box";
 $reset-all-borders: true;
 $reset-all-margins: true;
 $reset-all-padding: true;
-
 $reset-forms: false;
+$reset-font-size: true;
 
 /* Global Reset --------------------------------------------------------------*/
 html {
   box-sizing: $box-sizing;
+
+  @if $reset-font-size == true {
+    font-size: 62.5%;
+  }
 }
 
 html,

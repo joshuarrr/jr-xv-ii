@@ -1,11 +1,15 @@
 @import "../@lib.css";
 
-$logo-size: 5rem;
+$logo-size: 6rem;
 
 .site-logo {
 	@mixin font-family serif;
-  background-color: black;
+  background-color: gray(0, 70%);
   border-radius: 50%;
+  border: 1px solid gray(0, 50%);
+  box-shadow: 0 0 0 2px $background-color,
+  0 0 0 3px gray(215),
+  -0px -0px 15px 1px gray(20) inset;
   display: block;
   width: $logo-size;
   height: $logo-size;
@@ -13,6 +17,18 @@ $logo-size: 5rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  &:after {
+    color: white;
+    content: "j";
+    font-size: 3.6rem;
+    font-weight: 400;
+    left: 46%;
+    line-height: 0;
+    position: absolute;
+    text-rendering: geometricPrecision;
+    top: 45%;
+  }
 }
 
 .site-logo-link-text {
