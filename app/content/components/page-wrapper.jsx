@@ -10,7 +10,7 @@ export class PageWrapper extends Component {
 	render() {
 		return (
 			<div className="page-wrapper">
-				<Helmet titleTemplate="%s | React Base" />
+				<Helmet titleTemplate="Joshuar has a website. %s" />
     		<Nav />
 				{ this.props.children }
 			</div>
