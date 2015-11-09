@@ -45,7 +45,7 @@ var OSServer = function() {
         //  Local cache for static content.
         self.zcache['index.html'] = fs.readFileSync('./index.html');
 
-        var dist = fs.readdirSync('./dist');
+        var dist = fs.readdirSync('./dist/');
         dist.forEach(function(asset) {
             self.zcache[asset] = fs.readFileSync('./dist/' + asset);
         });
@@ -112,7 +112,8 @@ var OSServer = function() {
 
         Object.keys(self.zcache).forEach(function(assetName) {
             if (assetName !== 'index.html') {
-                self.routes['/' + assetName] = function(req, res) {
+                self.routes['/static/' + assetName] = function(req, res) {
+                    res.setHeader('Content-Type', 'application/javascript');
                     res.send(self.cache_get(assetName));
                 };
             }
