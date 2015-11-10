@@ -33,4 +33,13 @@ $logo-size: 6rem;
 
 .site-logo-link-text {
 	@mixin hidden-text;
+  /*width: media(320);*/
+
+  @media w(300) {
+    width: 100px;
+  }
+
+  @media h(300) {
+    width: 200px;
+  }
 }
