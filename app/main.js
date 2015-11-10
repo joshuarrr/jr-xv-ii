@@ -4,6 +4,7 @@ import createBrowserHistory from 'history/lib/createBrowserHistory';
 import { Router, Route, IndexRoute } from 'react-router';
 import { Home } from './content/home';
 import { About } from './content/about';
+require('file?name=favicon.png!./favicon.png');
 
 export class App extends Component {
 	static propTypes = {

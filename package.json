@@ -7,6 +7,7 @@
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "deploy": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",
+    "stage": "npm run clean && npm run build:webpack && supervisor server.js",
     "dev": "node devServer.js",
     "lint": "eslint app"
   },
