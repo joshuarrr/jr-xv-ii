@@ -70,7 +70,7 @@ var config = {
       },
       {
         test: /\.(png|jpeg|woff|woff2|eot|ttf)$/,
-        loader: 'url-loader?limit=8192'
+        loader: 'url-loader'
       },
       {
       test: /\.svg$/,
