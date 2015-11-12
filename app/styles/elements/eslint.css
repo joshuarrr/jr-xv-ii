@@ -9,10 +9,10 @@ body > div:last-child {
   text-rendering: optimizeLegibility;
 
   > pre {
-  	font-family: $font-family;
-	  overflow-wrap: break-word !important;
-	  word-wrap: break-word !important;
-	  word-break: break-word !important;
-	  hyphens: auto !important;
+    font-family: $font-family;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    hyphens: auto !important;
   }
 }

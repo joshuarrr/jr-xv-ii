@@ -10,9 +10,10 @@
     "comma-dangle": [2, "never"],
     "constructor-super": 0,
     "comma-spacing": [2, {"before": false, "after": true}],
+    "id-length": [1, {"min": 3, "exceptions": ["i"]}],
     "no-unused-vars": [1, { "vars": "all", "args": "none" }],
+    "quotes": [1, "double", "avoid-escape"],
     "react/jsx-curly-spacing": [1, "always"],
-    "no-console": [0],
-    "indent": [1, "tab"]
-  }
+    "no-console": [0]
+    }
 }

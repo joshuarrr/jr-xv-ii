@@ -1,2 +1,7 @@
 /* Color Variables */
 $background-color: gray(250);
+
+/* Reds */
+$light-red: color(#cc0033 lightness(50%));
+$red: #cc0033;
+$dark-red: color(#cc0033 lightness(30%));

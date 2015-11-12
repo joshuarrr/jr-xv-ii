@@ -9,7 +9,8 @@
     "build": "npm run clean && npm run build:webpack",
     "stage": "npm run clean && npm run build:webpack && supervisor server.js",
     "dev": "node devServer.js",
-    "lint": "eslint app"
+    "lint": "eslint app",
+    "lint-fix": "eslint app --fix"
   },
   "repository": {
     "type": "git",

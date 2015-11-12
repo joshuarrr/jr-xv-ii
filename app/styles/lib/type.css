@@ -10,15 +10,15 @@ $serif-font-family: 'EB Garamond', serif;
 $mono-font-family: 'Fira Mono', monospace, sans-serif;
 
 @define-mixin font-family $ff: $font-family {
-	@if $ff == serif {
- 		font-family: $serif-font-family;
-	}
-	@if $ff == sans-serif {
- 		font-family: $sans-serif-font-family;
-	}
-	@if $ff == mono {
- 		font-family: $mono-font-family;
-	}
-  font-feature-settings: "liga", "clig";
-  font-variant-ligatures: common-ligatures;
+  @if $ff == serif {
+   font-family: $serif-font-family;
+ }
+ @if $ff == sans-serif {
+   font-family: $sans-serif-font-family;
+ }
+ @if $ff == mono {
+   font-family: $mono-font-family;
+ }
+ font-feature-settings: "liga", "clig";
+ font-variant-ligatures: common-ligatures;
 }
