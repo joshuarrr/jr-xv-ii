@@ -1,3 +1,4 @@
+/*! Logo --------------------------------------------------------------------*/
 @import "../@lib.css";
 
 $logo-size: 6rem;
@@ -6,17 +7,13 @@ $logo-size: 6rem;
   @mixin font-family serif;
   background-color: gray(0, 70%);
   border-radius: 50%;
-  border: 1px solid gray(0, 50%);
   box-shadow: 0 0 0 2px $background-color,
-  0 0 0 3px gray(215),
-  -0px -0px 15px 1px gray(20) inset;
-  display: block;
+    0 0 0 3px gray(215),
+    -0px -0px 15px 1px gray(20) inset;
+  display: inline-block;
   width: $logo-size;
   height: $logo-size;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
 
   &:after {
     color: white;
@@ -29,11 +26,47 @@ $logo-size: 6rem;
     text-rendering: geometricPrecision;
     top: 45%;
   }
+
+  /* Change the size of logo instead of scale due to js transform on appear */
+  @media (--phone) {
+    width: calc($logo-size - .2rem);
+    height: calc($logo-size - .2rem);
+
+    &:after {
+      font-size: 3.8rem;
+    }
+  }
+
+  @media (--laptop) {
+    width: calc($logo-size);
+    height: calc($logo-size);
+
+    &:after {
+      font-size: 4rem;
+    }
+  }
+
+  @media (--desktop) {
+    width: calc($logo-size + .5);
+    height: calc($logo-size + .5);
+
+    &:after {
+      font-size: 4.2rem;
+    }
+  }
+
+  @media (--highRes) {
+    width: calc($logo-size + 1);
+    height: calc($logo-size + 1);
+
+    &:after {
+      font-size: 4.6rem;
+    }
+  }
 }
 
 .site-logo-link-text {
   @mixin hidden-text;
-  /*width: media(320);*/
 
   @media w(300) {
     width: 100px;

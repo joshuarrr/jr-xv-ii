@@ -81,18 +81,12 @@ var config = {
   },
   postcss: function () {
     return [
+      stylelint,
       cssimport({
         onImport: function (files) {
           files.forEach(this.addDependency);
         }.bind(this)
       }),
-      // function(css) {
-      //   // sans-serif fallback
-      //   css.eachDecl('font-family', function(decl) {
-      //     decl.value = decl.value + ', sans-serif';
-      //   });
-      // },
-      stylelint,
       discardComments,
       colorFunction,
       colorGray,

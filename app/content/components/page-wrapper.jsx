@@ -16,13 +16,13 @@ export class PageWrapper extends Component {
   render() {
     const hasNav = this.props.hasNav;
     return (
-      <div className="page-wrapper">
-        <header>
-          <Logo />
-          <Helmet titleTemplate="Joshuar has a website. - %s" />
+      <div className="page-wrapper  grid">
+        <Helmet titleTemplate="Joshuar has a website. - %s" />
+        <header className="site-header">
           { hasNav && <Nav /> }
         </header>
         <main className="grid">
+          <Logo />
           { this.props.children }
         </main>
         <DevMode showDevMode={ false } />

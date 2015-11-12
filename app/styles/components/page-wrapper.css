@@ -1,5 +1,6 @@
+/*! Page Wrapper -------------------------------------------------------------*/
 /* Don't style the body. */
-/* body {} */
+
 @import "../@lib.css";
 @import "./grid.css";
 
@@ -12,4 +13,11 @@
   right: 0;
   bottom: 0;
   left: 0;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.site-header {
+	text-align: center;
 }

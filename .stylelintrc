@@ -4,7 +4,7 @@
     "color-no-invalid-hex": 2,
     "declaration-colon-space-after": [2, "always"],
     "declaration-colon-space-before": [2, "never"],
-    "function-calc-no-unspaced-operator": 2,
+    "function-calc-no-unspaced-operator": 0,
     "function-comma-space-after": [2, "always"],
     "function-parentheses-space-inside": [2, "never"],
     "function-space-after": [2, "always"],
