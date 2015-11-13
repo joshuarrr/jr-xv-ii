@@ -4,8 +4,8 @@
 .social-links {
   margin-top: 3rem;
 
-  @media (--highRes) {
-    margin-top: 4rem;
+  @media (--venti) {
+    margin-top: 6rem;
   }
 }
 
