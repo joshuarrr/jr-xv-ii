@@ -21,7 +21,7 @@ $logo-size: 10vw;
   text-align: center;
   transition: all $default-duration;
 
-  @media w(1680) {
+  @media w(1681) {
     max-width: 8rem;
     max-height: 8rem;
   }
@@ -54,7 +54,7 @@ $logo-size: 10vw;
     left: calc($logo-size * .01);
   }
 
-  @media w(1650) {
+  @media w(1681) {
     font-size: 4.5rem;
   }
 }
