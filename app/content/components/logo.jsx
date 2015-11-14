@@ -16,6 +16,9 @@ export class Logo extends Component {
           <span className="site-logo-link-text">
             Joshuar
           </span>
+          <span className="site-logo-j">
+            j
+          </span>
         </Link>
       </h1>
     );

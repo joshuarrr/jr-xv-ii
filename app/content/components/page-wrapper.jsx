@@ -3,7 +3,6 @@ import Helmet from "react-helmet";
 import { Nav } from "./nav";
 import { Logo } from "./logo";
 import { DevMode } from "./dev-mode";
-
 require("../../styles/components/page-wrapper.css");
 
 export class PageWrapper extends Component {

@@ -1,3 +1,4 @@
+/*! Icons --------------------------------------------------------------------*/
 .icon {
 	background: rgba(0, 0, 0, 0) url("../../img/ico/icon-sprite.svg") no-repeat;
 	background-size: 37px 293px;
@@ -21,7 +22,7 @@
 		transform: scale(.9, .9);
 	}
 
-	@media (--tablet) {
+	@media w(768) {
 		transform: scale(.7, .7);
 
 		&:hover {
@@ -29,7 +30,7 @@
 		}
 	}
 
-	@media (--laptop) {
+	@media w(1024) {
 		transform: scale(.75, .75);
 
 		&:hover {
@@ -37,7 +38,7 @@
 		}
 	}
 
-	@media (--highRes) {
+	@media w(1440) {
 		transform: scale(.8, .8);
 
 		&:hover {

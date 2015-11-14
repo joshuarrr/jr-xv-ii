@@ -90,7 +90,9 @@ var config = {
       discardComments,
       colorFunction,
       colorGray,
-      mixins,
+      mixins({
+        mixinsFiles: path.join(__dirname, 'app/styles/mixins', '*.css')
+      }),
       simpleExtend,
       customProperties,
       cssVariables,

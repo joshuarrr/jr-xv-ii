@@ -17,3 +17,9 @@
   display: none;
   white-space: nowrap;
 }
+
+/* Size */
+@define-mixin size $size {
+    width: $size;
+    height: $size;
+}

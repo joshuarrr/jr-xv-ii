@@ -1,21 +1,21 @@
 /*! Page Wrapper -------------------------------------------------------------*/
-/* Don't style the body. */
-
 @import "../@lib.css";
 @import "./grid.css";
 
 .page-wrapper {
-  font-family: $font-family;
-  background-color: $background-color;
-  overflow: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
   align-items: center;
+  background-color: $background-color;
+  bottom: 0;
+  font-family: $font-family;
   justify-content: center;
+  left: 0;
+  overflow: auto;
+  right: 0;
+  top: 0;
+
+  @media h(448) {
+    position: absolute;
+  }
 }
 
 .site-header {

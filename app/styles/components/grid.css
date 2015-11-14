@@ -1,10 +1,4 @@
-$show-guides: false;
-/* $show-guides: true; */
-$guide-color: red;
-
-.guides {
-	display: flex;
-}
+/*! Grid ---------------------------------------------------------------------*/
 
 /* Flex Grid */
 $block-size: 1.5rem;

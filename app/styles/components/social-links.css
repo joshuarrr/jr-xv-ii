@@ -1,10 +1,12 @@
+/*! Social Links ------------------------------------------------------------ */
 @import "../@lib.css";
 @import "../elements/icons.css";
 
 .social-links {
   margin-top: 3rem;
+  transition: margin .5s ease;
 
-  @media (--venti) {
+  @media h(768) {
     margin-top: 6rem;
   }
 }
@@ -12,16 +14,17 @@
 .social-link-item {
   margin-bottom: 1rem;
   text-align: center;
+  transition: margin .5s ease;
 
-  @media (--tablet) {
+  @media w(768) {
     margin-bottom: 1.5rem;
   }
 
-  @media (--laptop) {
+  @media w(1024) {
     margin-bottom: 2rem;
   }
 
-  @media (--highRes) {
+  @media w(1440) {
     margin-bottom: 2.5rem;
   }
 }

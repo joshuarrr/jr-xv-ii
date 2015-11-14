@@ -1,78 +1,64 @@
 /*! Logo --------------------------------------------------------------------*/
 @import "../@lib.css";
 
-$logo-size: 6rem;
+$logo-size: 10vw;
 
 .site-logo {
   @mixin font-family serif;
-  background-color: gray(0, 70%);
-  border-radius: 50%;
-  box-shadow: 0 0 0 2px $background-color,
-    0 0 0 3px gray(215),
-    -0px -0px 15px 1px gray(20) inset;
-  display: inline-block;
   width: $logo-size;
   height: $logo-size;
+  min-width: 6rem;
+  min-height: 6rem;
+  max-width: 7rem;
+  max-height: 7rem;
+  background-color: gray(0, 70%);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 2px $background-color,
+    0 0 0 3px gray(215),
+    -0px -0px 15px 1px gray(20) inset;
   position: relative;
+  text-align: center;
+  transition: all $default-duration;
 
-  &:after {
-    color: white;
-    content: "j";
-    font-size: 3.6rem;
-    font-weight: 400;
-    left: 46%;
-    line-height: 0;
-    position: absolute;
-    text-rendering: geometricPrecision;
-    top: 45%;
+  @media w(1680) {
+    max-width: 8rem;
+    max-height: 8rem;
+  }
+}
+
+.site-logo-link {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 400;
+  left: calc($logo-size * .05);
+  line-height: 0;
+  position: relative;
+  top: 35%;
+
+  @media w(480) {
+    left: calc($logo-size * .035);
   }
 
-  /* Change the size of logo instead of scale due to js transform on appear */
-  @media (--phone) {
-    width: calc($logo-size - .2rem);
-    height: calc($logo-size - .2rem);
-
-    &:after {
-      font-size: 3.8rem;
-    }
+  @media w(568) {
+    left: calc($logo-size * .025);
   }
 
-  @media (--laptop) {
-    width: calc($logo-size);
-    height: calc($logo-size);
-
-    &:after {
-      font-size: 4rem;
-    }
+  @media w(678) {
+    font-size: 4rem;
+    left: calc($logo-size * .02);
+    top: 40%;
   }
 
-  @media (--desktop) {
-    width: calc($logo-size + .5);
-    height: calc($logo-size + .5);
-
-    &:after {
-      font-size: 4.2rem;
-    }
+  @media w(1024) {
+    left: calc($logo-size * .01);
   }
 
-  @media (--highRes) {
-    width: calc($logo-size + 1);
-    height: calc($logo-size + 1);
-
-    &:after {
-      font-size: 4.6rem;
-    }
+  @media w(1650) {
+    font-size: 4.5rem;
   }
 }
 
 .site-logo-link-text {
   @mixin hidden-text;
-
-  @media w(300) {
-    width: 100px;
-  }
-
-  @media h(300) {
-    width: 200px;
-  }
 }
