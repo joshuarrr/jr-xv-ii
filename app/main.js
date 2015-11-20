@@ -4,6 +4,7 @@ import createBrowserHistory from "history/lib/createBrowserHistory";
 import { Router, Route, IndexRoute } from "react-router";
 import { Home } from "./content/home";
 import { About } from "./content/about";
+import { Art } from "./content/art";
 // require("file?name=./favicon.png!./favicon.png");
 
 export class App extends Component {
@@ -26,6 +27,7 @@ render((
     <Route path="/" component={ App }>
     <IndexRoute component={ Home } />
     <Route path="/about" component={ About } />
+    <Route path="/about" component={ Art } />
     <Route path="/home" component={ Home } />
     </Route>
   </Router>
