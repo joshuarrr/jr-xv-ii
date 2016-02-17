@@ -1,7 +1,7 @@
 {
   "name": "Joshuar.",
   "version": "1.0.0",
-  "description": "Ugh.",
+  "description": "Joshuar has a website. Ugh.",
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
@@ -17,7 +17,7 @@
     "url": "https://github.com/openshift/origin-server"
   },
   "keywords": [
-    "react"
+    "react, portfolio"
   ],
   "author": "Joshuar",
   "license": "ISC",
@@ -33,7 +33,6 @@
     "eslint-config-airbnb": "^0.1.0",
     "eslint-loader": "^1.1.1",
     "eslint-plugin-react": "^3.6.3",
-    "express": "^4.13.3",
     "file-loader": "^0.8.4",
     "history": "^1.13.0",
     "postcss": "^5.0.10",
@@ -74,9 +73,7 @@
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-helmet": "^2.1.1",
-    "react-imageloader": "^2.1.0",
-    "velocity-animate": "^1.2.3",
-    "velocity-react": "^1.1.2"
+    "react-imageloader": "^2.1.0"
   },
   "engines": {
     "node": ">= 0.6.0",

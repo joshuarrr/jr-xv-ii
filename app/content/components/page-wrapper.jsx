@@ -5,7 +5,6 @@ import { Logo } from "./logo";
 import { Nav } from "./nav";
 import { Hero } from "./hero";
 import { SocialLinks } from "./social-links";
-import { VelocityTransitionGroup } from 'velocity-react';
 
 require("../../styles/components/page-wrapper.css");
 
@@ -28,26 +27,18 @@ export class PageWrapper extends Component {
     return (
       <div className="page-wrapper  grid">
         <Helmet titleTemplate="Joshuar has a website. - %s" />
-          <VelocityTransitionGroup
-          enter={{ animation: "fadeIn" }}
-          leave={{ animation: "fadeOut", duration: 4000 }}
-          duration={ 5000 }
-          className="velocity-wrapper"
-          runOnMount
-        >
-          <header className="site-header">
-            <Logo />
-            { hasNav && <Nav /> }
-          </header>
-          { hasHero && <Hero /> }
-          <main className={ 'main ' + this.props.mainClass + '-page' }>
-              { this.props.children }
-          </main>
-          <DevMode showDevMode={ false } />
-          <footer className="site-footer">
-            <SocialLinks />
-          </footer>
-        </VelocityTransitionGroup>
+        <header className="site-header">
+          <Logo />
+          { hasNav && <Nav /> }
+        </header>
+        { hasHero && <Hero /> }
+        <main className={ 'main ' + this.props.mainClass + '-page' }>
+            { this.props.children }
+        </main>
+        <DevMode showDevMode={ false } />
+        <footer className="site-footer">
+          <SocialLinks />
+        </footer>
       </div>
     );
   }
