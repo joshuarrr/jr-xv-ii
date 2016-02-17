@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import createBrowserHistory from "history/lib/createBrowserHistory";
 import { Router, Route, IndexRoute } from "react-router";
 import { Home } from "./content/home";
+import { Projects } from "./content/projects";
 import { Art } from "./content/art";
 import { Design } from "./content/design";
 import { Photography } from "./content/photography";
@@ -12,7 +13,7 @@ export class App extends Component {
   static propTypes = {
     children: React.PropTypes.node
   }
-  render() {
+  render = () => {
     return (
      <div className="react-wrapper">
       { this.props.children }
@@ -30,6 +31,7 @@ render((
     <Route path="/art" component={ Art } />
     <Route path="/design" component={ Design } />
     <Route path="/photography" component={ Photography } />
+    <Route path="/projects" component={ Projects } />
     <Route path="/home" component={ Home } />
     </Route>
   </Router>

@@ -5,7 +5,6 @@ import { Logo } from "./logo";
 import { Nav } from "./nav";
 import { Hero } from "./hero";
 import { SocialLinks } from "./social-links";
-
 require("../../styles/components/page-wrapper.css");
 
 export class PageWrapper extends Component {
