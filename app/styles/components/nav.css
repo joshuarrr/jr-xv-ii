@@ -1,11 +1,119 @@
 /*! Nav ----------------------------------------------------------------------*/
 .site-nav {
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
   margin-bottom: 1rem;
-  text-align: right;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.site-nav li {
+@import "../@lib.css";
+
+/*! Nav ---------------------------------------------------------------------*/
+
+.nav-links {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.nav-link {
+	line-height: 2;
+  position: relative;
+  color: gray(120);
+  letter-spacing: .1rem;
+
+  &.active {
+    color: gray(100);
+  }
+}
+
+/* NAV link effect */
+/* Inspired by (via http://tympanus.net/Development/CreativeLinkEffects) */
+.nav-link:before,
+.nav-link:after {
   display: inline-block;
-  margin-right: 1rem;
+  transition:
+    transform .3s,
+    opacity .3s;
+}
+
+/* set up hover states */
+.nav-link:before {
+  opacity: 0;
+  margin-right: 10px;
+  content: "[";
+  transform: translateX(20px);
+}
+
+.nav-link:after {
+  opacity: 0;
+  margin-left: 10px;
+  content: "]";
+  transform: translateX(-20px);
+}
+
+/* set up active hover state */
+.nav-link.active:before {
+  opacity: 0;
+  margin-right: 10px;
+  content: "—";
+  transform: translateX(20px);
+}
+
+.nav-link.active:after {
+  opacity: 0;
+  margin-left: 10px;
+  content: "—";
+  transform: translateX(-20px);
+}
+
+/* initial active link marker is visible */
+.nav-links .nav-link.active:after,
+.nav-links .nav-link.active:before {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/* hide all the link markers when hovering over the nav */
+.nav-links:hover .nav-link:before {
+  opacity: 0;
+  margin-right: 10px;
+  content: "[";
+  transform: translateX(20px);
+}
+
+.nav-links:hover .nav-link:after {
+  opacity: 0;
+  margin-left: 10px;
+  content: "]";
+  transform: translateX(-20px);
+}
+
+/* hide the active link markers when hovering over the nav */
+.nav-links:hover .nav-link.active:before {
+  opacity: 0;
+  margin-right: 10px;
+  content: "—";
+  transform: translateX(20px);
+}
+
+.nav-links:hover .nav-link.active:after {
+  opacity: 0;
+  margin-left: 10px;
+  content: "—";
+  transform: translateX(-20px);
+}
+
+/* show the actively hovered link marker */
+.nav-links .nav-link:hover:before,
+.nav-links .nav-link:hover:after,
+.nav-links .nav-link:focus:before,
+.nav-links .nav-link:focus:after,
+.nav-links .nav-link.active:hover:before,
+.nav-links .nav-link.active:hover:after,
+.nav-links .nav-link.active:focus:before,
+.nav-links .nav-link.active:focus:after  {
+  opacity: 1;
+  transform: translateX(0);
 }

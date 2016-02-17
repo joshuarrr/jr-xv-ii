@@ -6,23 +6,32 @@ export class Nav extends Component {
   render() {
     return (
      <nav>
-       <ul className="site-nav">
-         <li>
+       <ul className="nav-links">
+         <li className="nav-item">
            <Link
-           to="/home"
-           className="site-nav-link"
+           to="/design"
+           className="nav-link"
            activeClassName="active"
            >
-            Home
+            design
            </Link>
          </li>
-         <li>
+         <li className="nav-item">
           <Link
-            to="/about"
-            className="site-nav-link"
+            to="/photography"
+            className="nav-link"
             activeClassName="active"
           >
-            About
+            photography
+          </Link>
+         </li>
+         <li className="nav-item">
+          <Link
+            to="/art"
+            className="nav-link"
+            activeClassName="active"
+          >
+            art
           </Link>
          </li>
        </ul>

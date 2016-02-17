@@ -19,6 +19,7 @@ var mixins = require('postcss-mixins');
 var nested = require('postcss-nested');
 var browserReporter = require('postcss-browser-reporter');
 var reporter = require('postcss-reporter');
+var responsiveType = require('postcss-responsive-type');
 var simpleExtend = require('postcss-simple-extend');
 var simpleVars = require('postcss-simple-vars');
 var stylelint = require('stylelint');
@@ -102,6 +103,7 @@ var config = {
       nested,
       calc,
       conditionals,
+      responsiveType,
       functions({
         glob: path.join(__dirname, 'app/styles/functions', '*.js')
       }),

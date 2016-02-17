@@ -1,27 +1,22 @@
-/*! Logo --------------------------------------------------------------------*/
 @import "../@lib.css";
 
-$logo-size: 10vw;
-
+/*! Logo --------------------------------------------------------------------*/
 .site-logo {
   @mixin font-family serif;
-  width: $logo-size;
-  height: $logo-size;
-  min-width: 6rem;
-  min-height: 6rem;
-  max-width: 7rem;
-  max-height: 7rem;
   background-color: gray(0, 70%);
   border-radius: 50%;
   box-shadow:
     0 0 0 2px $background-color,
     0 0 0 3px gray(215),
     -0px -0px 15px 1px gray(20) inset;
-  position: relative;
+  position: absolute;
+  left: 50%;
   text-align: center;
-  transition: all $default-duration;
+  transform: translate(-50%, 50%);
+  bottom: 0;
+  margin: 0;
 
-  @media w(1681) {
+  @media w(1680) {
     max-width: 8rem;
     max-height: 8rem;
   }
@@ -29,34 +24,23 @@ $logo-size: 10vw;
 
 .site-logo-link {
   color: white;
-  font-size: 3.5rem;
+  display: block;
   font-weight: 400;
-  left: calc($logo-size * .05);
   line-height: 0;
   position: relative;
-  top: 35%;
+  width: 5vw;
+  height: 5vw;
+  min-width: 6rem;
+  min-height: 6rem;
+  max-width: 7.5rem;
+  max-height: 7.5rem;
+}
 
-  @media w(480) {
-    left: calc($logo-size * .035);
-  }
-
-  @media w(568) {
-    left: calc($logo-size * .025);
-  }
-
-  @media w(678) {
-    font-size: 4rem;
-    left: calc($logo-size * .02);
-    top: 40%;
-  }
-
-  @media w(1024) {
-    left: calc($logo-size * .01);
-  }
-
-  @media w(1681) {
-    font-size: 4.5rem;
-  }
+.site-logo-j {
+  top: 45%;
+  display: block;
+  position: relative;
+  transform: translateX(2%);
 }
 
 .site-logo-link-text {

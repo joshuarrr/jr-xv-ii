@@ -69,10 +69,14 @@
     "webpack-hot-middleware": "^2.0.0"
   },
   "dependencies": {
-    "express": "~3.4.4",
+    "express": "^4.13.3",
+    "postcss-responsive-type": "^0.3.2",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
-    "react-helmet": "^2.1.1"
+    "react-helmet": "^2.1.1",
+    "react-imageloader": "^2.1.0",
+    "velocity-animate": "^1.2.3",
+    "velocity-react": "^1.1.2"
   },
   "engines": {
     "node": ">= 0.6.0",

@@ -1,0 +1,23 @@
+.site-header {
+  background-color: gray(237);
+  border-bottom: 1px solid gray(217);
+  position: fixed;
+  top: 0;
+  transition: height 1s cubic-bezier(0.160, 0.035, 0.240, 1.295),
+  	background-color 1s cubic-bezier(0.160, 0.035, 0.240, 1.295);
+  width: 100%;
+  z-index: 1;
+	height: 20vh;
+
+  @media h(321) {
+  	height: 10vh;
+  }
+
+  @media h(481) {
+  	height: 15vh;
+  }
+
+  @media h(628) {
+  	height: 10vh;
+  }
+}

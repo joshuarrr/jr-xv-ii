@@ -1,7 +1,7 @@
 /*! Grid ---------------------------------------------------------------------*/
 
 /* Flex Grid */
-$block-size: 1.5rem;
+$block-size: 0;
 $page-margin: 0;
 $grid-border: 0;
 $grid-padding: $block-size;
@@ -19,6 +19,7 @@ $grid-border: 0;
   flex-direction: column;
   padding: $grid-padding;
   border: $grid-border;
+  align-items: center;
 }
 
 .grid-row {
@@ -31,10 +32,6 @@ $grid-border: 0;
   &:last-of-type {
     margin-bottom: 0;
   }
-/*
-  @media #{$w320} {
-    flex-direction: row;
-  }*/
 }
 
 .block {

@@ -1,2 +1,49 @@
 /*! Typography ---------------------------------------------------------------*/
 @import "../lib/type.css";
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 1.5rem;
+	font-weight: normal;
+}
+
+h1 {
+  font-size: responsive 24px 36px;
+  font-range: 320px 1400px;
+}
+
+.site-title {
+	margin-top: 3rem;
+}
+
+.site-logo-link {
+  font-size: responsive 36px 44px;
+  font-range: 320px 1400px;
+  text-rendering: geometricPrecision;
+}
+
+.intro-text {
+  font-size: responsive 16px 20px;
+  font-range: 320px 1400px;
+  line-height: 1.5;
+  margin: auto;
+  text-align: center;
+  width: 90vw;
+
+  @media w(400) {
+    width: 70vw;
+  }
+
+  @media w(500) {
+    width: 60vw;
+  }
+
+  @media w(768) {
+    width: 50vw;
+    max-width: 41rem;
+  }
+}
+
+.nav-links {
+  font-size: responsive 18px 22px;
+  font-range: 320px 1400px;
+}

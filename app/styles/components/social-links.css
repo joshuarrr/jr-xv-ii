@@ -3,29 +3,29 @@
 @import "../elements/icons.css";
 
 .social-links {
-  margin-top: 3rem;
-  transition: margin .5s ease;
-
-  @media h(768) {
-    margin-top: 6rem;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-link-item {
-  margin-bottom: 1rem;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  margin-right: 1vw;
   text-align: center;
   transition: margin .5s ease;
 
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @media h(768) {
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+  }
+
   @media w(768) {
-    margin-bottom: 1.5rem;
-  }
-
-  @media w(1024) {
-    margin-bottom: 2rem;
-  }
-
-  @media w(1440) {
-    margin-bottom: 2.5rem;
+    margin-right: 2vw;
   }
 }
 

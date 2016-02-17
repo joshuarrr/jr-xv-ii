@@ -1,0 +1,31 @@
+/*! Hero --------------------------------------------------------------------*/
+@import "../@lib.css";
+
+.hero-image-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+		z-index: 1;
+		mix-blend-mode: multiply;
+		top: 0;
+		pointer-events: none;
+
+	.hero-image {
+	  position: fixed;
+	  max-height: 100vh;
+	  max-width: 100vw;
+	  right: 0;
+	  opacity: 0;
+	  transition: opacity 1s, transform 35s;
+	  transform: translateX(30%) scale(.8);
+
+	  &.loaded {
+	  	opacity: .5;
+	  	transform: translateX(0%) scale(1);
+	  }
+	}
+
+	img {
+		height: 100vh;
+	}
+}

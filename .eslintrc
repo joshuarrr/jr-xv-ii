@@ -13,7 +13,10 @@
     "id-length": [1, {"min": 3, "exceptions": ["i"]}],
     "no-unused-vars": [1, { "vars": "all", "args": "none" }],
     "quotes": [1, "double", "avoid-escape"],
-    "react/jsx-curly-spacing": [1, "always"],
-    "no-console": [0]
+    //"react/jsx-curly-spacing": [1, "always"],
+    "react/jsx-curly-spacing": [0],
+    "no-console": [0],
+    "indent": [0],
+    "quotes": [0]
     }
 }

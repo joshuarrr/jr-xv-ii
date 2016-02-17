@@ -1,0 +1,39 @@
+.loading-bar {
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	background-color: transparent;
+}
+
+.loader {
+	position: relative;
+	margin-top: 0;
+	height: 10px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.loader .bar {
+	position: absolute;
+	height: 10px;
+	width: 100%;
+	background-color: Red;
+	animation: loader-animation 1.5s infinite cubic-bezier(.4, .8, .8, 1);
+}
+
+@keyframes loader-animation {
+	0% {
+		left: -100%;
+		opacity:.6;
+	}
+	60% {
+		left: 100%;
+		opacity:1;
+	}
+	100% {
+		left: 100%;
+		opacity:.6;
+	}
+}

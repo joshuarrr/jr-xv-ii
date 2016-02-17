@@ -1,0 +1,16 @@
+.home-page {
+	z-index: 2;
+
+	&.grid {
+    top: -20vh;
+    position: relative;
+
+	  @media h(321) {
+	  	top: -10vh;
+	  }
+
+	  @media h(481) {
+	  	top: -15vh;
+	  }
+	}
+}
