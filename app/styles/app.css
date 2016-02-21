@@ -22,3 +22,19 @@ body {
   min-height: 100%;
   background-color: gray(245);
 }
+
+.site-header.init {
+  opacity: 0;
+}
+
+.hero.init {
+	opacity: 0;
+}
+
+.site-footer.init {
+	opacity: 0;
+}
+
+.main.init{
+	opacity: 0;
+}

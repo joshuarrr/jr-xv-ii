@@ -6,7 +6,15 @@ import { Nav } from "./components/nav";
 require("../styles/app.css");
 
 export class Home extends Component {
-	render() {
+	constructor(props) {
+		super(props);
+		this.state = {
+			showProjects: false,
+			hasNav: true
+		};
+	}
+
+	render = () => {
 		return (
 			<PageWrapper
 				hasNav={ false }
@@ -14,20 +22,8 @@ export class Home extends Component {
 				mainClass="home"
 			>
 				<Helmet title="Home" />
-				<h1 className="site-title">joshuar</h1>
-				<p className="intro-text">
-					AKA Josh, or Joshua Richey.
-					An interactive web designer focused on UX, UI, & IA.
-				</p>
-					<span className="nav-links">
-           <Link
-           to="/projects"
-           className="nav-link"
-           activeClassName="active"
-           >
-            projects
-         </Link>
-         </span>
+				<h1 className="page-title">joshuar</h1>
+				<Nav />
 			</PageWrapper>
 		);
 	}

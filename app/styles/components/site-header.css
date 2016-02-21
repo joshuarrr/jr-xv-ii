@@ -3,6 +3,7 @@
   border-bottom: 1px solid gray(217);
   position: fixed;
   top: 0;
+  left: 0;
   transition: height 1s cubic-bezier(0.160, 0.035, 0.240, 1.295),
   	background-color 1s cubic-bezier(0.160, 0.035, 0.240, 1.295);
   width: 100%;

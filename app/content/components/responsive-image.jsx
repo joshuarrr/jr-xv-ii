@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+      import React, { Component } from "react";
 import ImageLoader from "react-imageloader";
 import { LoadingBar } from "./loading-bar";
 
@@ -37,7 +37,7 @@ export class ResponsiveImage extends Component {
     }
 
     return (
-        // render the image with ImageLoader
+        // Render the image with ImageLoader
         <ImageLoader
           src={ src }
           className={ this.props.class }

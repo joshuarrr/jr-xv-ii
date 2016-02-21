@@ -11,8 +11,9 @@ h1 {
   font-range: 320px 1400px;
 }
 
-.site-title {
+.page-title {
 	margin-top: 3rem;
+  @mixin font-family serif;
 }
 
 .site-logo-link {
@@ -46,4 +47,6 @@ h1 {
 .nav-links {
   font-size: responsive 18px 22px;
   font-range: 320px 1400px;
+  @mixin font-family sans-serif;
+  font-weight: 300;
 }

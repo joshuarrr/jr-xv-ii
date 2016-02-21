@@ -7,7 +7,7 @@ export class Hero extends Component {
   render() {
     return (
       <ResponsiveContainer
-        class={ 'hero-image-container' }
+        class={ 'hero hero-image-container init' }
       >
         <ResponsiveImage
           class="hero-image "

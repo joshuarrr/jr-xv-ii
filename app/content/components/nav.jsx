@@ -7,6 +7,17 @@ export class Nav extends Component {
     return (
      <nav>
        <ul className="nav-links">
+
+         <li className="nav-item">
+           <Link
+           to="/design"
+           className="nav-link"
+           activeClassName="active"
+           >
+            code
+           </Link>
+         </li>
+
          <li className="nav-item">
            <Link
            to="/design"

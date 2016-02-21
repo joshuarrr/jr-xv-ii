@@ -17,6 +17,7 @@
     "react/jsx-curly-spacing": [0],
     "no-console": [0],
     "indent": [0],
-    "quotes": [0]
+    "quotes": [0],
+    "react/no-did-mount-set-state": [0]
     }
 }

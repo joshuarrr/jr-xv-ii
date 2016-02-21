@@ -2,32 +2,28 @@
 @import "../@lib.css";
 @import "./grid.css";
 
-.page-wrapper {
-  bottom: 0;
-  font-family: $serif-font-family;
-  left: 0;
-  right: 0;
-  top: 0;
-
-  @media h(448) {
-    position: absolute;
-  }
-}
-
 .site-header {
 	text-align: center;
 }
 
 .main {
-  margin-top: 25vh;
+  margin-top: 45vh;
   text-align: center;
 
   @media h(321) {
-    margin-top: 15vh;
+    margin-top: 28vh;
   }
 
   @media h(481) {
-    margin-top: 20vh;
+    margin-top: 35vh;
+  }
+
+  @media h(800) {
+    margin-top: 35vh;
+  }
+
+  @media h(950) {
+    margin-top: 30vh;
   }
 }
 
@@ -35,7 +31,7 @@
   position: relative;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   background-color: gray(235);
   border-top: 1px solid gray(217);
   margin-top: 3rem;

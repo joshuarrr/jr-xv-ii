@@ -3,10 +3,11 @@ import { render } from "react-dom";
 import createBrowserHistory from "history/lib/createBrowserHistory";
 import { Router, Route, IndexRoute } from "react-router";
 import { Home } from "./content/home";
-import { Projects } from "./content/projects";
+import { Code } from "./content/code";
 import { Art } from "./content/art";
 import { Design } from "./content/design";
 import { Photography } from "./content/photography";
+import store from './store';
 // require("file?name=./favicon.png!./favicon.png");
 
 export class App extends Component {
@@ -14,6 +15,8 @@ export class App extends Component {
     children: React.PropTypes.node
   }
   render = () => {
+      console.log('* store.isLoaded = ' + store.isLoaded );
+
     return (
      <div className="react-wrapper">
       { this.props.children }
@@ -31,7 +34,7 @@ render((
     <Route path="/art" component={ Art } />
     <Route path="/design" component={ Design } />
     <Route path="/photography" component={ Photography } />
-    <Route path="/projects" component={ Projects } />
+    <Route path="/code" component={ Code } />
     <Route path="/home" component={ Home } />
     </Route>
   </Router>
