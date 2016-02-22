@@ -18,13 +18,26 @@ export class PageWrapper extends Component {
     route: React.PropTypes.object
   }
 
+  constructor() {
+    super();
+
+    this.state = {
+      loading: true
+    };
+  }
+
   componentDidMount() {
     store.isLoaded = true;
+
+    this.setState({
+      loading: false
+    });
   }
 
   render = () => {
     const hasNav = this.props.hasNav;
     const hasHero = this.props.hasHero;
+    const loadedClass = this.state.loading ? ' init' : '';
 
     return (
       <div className="grid">
@@ -44,16 +57,17 @@ export class PageWrapper extends Component {
             className="row header"
             runOnMount
           >
-          <header className="site-header init">
+            <header className="site-header init">
+              { hasNav && <Nav /> }
+            </header>
+          </VelocityTransitionGroup>
+          :
+          <div className="row header">
             <Logo />
-            { hasNav && <Nav /> }
-          </header>
-        </VelocityTransitionGroup>
-        :
-          <header className="site-header">
-            <Logo />
-            { hasNav && <Nav /> }
-          </header>
+            <header className="site-header">
+              { hasNav && <Nav /> }
+            </header>
+          </div>
         }
 
         {/* Hero */}
@@ -62,7 +76,7 @@ export class PageWrapper extends Component {
             animation: {
               opacity: [0.5, 0]
             },
-              duration: 3000
+              duration: 10000
             }
           }
           leave={{
@@ -94,7 +108,7 @@ export class PageWrapper extends Component {
               duration: 500
             }
           }
-          className={"row main " + this.props.mainClass}
+          className={ "row main " + this.props.mainClass }
           runOnMount
         >
           <main className="content">

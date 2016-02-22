@@ -1,0 +1,28 @@
+/* Trailer */
+@define-mixin trailer {
+	margin-bottom: 5vh;
+
+  @media h(481) {
+    margin-bottom: 6vh;
+  }
+
+  @media h(568) {
+    margin-bottom: 7vh;
+  }
+
+  @media h(667) {
+    margin-bottom: 8vh;
+  }
+
+  @media h(768) {
+    margin-bottom: 9vh;
+  }
+
+  @media h(800) {
+    margin-bottom: 10vh;
+  }
+
+  @media h(900) {
+    margin-bottom: 15vh;
+  }
+}

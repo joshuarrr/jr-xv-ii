@@ -26,14 +26,18 @@ body {
   opacity: 0;
 }
 
+.site-logo.init{
+	opacity: 0;
+}
+
 .hero.init {
 	opacity: 0;
 }
 
-.site-footer.init {
+.main.init{
 	opacity: 0;
 }
 
-.main.init{
+.site-footer.init {
 	opacity: 0;
 }

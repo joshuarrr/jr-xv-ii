@@ -6,20 +6,12 @@
   background-color: gray(0, 70%);
   border-radius: 50%;
   box-shadow:
-    0 0 0 2px $background-color,
-    0 0 0 3px gray(215),
-    -0px -0px 15px 1px gray(20) inset;
-  position: absolute;
-  left: 50%;
+    0 0 0 2px white(.7),
+    0 0 0 3px black(.2),
+    -0px -0px 15px 1px black(.5) inset;
   text-align: center;
-  transform: translate(-50%, 50%);
-  bottom: 0;
   margin: 0;
-
-  @media w(1680) {
-    max-width: 8rem;
-    max-height: 8rem;
-  }
+  z-index: 2;
 }
 
 .site-logo-link {
@@ -28,12 +20,8 @@
   font-weight: 400;
   line-height: 0;
   position: relative;
-  width: 5vw;
-  height: 5vw;
-  min-width: 6rem;
-  min-height: 6rem;
-  max-width: 7.5rem;
-  max-height: 7.5rem;
+  width: 6rem;
+  height: 6rem;
 }
 
 .site-logo-j {

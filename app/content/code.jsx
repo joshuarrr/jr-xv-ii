@@ -11,31 +11,39 @@ export class Code extends Component {
 			<PageWrapper
 				hasNav={ false }
 				hasHero={ false }
-				mainClass="projects"
+				mainClass="code"
 			>
-				<Helmet title="Code" />
-				<h1 className="page-title">code</h1>
+				<Helmet title="Codez" />
+				<h1 className="page-title">codez</h1>
 
 				<h2>Hello</h2>
 				<Codepen
 					user="joshuar"
 					hash="GpWJMV"
+					height="400"
+				/>
+
+				<h2>Section Breaks</h2>
+				<Codepen
+					user="joshuar"
+					hash="MwdYLP"
+					height="400"
+				/>
+
+				<h2>Color Animation</h2>
+				<Codepen
+					user="joshuar"
+					hash="RWVKgP"
 					height="300"
 				/>
 
 				<h2>Flexgrid</h2>
 				<Codepen
 					user="joshuar"
-					hash="pjLWPw"
-					height="300"
+					hash="bEPVEL"
+					height="400"
 				/>
 
-				<h2>Colorpen</h2>
-				<Codepen
-					user="joshuar"
-					hash="RWVKgP"
-					height="300"
-				/>
 			</PageWrapper>
 			);
 		}

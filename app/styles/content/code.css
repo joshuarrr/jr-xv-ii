@@ -2,5 +2,6 @@
 @import "../@lib.css";
 
 iframe {
-	margin-bottom: $trailer;
+	@mixin trailer;
+	border-bottom: $border;
 }

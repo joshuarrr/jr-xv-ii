@@ -1,1 +1,2 @@
-$default-border: 1px solid black(.3);
+$default-border: 1px solid black(.1);
+$border: $default-border;

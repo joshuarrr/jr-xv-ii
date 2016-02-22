@@ -3,8 +3,10 @@
 @import "./grid.css";
 
 .site-header {
-  background-color: gray(237);
-  border-bottom: 1px solid gray(217);
+  background-color: black(.1);
+  /* canary only :( */
+  backdrop-filter: blur(3px);
+  border-bottom: 1px solid black(.1);
   position: fixed;
   top: 0;
   left: 0;
@@ -20,6 +22,40 @@
 
   @media h(628) {
     height: 10vh;
+  }
+}
+
+.site-logo {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 20vh;
+
+  .site-logo-link {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  @media h(481) {
+    top: 15vh;
+  }
+
+  @media h(628) {
+    top: 10vh;
+  }
+
+  @media h(667) {
+    .site-logo-link {
+      width: 6.5rem;
+      height: 6.5rem;
+    }
+  }
+
+  @media h(900) {
+    .site-logo-link {
+      width: 7.5rem;
+      height: 7.5rem;
+    }
   }
 }
 
@@ -65,11 +101,11 @@
 
 .content {
   width: 100%;
-  align-self: flex-start;
+  align-self: center;
 }
 
 .site-footer {
   width: 100vw;
-  background-color: gray(235);
-  border-top: 1px solid gray(217);
+  background-color: black(.05);
+  border-top: 1px solid black(.1);
 }

@@ -20,6 +20,6 @@
 
 /* Size */
 @define-mixin size $size {
-    width: $size;
-    height: $size;
+  width: $size;
+  height: $size;
 }
