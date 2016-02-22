@@ -13,7 +13,7 @@ export class Photography extends Component {
 				mainClass="projects"
 			>
 				<Helmet title="Photography" />
-				<h1 className="site-title">photography</h1>
+				<h1 className="page-title">photography</h1>
 			</PageWrapper>
 			);
 		}

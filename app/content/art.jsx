@@ -14,7 +14,7 @@ export class Art extends Component {
 				mainClass="info"
 			>
 				<Helmet title="Art" />
-				<h1 className="site-title">art</h1>
+				<h1 className="page-title">art</h1>
 			</PageWrapper>
 			);
 		}

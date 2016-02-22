@@ -1,7 +1,16 @@
 /* Color Variables */
+
+/* Blacks */
+/* npm postcss-color-alpha */
+$black01: black(.01);
+
+/* Grays */
+/* npm postcss-color-gray */
 $background-color: gray(250);
 
+
 /* Reds */
+/* npm postcss-color-function */
 $light-red: color(#cc0033 lightness(50%));
 $red: #cc0033;
 $dark-red: color(#cc0033 lightness(30%));

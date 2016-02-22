@@ -14,19 +14,10 @@ export class Nav extends Component {
            className="nav-link"
            activeClassName="active"
            >
-            code
-           </Link>
-         </li>
-
-         <li className="nav-item">
-           <Link
-           to="/design"
-           className="nav-link"
-           activeClassName="active"
-           >
             design
            </Link>
          </li>
+
          <li className="nav-item">
           <Link
             to="/photography"
@@ -36,6 +27,17 @@ export class Nav extends Component {
             photography
           </Link>
          </li>
+
+         <li className="nav-item">
+           <Link
+           to="/code"
+           className="nav-link"
+           activeClassName="active"
+           >
+            code
+           </Link>
+         </li>
+
          <li className="nav-item">
           <Link
             to="/art"

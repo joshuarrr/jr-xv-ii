@@ -10,7 +10,7 @@ export class DevMode extends Component {
     const showDev = this.props.showDevMode;
     // console.log("showDev = " + showDev);
     return (
-      <div className="dev-mode-wrap">
+      <div className="dev-mode-wrapper">
       {
         showDev &&
         <Guides />

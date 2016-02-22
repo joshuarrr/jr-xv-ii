@@ -3,41 +3,73 @@
 @import "./grid.css";
 
 .site-header {
-	text-align: center;
+  background-color: gray(237);
+  border-bottom: 1px solid gray(217);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: height 1s cubic-bezier(.16, .035, .24, 1.295),
+    background-color 1s cubic-bezier(.16, .035, .24, 1.295);
+  width: 100%;
+  z-index: 1;
+  height: 20vh;
+
+  @media h(481) {
+    height: 15vh;
+  }
+
+  @media h(628) {
+    height: 10vh;
+  }
 }
 
 .main {
-  margin-top: 45vh;
   text-align: center;
-
-  @media h(321) {
-    margin-top: 28vh;
-  }
+  flex: 1 1 auto;
+  padding-top: 40vh;
+  padding-bottom: 10vh;
+  width: 80vw;
 
   @media h(481) {
-    margin-top: 35vh;
+    padding-top: 30vh;
+    padding-bottom: 15vh;
   }
 
-  @media h(800) {
-    margin-top: 35vh;
+  @media h(568) {
+    padding-top: 25vh;
+    padding-bottom: 10vh;
   }
 
-  @media h(950) {
-    margin-top: 30vh;
+  @media h(667) {
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+  }
+
+  @media h(768) {
+    padding-top: 17vh;
+    padding-bottom: 8vh;
+  }
+
+  @media w(768) {
+    width: 70vw;
+  }
+
+  @media w(1280) {
+    width: 60vw;
+  }
+
+  @media w(1660) {
+    width: 40vw;
   }
 }
 
+.content {
+  width: 100%;
+  align-self: flex-start;
+}
+
 .site-footer {
-  position: relative;
-  bottom: 0;
-  left: 0;
   width: 100vw;
   background-color: gray(235);
   border-top: 1px solid gray(217);
-  margin-top: 3rem;
-
-  @media h(321) {
-    position: absolute;
-    margin-top: 0;
-  }
 }

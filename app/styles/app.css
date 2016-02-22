@@ -5,7 +5,6 @@
 @import "./elements/postcss-lint.css";
 @import "./elements/typography.css";
 @import "./components/responsive-image.css";
-@import "./components/site-header.css";
 @import "./components/nav.css";
 @import "./content/home.css";
 
@@ -15,7 +14,7 @@ body {
 
 .root,
 .react-wrapper {
-  height: 100%;
+  min-height: 100%;
 }
 
 .root {

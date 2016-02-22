@@ -15,23 +15,18 @@ $grid-border: 0;
 
 .grid {
   /* Column flexbox for sticky footer */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: $grid-padding;
-  border: $grid-border;
+  justify-content: space-between;
   align-items: center;
 }
 
-.grid-row {
-  justify-content: space-between;
+.row {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: stretch;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .block {

@@ -27,9 +27,8 @@ export class PageWrapper extends Component {
     const hasHero = this.props.hasHero;
 
     return (
-      <div className="page-wrapper  grid">
+      <div className="grid">
         <Helmet titleTemplate="Joshuar has a website. - %s" />
-
 
         {/* Header */}
         { !store.isLoaded ?
@@ -42,7 +41,7 @@ export class PageWrapper extends Component {
                 delay: 500
               }
             }
-            className="header-animation velocity-wrapper"
+            className="row header"
             runOnMount
           >
           <header className="site-header init">
@@ -56,7 +55,6 @@ export class PageWrapper extends Component {
             { hasNav && <Nav /> }
           </header>
         }
-
 
         {/* Hero */}
         <VelocityTransitionGroup
@@ -74,12 +72,11 @@ export class PageWrapper extends Component {
               duration: 3000
             }
           }
-          className="velocity-wrapper"
+          className="row hero"
           runOnMount
         >
           { hasHero && <Hero /> }
         </VelocityTransitionGroup>
-
 
         {/* Main */}
         <VelocityTransitionGroup
@@ -97,17 +94,18 @@ export class PageWrapper extends Component {
               duration: 500
             }
           }
-          className="velocity-wrapper"
+          className={"row main " + this.props.mainClass}
           runOnMount
         >
-          <main className={ 'main ' + this.props.mainClass + '-page init' }>
+          <main className="content">
             { this.props.children }
           </main>
         </VelocityTransitionGroup>
 
-
-        <DevMode showDevMode={ false } />
-
+        {
+          store.isDevMode &&
+          <DevMode showDevMode={ false } />
+        }
 
         {/* Footer */}
         { !store.isLoaded ?
@@ -120,6 +118,7 @@ export class PageWrapper extends Component {
                 delay: 500
               }
             }
+            className="row footer"
             runOnMount
           >
             <footer className="site-footer init">

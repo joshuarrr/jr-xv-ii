@@ -8,6 +8,8 @@ import { Art } from "./content/art";
 import { Design } from "./content/design";
 import { Photography } from "./content/photography";
 import store from './store';
+require("./styles/app.css");
+
 // require("file?name=./favicon.png!./favicon.png");
 
 export class App extends Component {

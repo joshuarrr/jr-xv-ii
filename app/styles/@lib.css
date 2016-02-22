@@ -1,5 +1,7 @@
 @import "./lib/color.css";
+@import "./lib/grid.css";
 @import "./mixins/helpers.css";
 @import "./lib/media.css";
 @import "./lib/transitions.css";
 @import "./lib/type.css";
+@import "./lib/borders.css";

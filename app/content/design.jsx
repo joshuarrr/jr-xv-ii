@@ -13,7 +13,7 @@ export class Design extends Component {
 				mainClass="projects"
 			>
 				<Helmet title="Design" />
-				<h1 className="site-title">design</h1>
+				<h1 className="page-title">design</h1>
 				<h2>Colorpen</h2>
 				<h2>idealist</h2>
 				<h2>grand canyon</h2>
