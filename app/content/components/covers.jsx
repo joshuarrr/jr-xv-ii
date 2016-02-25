@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import {ResponsiveContainer} from "./responsive-container";
-import {ResponsiveImage} from "./responsive-image";
+import { ResponsiveContainer } from "./responsive-container";
+import { ResponsiveImage } from "./responsive-image";
+import { Link } from "react-router";
 require("../../styles/components/covers.css");
 
 export class Covers extends Component {
@@ -8,76 +9,92 @@ export class Covers extends Component {
     return (
       <div className="row covers">
         {/* Art */}
-        <figure className="cover effect-bubba art">
-          <ResponsiveContainer
-            key={ "rc-1" }
-            ref="imgContainer"
-          >
-            <ResponsiveImage
+        <Link
+        to="/art"
+        >
+          <figure className="cover effect-bubba art">
+            <ResponsiveContainer
+              key={ "rc-1" }
               ref="imgContainer"
-              src="lines-07_crop"
-            />
-          </ResponsiveContainer>
-          <figcaption className="description">
-            <h2>
-              Art
-            </h2>
-          </figcaption>
-        </figure>
+            >
+              <ResponsiveImage
+                ref="imgContainer"
+                src="lines-07_crop"
+              />
+            </ResponsiveContainer>
+            <figcaption className="description">
+              <h2>
+                Art
+              </h2>
+            </figcaption>
+          </figure>
+        </Link>
 
         {/* Photography */}
-        <figure className="cover effect-bubba photography">
-          <ResponsiveContainer
-            key={ "rc-2" }
-            ref="imgContainer"
-          >
-            <ResponsiveImage
+        <Link
+        to="/photography"
+        >
+          <figure className="cover effect-bubba photography">
+            <ResponsiveContainer
+              key={ "rc-2" }
               ref="imgContainer"
-              src="mask.jpg"
-            />
-          </ResponsiveContainer>
-          <figcaption className="description">
-            <h2>
-              Photography
-            </h2>
-          </figcaption>
-        </figure>
+            >
+              <ResponsiveImage
+                ref="imgContainer"
+                src="mask.jpg"
+              />
+            </ResponsiveContainer>
+            <figcaption className="description">
+              <h2>
+                Photography
+              </h2>
+            </figcaption>
+          </figure>
+        </Link>
 
         {/* Design */}
-        <figure className="cover effect-bubba design">
-          <ResponsiveContainer
-            key={ "rc-3" }
-            ref="imgContainer"
+        <Link
+          to="/design"
           >
-            <ResponsiveImage
+          <figure className="cover effect-bubba design">
+            <ResponsiveContainer
+              key={ "rc-3" }
               ref="imgContainer"
-              src="colorpen.jpg"
-            />
-          </ResponsiveContainer>
-          <figcaption className="description">
-            <h2>
-              Design
-            </h2>
-          </figcaption>
-        </figure>
+            >
+              <ResponsiveImage
+                ref="imgContainer"
+                src="colorpen.jpg"
+              />
+            </ResponsiveContainer>
+            <figcaption className="description">
+              <h2>
+                Design
+              </h2>
+            </figcaption>
+          </figure>
+        </Link>
 
         {/* Code */}
-        <figure className="cover effect-bubba code">
-          <ResponsiveContainer
-            key={ "rc-4" }
-            ref="imgContainer"
-          >
-            <ResponsiveImage
+        <Link
+          to="/code"
+        >
+          <figure className="cover effect-bubba code">
+            <ResponsiveContainer
+              key={ "rc-4" }
               ref="imgContainer"
-              src="code.jpg"
-            />
-          </ResponsiveContainer>
-          <figcaption className="description">
-            <h2>
-              Code
-            </h2>
-          </figcaption>
-        </figure>
+            >
+              <ResponsiveImage
+                ref="imgContainer"
+                src="code.jpg"
+              />
+            </ResponsiveContainer>
+            <figcaption className="description">
+              <h2>
+                Code
+              </h2>
+            </figcaption>
+          </figure>
+        </Link>
       </div>
     );
   }

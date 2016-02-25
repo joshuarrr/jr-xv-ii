@@ -1,0 +1,37 @@
+/*! Links -------------------------------------------------------------------*/
+@import "../@lib.css";
+
+$link-color: $body-color;
+$link-visited-color: $body-color;
+$link-hover-color: $red;
+$link-active-color: $light-red;
+
+a {
+	@mixin default-transition;
+	text-decoration: none;
+	transition-property: color;
+}
+
+a:,
+a:link {
+	color: $link-color;
+}
+
+a:visited {
+	color: $link-visited-color;
+}
+
+a:hover {
+	color: $link-hover-color;
+	outline: none;
+}
+
+a:active {
+	color: $link-active-color;
+}
+
+
+a:focus {
+	color: $link-hover-color;
+	outline: none;
+}
