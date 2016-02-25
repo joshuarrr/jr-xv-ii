@@ -37,7 +37,6 @@ export class PageWrapper extends Component {
   render = () => {
     const hasNav = this.props.hasNav;
     const hasHero = this.props.hasHero;
-    const loadedClass = this.state.loading ? ' init' : '';
 
     return (
       <div className="grid">

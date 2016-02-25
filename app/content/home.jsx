@@ -1,6 +1,5 @@
-import React, { Component, PropTypes } from "react";
+import React, { Component } from "react";
 import { PageWrapper } from "./components/page-wrapper";
-import { Link } from "react-router";
 import Helmet from "react-helmet";
 import { Nav } from "./components/nav";
 require("../styles/content/home.css");

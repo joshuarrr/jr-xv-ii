@@ -3,7 +3,7 @@
 @import "./grid.css";
 
 .site-header {
-  background-color: black(.1);
+  background-color: black(.03);
   /* canary only :( */
   backdrop-filter: blur(3px);
   border-bottom: 1px solid black(.1);

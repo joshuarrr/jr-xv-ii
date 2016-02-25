@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { PageWrapper } from "./components/page-wrapper";
 import Helmet from "react-helmet";
-import { Nav } from "./components/nav";
 require("../styles/app.css");
 
 export class Art extends Component {

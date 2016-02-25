@@ -1,4 +1,4 @@
-      import React, { Component } from "react";
+import React, { Component } from "react";
 import ImageLoader from "react-imageloader";
 import { LoadingBar } from "./loading-bar";
 
@@ -27,11 +27,15 @@ export class ResponsiveImage extends Component {
     const src = `${ baseURL }/w_${ width },dpr_${ dpr }/${ this.props.src }`;
     const loadMsg = this.props.loadMsg;
 
-
     function preloader() {
-      if (this.loadMsg) {
+      if (loadMsg) {
         return (
           <p>loading</p>
+        );
+      }
+      if (this.LoadingBar) {
+        return (
+          <LoadingBar />
         );
       }
     }

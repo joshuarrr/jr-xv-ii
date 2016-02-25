@@ -6,8 +6,8 @@ $black01: black(.01);
 
 /* Grays */
 /* npm postcss-color-gray */
-$background-color: gray(250);
-
+$background-color: gray(245);
+$body-color: gray(50);
 
 /* Reds */
 /* npm postcss-color-function */

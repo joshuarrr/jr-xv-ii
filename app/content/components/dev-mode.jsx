@@ -6,6 +6,7 @@ export class DevMode extends Component {
   static propTypes = {
     showDevMode: React.PropTypes.bool
   }
+
   render() {
     const showDev = this.props.showDevMode;
     // console.log("showDev = " + showDev);
