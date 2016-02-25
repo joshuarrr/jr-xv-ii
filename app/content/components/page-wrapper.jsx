@@ -108,11 +108,12 @@ export class PageWrapper extends Component {
             }
           }
           className={ "row main " + this.props.mainClass }
+          component={"main"}
           runOnMount
         >
-          <main className="content">
+          <div className="content">
             { this.props.children }
-          </main>
+          </div>
         </VelocityTransitionGroup>
 
         {

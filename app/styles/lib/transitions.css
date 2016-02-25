@@ -2,6 +2,7 @@
 
 $default-duration: .3s;
 $default-ease: ease-out;
+$duration: $default-duration;
 
 @define-mixin default-transition {
     transition-duration: $default-duration;

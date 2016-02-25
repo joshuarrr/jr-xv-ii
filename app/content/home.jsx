@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { PageWrapper } from "./components/page-wrapper";
 import Helmet from "react-helmet";
-import { Nav } from "./components/nav";
+import { Covers } from "./components/covers";
 require("../styles/content/home.css");
 
 export class Home extends Component {
@@ -22,7 +22,7 @@ export class Home extends Component {
 			>
 				<Helmet title="Home" />
 				<h1 className="page-title">joshuar</h1>
-				<Nav />
+        <Covers />
 			</PageWrapper>
 		);
 	}

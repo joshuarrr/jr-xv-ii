@@ -23,26 +23,16 @@ h2 {
   font-range: 320px 1400px;
 }
 
-h1 {
-  font-size: responsive 24px 36px;
-  font-range: 320px 1400px;
-}
-
 .main  {
   @mixin font-family sans-serif;
 }
 
 .page-title {
   @mixin font-family serif;
-  margin-bottom: 10vh;
-
-  @media h(667) {
-    margin-bottom: 8vh;
-  }
-
-  @media h(800) {
-    margin-bottom: 10vh;
-  }
+  position: absolute;
+  top: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .site-logo-link {
