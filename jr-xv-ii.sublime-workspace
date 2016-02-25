@@ -4,6 +4,82 @@
 		"selected_items":
 		[
 			[
+				"S",
+				"StyleGuide	(main.js)"
+			],
+			[
+				"style",
+				"style-guide"
+			],
+			[
+				"mar",
+				"margin-bottom	(typography.css)"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"o",
+				"outline"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"fle",
+				"flex-direction"
+			],
+			[
+				"alig",
+				"align-items"
+			],
+			[
+				"fl",
+				"flex-start"
+			],
+			[
+				"show",
+				"showProjects"
+			],
+			[
+				"tra",
+				"translateY()"
+			],
+			[
+				"tran",
+				"transform"
+			],
+			[
+				"ini",
+				"initialLoad"
+			],
+			[
+				"trans",
+				"translateY()"
+			],
+			[
+				"pa",
+				"pathname"
+			],
+			[
+				"pro",
+				"projects"
+			],
+			[
+				"Rea",
+				"ReactCSSTransitionGroup"
+			],
+			[
+				"Loa",
+				"LoadingCrossfadeComponent"
+			],
+			[
+				"v",
+				"VelocityTransitionGroup"
+			],
+			[
 				"max",
 				"max-height"
 			],
@@ -80,16 +156,8 @@
 				"toggleNav"
 			],
 			[
-				"b",
-				"border"
-			],
-			[
 				"wid",
 				"width"
-			],
-			[
-				"mar",
-				"margin-top"
 			],
 			[
 				"margin",
@@ -110,14 +178,6 @@
 			[
 				"d",
 				"default-duration"
-			],
-			[
-				"tran",
-				"transition"
-			],
-			[
-				"tra",
-				"transform"
 			],
 			[
 				"w",
@@ -146,10 +206,6 @@
 			[
 				"set",
 				"setMinHeight"
-			],
-			[
-				"pro",
-				"propClass"
 			],
 			[
 				"imag",
@@ -218,10 +274,6 @@
 			[
 				"a",
 				"auto"
-			],
-			[
-				"trans",
-				"transform"
 			],
 			[
 				"di",
@@ -324,10 +376,6 @@
 				"isNavExpanded"
 			],
 			[
-				"pa",
-				"padding-top"
-			],
-			[
 				"op",
 				"opacity"
 			],
@@ -388,10 +436,6 @@
 				"table-cell"
 			],
 			[
-				"bo",
-				"bottom"
-			],
-			[
 				"log",
 				"logo-style"
 			],
@@ -402,10 +446,6 @@
 			[
 				"bl",
 				"block"
-			],
-			[
-				"fl",
-				"float"
 			],
 			[
 				"back",
@@ -464,10 +504,6 @@
 				"background-blue"
 			],
 			[
-				"v",
-				"vertical-align"
-			],
-			[
 				"tab",
 				"table-cell"
 			],
@@ -478,54 +514,11 @@
 			[
 				"font-s",
 				"font-size"
-			],
-			[
-				"error",
-				"error_message"
-			],
-			[
-				"remov",
-				"removeClass"
-			],
-			[
-				"le",
-				"left"
-			],
-			[
-				"el",
-				"ellipses"
-			],
-			[
-				"padding",
-				"padding-left"
-			],
-			[
-				"ab",
-				"absolute"
-			],
-			[
-				"it",
-				"italic"
-			],
-			[
-				"item",
-				"itemsList"
-			],
-			[
-				"last-",
-				"nth-last-of-type(  (pseudo-class)"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -723,32 +716,78 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/joshuar/Projects/jr-xv-ii"
+		"/Users/joshuar/Projects/jr-xv-ii",
+		"/Users/joshuar/Projects/jr-xv-ii/app",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/components",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/mixins",
+		"/Users/joshuar/Projects/jr-xv-ii/node_modules",
+		"/Users/joshuar/Projects/jr-xv-ii/node_modules/rsg-alt",
+		"/Users/joshuar/Projects/jr-xv-ii/node_modules/rsg-alt/bin"
 	],
 	"file_history":
 	[
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/page-wrapper.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/.eslintrc",
+		"/Users/joshuar/Projects/jr-xv-ii/app/store.js",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/art.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/home.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/design.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/responsive-image.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/responsive-container.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/package.json",
+		"/Users/joshuar/Projects/jr-xv-ii/app/main.js",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/style-guide.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/button.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/node_modules/.bin/stylelint",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/page-wrapper.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/elements/typography.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/data/design.js",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/content/design.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/color.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/mixins/trailer.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/app.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/code.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/about.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/dev-mode.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/node_modules/autoprefixer/node_modules/caniuse-db/features-json/css3-colors.json",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/content/code.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/responsive-image.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/nav.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/logo.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/borders.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/grid.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/mixins/helpers.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/grid.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/hero.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/logo.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/hero.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/@lib.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/nav.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/content/home.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/site-header.css",
+		"/Users/joshuar/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/photography.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/dev-mode.css",
+		"/Users/joshuar/Projects/jr-xv-ii/node_modules/babel-core/lib/transformation/file/options/option-manager.js",
+		"/Users/joshuar/Projects/jr-xv-ii/webpack.config.dev.js",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/type.css",
+		"/Users/joshuar/Projects/jr-xv-ii/index.html",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/projects.jsx",
+		"/Users/joshuar/Projects/jr-xv-i/app/content/art.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/node_modules/react-router-transition/src/presets.js",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/functions/media.js",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/breakpoints.css",
-		"/Users/joshuar/Projects/jr-xv-ii/webpack.config.dev.js",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/functions/foo.js",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/page-wrapper.css",
 		"/Users/joshuar/Projects/jr-xv-ii/.stylelintrc",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/color.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/@lib.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/properties.css",
 		"/Users/joshuar/Projects/jr-xv-ii/_process/flexigrid.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/logo.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/@elements.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/app.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/type.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/elements/typography.css",
 		"/Users/joshuar/Projects/jr-xv-ii/webpack.config.prod.js",
-		"/Users/joshuar/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/joshuar/Projects/jr-xv-ii/package.json",
 		"/Users/joshuar/Projects/jr-xv-i/build/index.html",
 		"/Users/joshuar/Projects/jr-xv-i/app/app.jsx",
-		"/Users/joshuar/Projects/jr-xv-ii/index.html",
-		"/Users/joshuar/Projects/jr-xv-ii/app/main.js",
 		"/Users/joshuar/Projects/jr-xv-ii/app/favicon.png",
 		"/Users/joshuar/Projects/jr-xv-i/app/styles/_lib/_type-vars.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/mixins.css",
@@ -764,28 +803,19 @@
 		"/Users/joshuar/Projects/jr-xv-ii/.git/config",
 		"/Users/joshuar/Projects/jr-xv-ii/README.md",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/elements/reset.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/logo.jsx",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content/home.jsx",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/page-wrapper.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/vars.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/grid.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/elements/reset-forms.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/elements/postcss-lint.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/elements/eslint.css",
 		"/Users/joshuar/Projects/jr-xv-i/app/styles/_lib/_mixins.css",
 		"/Users/joshuar/Projects/jr-xv-i/index.html",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/dev-mode.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/dev-mode.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/dev-guides.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/dev-guides.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/guides.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/guides.css",
 		"/Users/joshuar/Projects/jr-xv-i/app/components/logo.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/log.jsx",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/nav.jsx",
-		"/Users/joshuar/Projects/jr-xv-ii/.eslintrc",
 		"/Users/joshuar/Projects/jr-xv-i/app/components/header.jsx",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content/about.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/.gitignore",
 		"/Users/joshuar/Projects/react-base/.git/config",
 		"/Users/joshuar/Projects/react-base/package.json",
@@ -826,39 +856,11 @@
 		"/Users/joshuar/Projects/react-base/node_modules/webpack/node_modules/node-libs-browser/node_modules/browserify-zlib/node_modules/pako/doc/index.html",
 		"/Users/joshuar/Projects/react-base/node_modules/babel-core/node_modules/regenerator/node_modules/commoner/node_modules/install/docs/docco.css",
 		"/Users/joshuar/Projects/react-base/node_modules/stylelint/dist/ruleSeverities.js",
-		"/Users/joshuar/Projects/react-base/app/styles/@_elements.css",
-		"/Users/joshuar/Projects/react-base/app/styles/vendor/@imports",
-		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/examples/react-transform-catch-errors/App.js",
-		"/Users/joshuar/Projects/react-base/.babelrc",
-		"/Users/joshuar/Projects/react-base/node_modules/eslint/node_modules/handlebars/print-script",
-		"/Users/joshuar/Projects/react-base/.csslintrc",
-		"/Users/joshuar/Library/Application Support/Sublime Text 3/Packages/CSSLint/CSSLint.sublime-settings",
-		"/Users/joshuar/Library/Application Support/Sublime Text 3/Packages/User/CSSLint.sublime-settings",
-		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/README.md",
-		"/Users/joshuar/Projects/react-base/react-base.sublime-project",
-		"/Users/joshuar/Projects/react-base/node_modules/webpack/node_modules/watchpack/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_object_wrap.h",
-		"/Users/joshuar/Projects/react-base/app/styles/vendor/redbox.css",
-		"/Users/joshuar/Projects/react-base/src/content/logo.jsx",
-		"/Users/joshuar/Projects/react-base/src/content/counter.jsx",
-		"/Users/joshuar/Projects/react-base/src/colors.js",
-		"/Users/joshuar/.bash_profile",
-		"/Users/joshuar/Projects/jr-mmxv-ii/webpack.production.config.js",
-		"/Users/joshuar/Projects/jr-mmxv-ii/build/index.html",
-		"/Users/joshuar/Projects/jr-mmxv-ii/README.md",
-		"/Users/joshuar/Projects/jr-mmxv-ii/.git/config",
-		"/Users/joshuar/Projects/jr-mmxv-ii/server.js",
-		"/Users/joshuar/Projects/jr-mmxv-ii/pa",
-		"/Users/joshuar/Projects/jr-mmxv-ii/package.json",
-		"/Users/joshuar/Projects/jr-mmxv-ii/webpack.config.js",
-		"/Users/joshuar/Projects/jr-mmxv-ii/npm-debug.log",
-		"/Users/joshuar/Projects/jr-mmxv-ii/.gitignore",
-		"/Users/joshuar/Projects/jr-mmxv-ii/.htaccess",
-		"/Users/joshuar/Projects/Flexy/flexy.css",
-		"/Users/joshuar/Projects/Flexy/app/styles/about.css"
+		"/Users/joshuar/Projects/react-base/app/styles/@_elements.css"
 	],
 	"find":
 	{
-		"height": 33.0
+		"height": 46.0
 	},
 	"find_in_files":
 	{
@@ -924,9 +926,86 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"'",
+			"serve",
+			"loadedClass",
+			"LoadingBar",
+			"page",
+			"imageLoader",
+			"this",
+			"projectClass",
+			"height",
+			".site-logo",
+			"hero",
+			"20",
+			"title",
+			"height",
+			"padding",
+			"main",
+			"mainClass",
+			"home",
+			"margin",
+			"height",
+			".site-header",
+			"page-wrapper--",
+			"page-wrapper",
+			"velocity-wrapper",
+			"page-wrapper--page",
+			"velocity-wrapper",
+			"-wrapper ",
+			"-wrapper",
+			"Loaded",
+			"loaded",
+			"Loaded",
+			"-animation",
+			"animation",
+			"main",
+			"{",
+			"hero",
+			"MAIN",
+			".hero-image",
+			"main",
+			"Design",
+			"hero",
+			"<Nav",
+			"hero",
+			"translateY",
+			"Column",
+			"Col",
+			"col",
+			"Col",
+			"col",
+			"Col",
+			"col",
+			"Col",
+			"col",
+			"Col",
+			"col",
+			"80",
+			":8080",
+			"8080",
+			"port",
+			"this",
+			"margin-",
+			"this",
+			"VelocityTransitionGroup",
+			"this",
+			"VelocityTransitionGroup",
+			"this",
+			"item",
+			"this",
+			"<Locations",
+			"this",
+			"veloc",
+			"../",
+			"file-lo",
+			"file0lo",
+			"filelo",
+			"file",
+			"{",
 			"-",
 			"width",
 			"m ",
@@ -977,84 +1056,7 @@
 			"express",
 			"build",
 			"port",
-			"Home",
-			"80",
-			"warning",
-			"this",
-			"warnings",
-			"\\",
-			"before",
-			"this",
-			"About",
-			",",
-			"'",
-			"bottom: 0px",
-			"color: rgb(0, 0, 0)",
-			"color: \"rgb(0, 0, 0)\"",
-			"div",
-			"display:",
-			"position: fixed",
-			"255, 221, 221",
-			"zIndex: 9999",
-			"rgb(255, 221, 221)",
-			"app.css",
-			"'",
-			"font",
-			"mono",
-			"css",
-			"lint",
-			"css",
-			"cssimport",
-			"<RedBox",
-			"SiteWrapper",
-			"this",
-			"'",
-			"\"",
-			"quotes",
-			"redbox",
-			"Gainsboro",
-			"main",
-			"htacc",
-			"react-imageloader",
-			"imagel",
-			"*",
-			"sizr",
-			"multiply",
-			"/*",
-			"setsta",
-			"hey parent",
-			"onMouse",
-			"link",
-			">\n",
-			"Projects",
-			"Art",
-			"list",
-			"listener",
-			"? ' ",
-			"setState",
-			"this",
-			"force",
-			"this",
-			"initialState",
-			"state",
-			">\n",
-			"force",
-			"click",
-			"togg",
-			"pointer-events",
-			"point",
-			"isNavShowing",
-			"hideHeader",
-			"header",
-			"pinned",
-			"showWaypoints",
-			"showHeader",
-			"switchPos",
-			"$nav-bg",
-			"togg",
-			"accell",
-			"opacity",
-			"isNavShowing"
+			"Home"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1062,6 +1064,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\"",
 			"'",
 			"\"",
 			"'",
@@ -1188,8 +1191,7 @@
 			"h2",
 			"font-size: .8em;",
 			"font-weight: 500;",
-			"font-weight:500;",
-			"borders"
+			"font-weight:500;"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1200,43 +1202,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Mono-Red Light.tmTheme",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 33.0
+		"height": 36.0
 	},
 	"input":
 	{
@@ -1277,7 +1250,7 @@
 	"project": "jr-xv-ii.sublime-project",
 	"replace":
 	{
-		"height": 62.0
+		"height": 84.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1287,12 +1260,196 @@
 		"selected_items":
 		[
 			[
+				"pack",
+				"package.json"
+			],
+			[
+				"page-",
+				"app/content/components/page-wrapper.jsx"
+			],
+			[
+				"sty",
+				"node_modules/.bin/stylelint"
+			],
+			[
+				"store",
+				"app/store.js"
+			],
+			[
+				"desi",
+				"app/content/design.jsx"
+			],
+			[
+				"art",
+				"app/content/art.jsx"
+			],
+			[
+				"responsi",
+				"app/content/components/responsive-image.jsx"
+			],
+			[
+				"home",
+				"app/content/home.jsx"
+			],
+			[
+				"trai",
+				"app/styles/mixins/trailer.css"
+			],
+			[
+				"t",
+				"app/styles/elements/typography.css"
+			],
+			[
+				"colorcs",
+				"app/styles/lib/color.css"
+			],
+			[
+				"color",
+				"node_modules/autoprefixer/node_modules/caniuse-db/features-json/css3-colors.json"
+			],
+			[
+				"app",
+				"app/styles/app.css"
+			],
+			[
+				"page",
+				"app/styles/components/page-wrapper.css"
+			],
+			[
+				"design",
+				"app/data/design.js"
+			],
+			[
+				"ty",
+				"app/styles/elements/typography.css"
+			],
+			[
+				"trailer",
+				"app/styles/mixins/trailer.css"
+			],
+			[
+				"code",
+				"app/styles/content/code.css"
+			],
+			[
+				"nav",
+				"app/content/components/nav.jsx"
+			],
+			[
+				"border",
+				"app/styles/lib/borders.css"
+			],
+			[
+				"gr",
+				"app/styles/lib/grid.css"
+			],
+			[
+				"borders",
+				"app/styles/lib/borders.css"
+			],
+			[
 				"logo",
-				"app/styles/components/logo.css"
+				"app/content/components/logo.jsx"
+			],
+			[
+				"hero",
+				"app/styles/components/hero.css"
+			],
+			[
+				"grid",
+				"app/styles/components/grid.css"
+			],
+			[
+				"typo",
+				"app/styles/elements/typography.css"
+			],
+			[
+				"nav.css",
+				"app/styles/components/nav.css"
+			],
+			[
+				"footer",
+				"node_modules/babel-core/lib/transformation/file/options/option-manager.js"
+			],
+			[
+				"dev-mo",
+				"app/styles/components/dev-mode.css"
+			],
+			[
+				"devm",
+				"app/content/components/dev-mode.jsx"
+			],
+			[
+				"nav.j",
+				"app/content/components/nav.jsx"
+			],
+			[
+				"navcs",
+				"app/styles/components/nav.css"
+			],
+			[
+				"bord",
+				"app/styles/lib/borders.css"
 			],
 			[
 				"web",
 				"webpack.config.dev.js"
+			],
+			[
+				"colorcss",
+				"app/styles/lib/color.css"
+			],
+			[
+				"colors",
+				"node_modules/autoprefixer/node_modules/caniuse-db/features-json/css3-colors.json"
+			],
+			[
+				"i",
+				"index.html"
+			],
+			[
+				"type",
+				"app/styles/lib/type.css"
+			],
+			[
+				"respon",
+				"app/content/components/responsive-container.jsx"
+			],
+			[
+				"respo",
+				"app/content/components/responsive-image.jsx"
+			],
+			[
+				"respons",
+				"app/styles/components/responsive-image.css"
+			],
+			[
+				"resp",
+				"app/content/components/responsive-image.jsx"
+			],
+			[
+				"header",
+				"app/styles/components/site-header.css"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"pa",
+				"package.json"
+			],
+			[
+				"main",
+				"app/main.js"
+			],
+			[
+				"photo",
+				"app/content/photography.jsx"
+			],
+			[
+				"des",
+				"app/content/design.jsx"
 			],
 			[
 				"webp",
@@ -1301,10 +1458,6 @@
 			[
 				"we",
 				"webpack.config.prod.js"
-			],
-			[
-				"pa",
-				"package.json"
 			],
 			[
 				"colo",
@@ -1327,20 +1480,8 @@
 				"app/styles/elements/reset.css"
 			],
 			[
-				"app",
-				"app/styles/app.css"
-			],
-			[
-				"page",
-				"app/styles/components/page-wrapper.css"
-			],
-			[
 				"lib",
 				"app/styles/@lib.css"
-			],
-			[
-				"pac",
-				"package.json"
 			],
 			[
 				"conf",
@@ -1359,24 +1500,12 @@
 				"app/styles/lib/vars.css"
 			],
 			[
-				"nav",
-				"app/content/components/nav.jsx"
-			],
-			[
 				"ma",
 				"app/main.js"
 			],
 			[
 				"ab",
 				"app/content/about.jsx"
-			],
-			[
-				"main",
-				"app/main.js"
-			],
-			[
-				"home",
-				"app/content/home.jsx"
 			],
 			[
 				"reset",
@@ -1467,16 +1596,8 @@
 				"webpack.config.dev.js"
 			],
 			[
-				"art",
-				"app/content/art.jsx"
-			],
-			[
 				"tran",
 				"~/Projects/jr-xv-i/app/styles/_elements/transitions.css"
-			],
-			[
-				"ty",
-				"app/styles/_lib/_type-vars.css"
 			],
 			[
 				"tyo",
@@ -1485,10 +1606,6 @@
 			[
 				"ro",
 				"app/routes.jsx"
-			],
-			[
-				"des",
-				"app/content/design.jsx"
 			],
 			[
 				"words",
@@ -1503,28 +1620,12 @@
 				"app/routes.jsx"
 			],
 			[
-				"pack",
-				"package.json"
-			],
-			[
 				"toggle",
 				"app/styles/_elements/nav-toggle.css"
 			],
 			[
-				"navcs",
-				"app/styles/_elements/nav.css"
-			],
-			[
-				"store",
-				"app/store.js"
-			],
-			[
 				"heade",
 				"app/components/header.jsx"
-			],
-			[
-				"header",
-				"app/styles/components/header.css"
 			],
 			[
 				"hea",
@@ -1583,10 +1684,6 @@
 				"app/styles/art.css"
 			],
 			[
-				"design",
-				"app/data/design.js"
-			],
-			[
 				"logoc",
 				"app/styles/_elements/logo.css"
 			],
@@ -1611,16 +1708,8 @@
 				"app/styles/_elements.css"
 			],
 			[
-				"type",
-				"app/styles/_lib/_type-vars.css"
-			],
-			[
 				"icons",
 				"app/styles/_elements/icons.css"
-			],
-			[
-				"color",
-				"app/styles/_lib/_color.css"
 			],
 			[
 				"type.css",
@@ -1651,24 +1740,12 @@
 				"_process/design.js"
 			],
 			[
-				"respon",
-				"app/components/ResponsiveContainer.js"
-			],
-			[
 				"bun",
 				"build/bundle.js"
 			],
 			[
 				"header.",
 				"app/components/header.jsx"
-			],
-			[
-				"nav.j",
-				"app/components/nav.jsx"
-			],
-			[
-				"respons",
-				"app/components/ResponsiveContainer.js"
 			],
 			[
 				"transitionchi",
@@ -1693,110 +1770,6 @@
 			[
 				"headerjs",
 				"app/components/header.jsx"
-			],
-			[
-				"colors",
-				"app/styles/_lib/_color.css"
-			],
-			[
-				"inde",
-				"build/index.html"
-			],
-			[
-				"sty",
-				"app/styles/style-guide.css"
-			],
-			[
-				"lin",
-				"app/styles/_elements/links.css"
-			],
-			[
-				"resp",
-				"app/components/ResponsiveContainer.js"
-			],
-			[
-				"wo",
-				"app/content/words.jsx"
-			],
-			[
-				"desi",
-				"app/data/design.js"
-			],
-			[
-				"typcs",
-				"app/styles/_elements/type.css"
-			],
-			[
-				"ppcss",
-				"app/styles/app.css"
-			],
-			[
-				"pacage",
-				"package.json"
-			],
-			[
-				"json",
-				"node_modules/loader-utils/node_modules/.bin/json5"
-			],
-			[
-				"navjs",
-				"app/components/nav.jsx"
-			],
-			[
-				"repsons",
-				"app/components/ResponsiveImage.js"
-			],
-			[
-				"design-1",
-				"app/content/design-1.jsx"
-			],
-			[
-				"med",
-				"app/styles/_lib/_media.css"
-			],
-			[
-				"wa",
-				"webpack.config.js"
-			],
-			[
-				"s",
-				"app/store.js"
-			],
-			[
-				"media",
-				"app/styles/_lib/_media.css"
-			],
-			[
-				"mix",
-				"app/styles/_lib/_mixins.css"
-			],
-			[
-				"typo",
-				"app/content/style-guide/typography.jsx"
-			],
-			[
-				"appc",
-				"app/styles/app.css"
-			],
-			[
-				"gui",
-				"app/content/style-guide.jsx"
-			],
-			[
-				"app.c",
-				"app/styles/app.css"
-			],
-			[
-				"tram",
-				"app/styles/infinigram.css"
-			],
-			[
-				"head",
-				"app/styles/components/header.css"
-			],
-			[
-				"navc",
-				"app/styles/_elements/nav.css"
 			]
 		],
 		"width": 0.0
@@ -1831,7 +1804,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 203.0,
+	"side_bar_width": 235.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
