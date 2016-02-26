@@ -1,14 +1,31 @@
 /*! Covers ------------------------------------------------------------------*/
 @import "../@lib.css";
 
+.covers {
+	display: flex;
+	flex-direction: column;
+
+	@media w(480){
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
 .cover {
 	position: relative;
 	z-index: 2;
-	width: 20vh;
-	height: 20vh;
+	width: 50vw;
+	height: 50vw;
 	border-bottom: 4vh solid white;
 	box-shadow: 0 0 0 10px white,
 						  0 0 0 11px black(.1);
+	margin-bottom: 10vh;
+
+	a,
+	a:visited {
+		color: $body-color;
+	}
 
 	.responsive-container {
 		overflow: hidden;
@@ -20,7 +37,7 @@
 				opacity .35s,
 				transform .5s;
 			opacity: .9;
-			border: 1px solid transparent;
+			border: 1px solid white;
 		}
 	}
 
@@ -43,6 +60,10 @@
 	&:hover {
 		cursor: pointer;
 
+		a {
+			color: $red;
+		}
+
 		.description {
 			background-color: black(.1);
 		}
@@ -50,5 +71,11 @@
 		img {
 			transform: scale(1.1);
 		}
+	}
+
+	@media w(480){
+		width: 50vh;
+		height: 50vh;
+		margin-bottom: 0;
 	}
 }

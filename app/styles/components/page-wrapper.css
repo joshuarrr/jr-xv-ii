@@ -17,7 +17,7 @@
   height: 20vh;
 
   @media h(481) {
-    height: 15vh;
+    height: 10vh;
   }
 
   @media h(628) {
@@ -37,7 +37,7 @@
   }
 
   @media h(481) {
-    top: 15vh;
+    top: 10vh;
   }
 
   @media h(628) {
@@ -62,9 +62,11 @@
 .main {
   text-align: center;
   flex: 1 1 auto;
-  padding-top: 40vh;
+  padding-top: 35vh;
   padding-bottom: 10vh;
   width: 80vw;
+  position: relative;
+  z-index: 3;
 
   @media h(481) {
     padding-top: 30vh;
@@ -72,11 +74,11 @@
   }
 
   @media h(568) {
-    padding-top: 25vh;
+    padding-top: 20vh;
     padding-bottom: 10vh;
   }
 
-  @media h(667) {
+  @media h(627) {
     padding-top: 20vh;
     padding-bottom: 10vh;
   }
@@ -102,6 +104,11 @@
 .content {
   width: 100%;
   align-self: center;
+  z-index: 0;
+}
+
+.page-title {
+  margin-bottom: 5vh;
 }
 
 .site-footer {

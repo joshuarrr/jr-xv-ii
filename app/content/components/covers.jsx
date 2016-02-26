@@ -9,10 +9,10 @@ export class Covers extends Component {
     return (
       <div className="row covers">
         {/* Art */}
-        <Link
-        to="/art"
-        >
-          <figure className="cover effect-bubba art">
+        <figure className="cover effect-bubba art">
+          <Link
+          to="/art"
+          >
             <ResponsiveContainer
               key={ "rc-1" }
               ref="imgContainer"
@@ -27,14 +27,14 @@ export class Covers extends Component {
                 Art
               </h2>
             </figcaption>
-          </figure>
-        </Link>
+          </Link>
+        </figure>
 
         {/* Photography */}
-        <Link
-        to="/photography"
-        >
-          <figure className="cover effect-bubba photography">
+        <figure className="cover effect-bubba photography">
+          <Link
+          to="/photography"
+          >
             <ResponsiveContainer
               key={ "rc-2" }
               ref="imgContainer"
@@ -49,14 +49,14 @@ export class Covers extends Component {
                 Photography
               </h2>
             </figcaption>
-          </figure>
-        </Link>
+          </Link>
+        </figure>
 
         {/* Design */}
-        <Link
-          to="/design"
-          >
-          <figure className="cover effect-bubba design">
+        <figure className="cover effect-bubba design">
+          <Link
+            to="/design"
+            >
             <ResponsiveContainer
               key={ "rc-3" }
               ref="imgContainer"
@@ -71,14 +71,14 @@ export class Covers extends Component {
                 Design
               </h2>
             </figcaption>
-          </figure>
-        </Link>
+          </Link>
+        </figure>
 
         {/* Code */}
-        <Link
-          to="/code"
-        >
-          <figure className="cover effect-bubba code">
+        <figure className="cover effect-bubba code">
+          <Link
+            to="/code"
+          >
             <ResponsiveContainer
               key={ "rc-4" }
               ref="imgContainer"
@@ -93,8 +93,8 @@ export class Covers extends Component {
                 Code
               </h2>
             </figcaption>
-          </figure>
-        </Link>
+          </Link>
+        </figure>
       </div>
     );
   }

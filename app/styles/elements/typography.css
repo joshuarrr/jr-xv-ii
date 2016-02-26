@@ -29,10 +29,6 @@ h2 {
 
 .page-title {
   @mixin font-family serif;
-  position: absolute;
-  top: 20vh;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .site-logo-link {

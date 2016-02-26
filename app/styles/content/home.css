@@ -2,7 +2,8 @@
 @import "../@lib.css";
 
 .home.main {
-	@media w(768) {
- 		width: 80vw;
+
+	@media w(1200) {
+ 		width: 60vw;
  	}
 }
