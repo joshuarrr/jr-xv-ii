@@ -9,10 +9,10 @@ require("../styles/content/design.css");
 export class Design extends Component {
 
 	render = () => {
-		const projectArray = projectList.slice(0, 1);
-		console.log('* projectArray = ' + projectArray + '\n');
+		// const projectArray = projectList.slice(0, 1);
+		// console.log('* projectArray = ' + projectArray + '\n');
 
-		const projects = projectArray.map(function exp(p, i) {
+		const projects = projectList.map(function exp(p, i) {
 			return (
 				<div
 					className="project"

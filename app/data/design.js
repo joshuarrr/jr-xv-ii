@@ -124,7 +124,7 @@ export default [
 		description: ``,
 		file: 'polar-express-01.jpg',
 		class: 'border',
-		role: 'Design',
+		role: 'Key art',
 		id: 'polar'
 	},
 	{
@@ -132,7 +132,7 @@ export default [
 		description: ``,
 		file: 'CCA-01.jpg',
 		class: 'border',
-		role: 'Design',
+		role: 'Collateral design',
 		id: 'cca'
 	},
 	{
