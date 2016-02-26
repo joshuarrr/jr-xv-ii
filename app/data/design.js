@@ -71,7 +71,7 @@ export default [
 	{
 		title: 'Colorpen.io',
 		description: ``,
-		role: 'Product design & development',
+		role: 'Design & development',
 		tech: 'Webpack, React.js, jsx, es6, PostCSS',
 		file: 'Colorpen.jpg',
 		class: 'border',

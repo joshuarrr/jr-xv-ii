@@ -7,18 +7,14 @@ import { Code } from "./content/code";
 import { Art } from "./content/art";
 import { Design } from "./content/design";
 import { Photography } from "./content/photography";
-import store from './store';
 require("./styles/app.css");
-
-// require("file?name=./favicon.png!./favicon.png");
+require('file?name=favicon.png!./favicon.png');
 
 export class App extends Component {
   static propTypes = {
     children: React.PropTypes.node
   }
   render = () => {
-      console.log('* store.isLoaded = ' + store.isLoaded );
-
     return (
      <div className="react-wrapper">
       { this.props.children }

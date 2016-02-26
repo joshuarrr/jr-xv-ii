@@ -9,92 +9,80 @@ export class Covers extends Component {
     return (
       <div className="row covers">
         {/* Art */}
-        <figure className="cover effect-bubba art">
-          <Link
+        <Link
           to="/art"
+          className="cover"
+        >
+          <ResponsiveContainer
+            key={ "rc-1" }
+            ref="imgContainer"
           >
-            <ResponsiveContainer
-              key={ "rc-1" }
+            <ResponsiveImage
               ref="imgContainer"
-            >
-              <ResponsiveImage
-                ref="imgContainer"
-                src="lines-07_crop"
-              />
-            </ResponsiveContainer>
-            <figcaption className="description">
-              <h2>
-                Art
-              </h2>
-            </figcaption>
-          </Link>
-        </figure>
+              src="lines-07_crop"
+            />
+          </ResponsiveContainer>
+          <h2 className="cover-title">
+            Art
+          </h2>
+        </Link>
 
         {/* Photography */}
-        <figure className="cover effect-bubba photography">
-          <Link
+        <Link
           to="/photography"
+          className="cover"
+        >
+          <ResponsiveContainer
+            key={ "rc-2" }
+            ref="imgContainer"
           >
-            <ResponsiveContainer
-              key={ "rc-2" }
+            <ResponsiveImage
               ref="imgContainer"
-            >
-              <ResponsiveImage
-                ref="imgContainer"
-                src="mask.jpg"
-              />
-            </ResponsiveContainer>
-            <figcaption className="description">
-              <h2>
-                Photography
-              </h2>
-            </figcaption>
-          </Link>
-        </figure>
+              src="mask.jpg"
+            />
+          </ResponsiveContainer>
+          <h2 className="cover-title">
+            Photography
+          </h2>
+        </Link>
 
         {/* Design */}
-        <figure className="cover effect-bubba design">
-          <Link
-            to="/design"
-            >
-            <ResponsiveContainer
-              key={ "rc-3" }
+        <Link
+          to="/design"
+          className="cover"
+        >
+          <ResponsiveContainer
+            key={ "rc-3" }
+            ref="imgContainer"
+          >
+            <ResponsiveImage
               ref="imgContainer"
-            >
-              <ResponsiveImage
-                ref="imgContainer"
-                src="colorpen.jpg"
-              />
-            </ResponsiveContainer>
-            <figcaption className="description">
-              <h2>
-                Design
-              </h2>
-            </figcaption>
-          </Link>
-        </figure>
+              src="colorpen.jpg"
+            />
+          </ResponsiveContainer>
+          <h2 className="cover-title">
+            Design
+          </h2>
+        </Link>
 
         {/* Code */}
-        <figure className="cover effect-bubba code">
-          <Link
-            to="/code"
+        <Link
+          to="/code"
+          className="cover"
+        >
+          <ResponsiveContainer
+            key={ "rc-4" }
+            ref="imgContainer"
           >
-            <ResponsiveContainer
-              key={ "rc-4" }
+            <ResponsiveImage
               ref="imgContainer"
-            >
-              <ResponsiveImage
-                ref="imgContainer"
-                src="code.jpg"
-              />
-            </ResponsiveContainer>
-            <figcaption className="description">
-              <h2>
-                Code
-              </h2>
-            </figcaption>
-          </Link>
-        </figure>
+              src="code.jpg"
+            />
+          </ResponsiveContainer>
+          <h2 className="cover-title">
+            Code
+          </h2>
+        </Link>
       </div>
     );
   }

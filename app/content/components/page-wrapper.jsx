@@ -85,7 +85,7 @@ export class PageWrapper extends Component {
               duration: 3000
             }
           }
-          className="row hero"
+          className="hero"
           runOnMount
         >
           { hasHero && <Hero /> }
@@ -107,7 +107,7 @@ export class PageWrapper extends Component {
               duration: 500
             }
           }
-          className={ "row main " + this.props.mainClass }
+          className={ "main " + this.props.mainClass }
           component={"main"}
           runOnMount
         >

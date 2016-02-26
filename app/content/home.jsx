@@ -17,7 +17,7 @@ export class Home extends Component {
 		return (
 			<PageWrapper
 				hasNav={ false }
-				hasHero
+				hasHero={ false }
 				mainClass="home"
 			>
 				<Helmet title="Home" />

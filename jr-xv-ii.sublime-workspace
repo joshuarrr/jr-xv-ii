@@ -4,6 +4,66 @@
 		"selected_items":
 		[
 			[
+				"fle",
+				"flex"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"j",
+				"justify-content"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"tra",
+				"transform"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"tr",
+				"transition"
+			],
+			[
+				"fig",
+				"figcaption"
+			],
+			[
+				"bac",
+				"backdrop-filter"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"respon",
+				"responsive-container	(responsive-container.jsx)"
+			],
+			[
+				"comp",
+				"component	(about.jsx)"
+			],
+			[
 				"S",
 				"StyleGuide	(main.js)"
 			],
@@ -12,24 +72,12 @@
 				"style-guide"
 			],
 			[
-				"mar",
-				"margin-bottom	(typography.css)"
-			],
-			[
 				"b",
 				"block"
 			],
 			[
 				"o",
 				"outline"
-			],
-			[
-				"bo",
-				"border"
-			],
-			[
-				"fle",
-				"flex-direction"
 			],
 			[
 				"alig",
@@ -44,20 +92,12 @@
 				"showProjects"
 			],
 			[
-				"tra",
-				"translateY()"
-			],
-			[
 				"tran",
 				"transform"
 			],
 			[
 				"ini",
 				"initialLoad"
-			],
-			[
-				"trans",
-				"translateY()"
 			],
 			[
 				"pa",
@@ -88,10 +128,6 @@
 				"serif-font-family"
 			],
 			[
-				"tr",
-				"translate()"
-			],
-			[
 				"has",
 				"hasNav"
 			],
@@ -114,10 +150,6 @@
 			[
 				"text",
 				"text-decoration"
-			],
-			[
-				"bac",
-				"background"
 			],
 			[
 				"te",
@@ -240,10 +272,6 @@
 				"right"
 			],
 			[
-				"comp",
-				"components"
-			],
-			[
 				"ex",
 				"expanded"
 			],
@@ -270,10 +298,6 @@
 			[
 				"min",
 				"min-width"
-			],
-			[
-				"a",
-				"auto"
 			],
 			[
 				"di",
@@ -310,10 +334,6 @@
 			[
 				"baco",
 				"background-size"
-			],
-			[
-				"bor",
-				"border"
 			],
 			[
 				"co",
@@ -494,26 +514,6 @@
 			[
 				"import",
 				"important"
-			],
-			[
-				"app",
-				"appearance"
-			],
-			[
-				"background",
-				"background-blue"
-			],
-			[
-				"tab",
-				"table-cell"
-			],
-			[
-				"ov",
-				"overflow"
-			],
-			[
-				"font-s",
-				"font-size"
 			]
 		]
 	},
@@ -718,63 +718,67 @@
 	[
 		"/Users/joshuar/Projects/jr-xv-ii",
 		"/Users/joshuar/Projects/jr-xv-ii/app",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/components",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/mixins",
-		"/Users/joshuar/Projects/jr-xv-ii/node_modules",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/content",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/elements",
 		"/Users/joshuar/Projects/jr-xv-ii/node_modules/rsg-alt",
 		"/Users/joshuar/Projects/jr-xv-ii/node_modules/rsg-alt/bin"
 	],
 	"file_history":
 	[
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/page-wrapper.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/main.js",
+		"/Users/joshuar/Projects/jr-xv-ii/webpack.config.dev.js",
+		"/Users/joshuar/Projects/jr-xv-ii/index.html",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/home.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/page-wrapper.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/app.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/hero.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/elements/typography.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/covers.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/content/home.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/data/design.js",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/covers.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/grid.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/color.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/transitions.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/elements/links.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/@elements.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/responsive-image.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/about.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/responsive-container.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/responsive-image.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/nav.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/site-header.css",
+		"/Users/joshuar/.bash_profile",
 		"/Users/joshuar/Projects/jr-xv-ii/.eslintrc",
 		"/Users/joshuar/Projects/jr-xv-ii/app/store.js",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/art.jsx",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content/home.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/design.jsx",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/responsive-image.jsx",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/responsive-container.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/package.json",
-		"/Users/joshuar/Projects/jr-xv-ii/app/main.js",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/style-guide.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/button.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/node_modules/.bin/stylelint",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/page-wrapper.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/elements/typography.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/data/design.js",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/content/design.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/color.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/mixins/trailer.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/app.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/code.jsx",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content/about.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/dev-mode.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/node_modules/autoprefixer/node_modules/caniuse-db/features-json/css3-colors.json",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/content/code.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/responsive-image.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/nav.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/logo.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/borders.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/grid.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/mixins/helpers.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/grid.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/hero.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/logo.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/hero.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/@lib.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/nav.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/content/home.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/site-header.css",
 		"/Users/joshuar/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/photography.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/dev-mode.css",
 		"/Users/joshuar/Projects/jr-xv-ii/node_modules/babel-core/lib/transformation/file/options/option-manager.js",
-		"/Users/joshuar/Projects/jr-xv-ii/webpack.config.dev.js",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/type.css",
-		"/Users/joshuar/Projects/jr-xv-ii/index.html",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/projects.jsx",
 		"/Users/joshuar/Projects/jr-xv-i/app/content/art.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/node_modules/react-router-transition/src/presets.js",
@@ -784,7 +788,6 @@
 		"/Users/joshuar/Projects/jr-xv-ii/.stylelintrc",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/properties.css",
 		"/Users/joshuar/Projects/jr-xv-ii/_process/flexigrid.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/@elements.css",
 		"/Users/joshuar/Projects/jr-xv-ii/webpack.config.prod.js",
 		"/Users/joshuar/Projects/jr-xv-i/build/index.html",
 		"/Users/joshuar/Projects/jr-xv-i/app/app.jsx",
@@ -851,12 +854,7 @@
 		"/Users/joshuar/Projects/react-base/.eslintrc",
 		"/Users/joshuar/Projects/react-base/app/content/about.jsx",
 		"/Users/joshuar/Projects/react-base/node_modules/stylelint/src/rules/value-no-vendor-prefix/README.md",
-		"/Users/joshuar/Projects/react-base/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/plugins/_collections.js",
-		"/Users/joshuar/Projects/react-base/node_modules/redbox-react/src/redbox.css",
-		"/Users/joshuar/Projects/react-base/node_modules/webpack/node_modules/node-libs-browser/node_modules/browserify-zlib/node_modules/pako/doc/index.html",
-		"/Users/joshuar/Projects/react-base/node_modules/babel-core/node_modules/regenerator/node_modules/commoner/node_modules/install/docs/docco.css",
-		"/Users/joshuar/Projects/react-base/node_modules/stylelint/dist/ruleSeverities.js",
-		"/Users/joshuar/Projects/react-base/app/styles/@_elements.css"
+		"/Users/joshuar/Projects/react-base/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/plugins/_collections.js"
 	],
 	"find":
 	{
@@ -929,6 +927,46 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"content",
+			"store",
+			"page-",
+			"title",
+			"favicon",
+			"file-loa",
+			"url",
+			"hero",
+			"content",
+			"className=\"cover-title\"",
+			"className=\"cover ",
+			"className=\"cover",
+			"description",
+			"desc",
+			"hero",
+			"main",
+			"#fff",
+			".cover:hover ",
+			"::",
+			".cover .description",
+			"figcaption",
+			"effect-bubba",
+			"figure",
+			"          <div className=\"description\">\n",
+			"t0b",
+			"''",
+			"0.",
+			"figure className",
+			"div className=\"cover ",
+			"figure",
+			"<div>",
+			"              class={ \"img-wrap \" }\n",
+			"            class={ \"cover\" }\n",
+			"<div>",
+			"<ResponsiveContainer",
+			"ResponsiveContainer",
+			"content",
+			"main",
+			"cover-img-container",
+			"prel",
 			"'",
 			"serve",
 			"loadedClass",
@@ -1016,47 +1054,7 @@
 			"this",
 			"__dirname",
 			"2",
-			"postcss",
-			"var fs = require('fs');",
-			"fs",
-			"function",
-			"10rem",
-			"rem",
-			"favi",
-			"app.get",
-			"get",
-			"favicon",
-			"app",
-			"express.createServer",
-			"$background-color$background-color",
-			"$background-color",
-			"background",
-			"@if ",
-			"if",
-			"primary-font-family",
-			"px",
-			"transform",
-			"translate",
-			"full",
-			"full-he",
-			"margin",
-			"page-ma",
-			"guide-col",
-			"this.props.showDevMode",
-			"this",
-			"\"",
-			"'",
-			"logo",
-			"this",
-			"zcache",
-			"static/",
-			"createS",
-			"create",
-			"SampleApp",
-			"express",
-			"build",
-			"port",
-			"Home"
+			"postcss"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1064,6 +1062,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			":",
+			"\"\"",
 			"\"",
 			"'",
 			"\"",
@@ -1189,9 +1189,7 @@
 			"summary",
 			"",
 			"h2",
-			"font-size: .8em;",
-			"font-weight: 500;",
-			"font-weight:500;"
+			"font-size: .8em;"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1260,6 +1258,90 @@
 		"selected_items":
 		[
 			[
+				"home",
+				"app/content/home.jsx"
+			],
+			[
+				"pagew",
+				"app/content/components/page-wrapper.jsx"
+			],
+			[
+				"page",
+				"app/styles/components/page-wrapper.css"
+			],
+			[
+				"app",
+				"app/styles/app.css"
+			],
+			[
+				"main",
+				"app/main.js"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"mai",
+				"app/main.js"
+			],
+			[
+				"webp",
+				"webpack.config.dev.js"
+			],
+			[
+				"covers",
+				"app/content/components/covers.jsx"
+			],
+			[
+				"hero",
+				"app/styles/components/hero.css"
+			],
+			[
+				"ty",
+				"app/styles/elements/typography.css"
+			],
+			[
+				"nav",
+				"app/content/components/nav.jsx"
+			],
+			[
+				"transi",
+				"app/styles/lib/transitions.css"
+			],
+			[
+				"header",
+				"app/styles/components/site-header.css"
+			],
+			[
+				"colorcs",
+				"app/styles/lib/color.css"
+			],
+			[
+				"colorcss",
+				"app/styles/lib/color.css"
+			],
+			[
+				"grid",
+				"app/styles/components/grid.css"
+			],
+			[
+				"hom",
+				"app/styles/content/home.css"
+			],
+			[
+				"container",
+				"app/content/components/responsive-container.jsx"
+			],
+			[
+				"respo",
+				"app/styles/components/responsive-image.css"
+			],
+			[
+				"responsive",
+				"app/content/components/responsive-image.jsx"
+			],
+			[
 				"pack",
 				"package.json"
 			],
@@ -1288,10 +1370,6 @@
 				"app/content/components/responsive-image.jsx"
 			],
 			[
-				"home",
-				"app/content/home.jsx"
-			],
-			[
 				"trai",
 				"app/styles/mixins/trailer.css"
 			],
@@ -1300,28 +1378,12 @@
 				"app/styles/elements/typography.css"
 			],
 			[
-				"colorcs",
-				"app/styles/lib/color.css"
-			],
-			[
 				"color",
 				"node_modules/autoprefixer/node_modules/caniuse-db/features-json/css3-colors.json"
 			],
 			[
-				"app",
-				"app/styles/app.css"
-			],
-			[
-				"page",
-				"app/styles/components/page-wrapper.css"
-			],
-			[
 				"design",
 				"app/data/design.js"
-			],
-			[
-				"ty",
-				"app/styles/elements/typography.css"
 			],
 			[
 				"trailer",
@@ -1330,10 +1392,6 @@
 			[
 				"code",
 				"app/styles/content/code.css"
-			],
-			[
-				"nav",
-				"app/content/components/nav.jsx"
 			],
 			[
 				"border",
@@ -1350,14 +1408,6 @@
 			[
 				"logo",
 				"app/content/components/logo.jsx"
-			],
-			[
-				"hero",
-				"app/styles/components/hero.css"
-			],
-			[
-				"grid",
-				"app/styles/components/grid.css"
 			],
 			[
 				"typo",
@@ -1396,10 +1446,6 @@
 				"webpack.config.dev.js"
 			],
 			[
-				"colorcss",
-				"app/styles/lib/color.css"
-			],
-			[
 				"colors",
 				"node_modules/autoprefixer/node_modules/caniuse-db/features-json/css3-colors.json"
 			],
@@ -1416,20 +1462,12 @@
 				"app/content/components/responsive-container.jsx"
 			],
 			[
-				"respo",
-				"app/content/components/responsive-image.jsx"
-			],
-			[
 				"respons",
 				"app/styles/components/responsive-image.css"
 			],
 			[
 				"resp",
 				"app/content/components/responsive-image.jsx"
-			],
-			[
-				"header",
-				"app/styles/components/site-header.css"
 			],
 			[
 				"pac",
@@ -1440,20 +1478,12 @@
 				"package.json"
 			],
 			[
-				"main",
-				"app/main.js"
-			],
-			[
 				"photo",
 				"app/content/photography.jsx"
 			],
 			[
 				"des",
 				"app/content/design.jsx"
-			],
-			[
-				"webp",
-				"webpack.config.dev.js"
 			],
 			[
 				"we",
@@ -1520,16 +1550,8 @@
 				"node_modules/redbox-react/src/style.js"
 			],
 			[
-				"pagew",
-				"app/content/components/page-wrapper.jsx"
-			],
-			[
 				"resetf",
 				"app/styles/elements/reset-forms.css"
-			],
-			[
-				"hom",
-				"app/content/home.jsx"
 			],
 			[
 				"docco.css",
@@ -1542,10 +1564,6 @@
 			[
 				"res",
 				"node_modules/stylelint/dist/ruleSeverities.js"
-			],
-			[
-				"mai",
-				"app/main.js"
 			],
 			[
 				"a",
@@ -1728,10 +1746,6 @@
 				"_process/icons.css"
 			],
 			[
-				"responsive",
-				"app/components/ResponsiveImage.js"
-			],
-			[
 				"design.cs",
 				"app/styles/design.css"
 			],
@@ -1754,22 +1768,6 @@
 			[
 				"veloityt",
 				"node_modules/velocitytransitiongroup/scripts/VelocityTransitionGroup.jsx"
-			],
-			[
-				"package",
-				"package.json"
-			],
-			[
-				"links",
-				"app/styles/_elements/links.css"
-			],
-			[
-				"st",
-				"app/store.js"
-			],
-			[
-				"headerjs",
-				"app/components/header.jsx"
 			]
 		],
 		"width": 0.0
