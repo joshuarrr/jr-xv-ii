@@ -7,8 +7,12 @@ import { ResponsiveImage } from "./components/responsive-image";
 require("../styles/content/design.css");
 
 export class Design extends Component {
+
 	render = () => {
-		const projects = projectList.map(function exp(p, i) {
+		const projectArray = projectList.slice(0, 1);
+		console.log('* projectArray = ' + projectArray + '\n');
+
+		const projects = projectArray.map(function exp(p, i) {
 			return (
 				<div
 					className="project"

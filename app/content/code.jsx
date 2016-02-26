@@ -13,8 +13,8 @@ export class Code extends Component {
 				hasHero={ false }
 				mainClass="code"
 			>
-				<Helmet title="Codez" />
-				<h1 className="page-title">codez</h1>
+				<Helmet title="Code" />
+				<h1 className="page-title">code</h1>
 
 				<h2>Hello</h2>
 				<Codepen
