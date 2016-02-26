@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"pro",
+				"project"
+			],
+			[
+				"proj",
+				"projectArray"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"b",
+				"border"
+			],
+			[
+				"flex",
+				"flex-start"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
 				"fle",
 				"flex"
 			],
@@ -72,10 +96,6 @@
 				"style-guide"
 			],
 			[
-				"b",
-				"block"
-			],
-			[
 				"o",
 				"outline"
 			],
@@ -102,10 +122,6 @@
 			[
 				"pa",
 				"pathname"
-			],
-			[
-				"pro",
-				"projects"
 			],
 			[
 				"Rea",
@@ -190,10 +206,6 @@
 			[
 				"wid",
 				"width"
-			],
-			[
-				"margin",
-				"margin-bottom"
 			],
 			[
 				"etc",
@@ -502,18 +514,6 @@
 			[
 				"base",
 				"baseline"
-			],
-			[
-				"ver",
-				"vertical-align"
-			],
-			[
-				"text-",
-				"text-indent"
-			],
-			[
-				"import",
-				"important"
 			]
 		]
 	},
@@ -718,28 +718,28 @@
 	[
 		"/Users/joshuar/Projects/jr-xv-ii",
 		"/Users/joshuar/Projects/jr-xv-ii/app",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content/components",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/content",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/elements",
-		"/Users/joshuar/Projects/jr-xv-ii/node_modules/rsg-alt",
-		"/Users/joshuar/Projects/jr-xv-ii/node_modules/rsg-alt/bin"
+		"/Users/joshuar/Projects/jr-xv-ii/app/content"
 	],
 	"file_history":
 	[
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/page-wrapper.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/main.js",
-		"/Users/joshuar/Projects/jr-xv-ii/webpack.config.dev.js",
-		"/Users/joshuar/Projects/jr-xv-ii/index.html",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/content/design.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/home.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/data/design.js",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/design.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/index.html",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/covers.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/node_modules/react-waypoint/build/npm/waypoint.js",
+		"/Users/joshuar/Projects/jr-xv-ii/app/main.js",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/code.jsx",
+		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/responsive-image.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/page-wrapper.jsx",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/app.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/hero.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/page-wrapper.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/elements/typography.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/covers.css",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/app.css",
+		"/Users/joshuar/Projects/jr-xv-ii/webpack.config.dev.js",
+		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/hero.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/content/home.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/data/design.js",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/covers.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/grid.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/color.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/lib/transitions.css",
@@ -748,21 +748,17 @@
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/responsive-image.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/about.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/responsive-container.jsx",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/responsive-image.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/nav.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/components/site-header.css",
 		"/Users/joshuar/.bash_profile",
 		"/Users/joshuar/Projects/jr-xv-ii/.eslintrc",
 		"/Users/joshuar/Projects/jr-xv-ii/app/store.js",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/art.jsx",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content/design.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/package.json",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/style-guide.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/button.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/node_modules/.bin/stylelint",
-		"/Users/joshuar/Projects/jr-xv-ii/app/styles/content/design.css",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/mixins/trailer.css",
-		"/Users/joshuar/Projects/jr-xv-ii/app/content/code.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/app/content/components/dev-mode.jsx",
 		"/Users/joshuar/Projects/jr-xv-ii/node_modules/autoprefixer/node_modules/caniuse-db/features-json/css3-colors.json",
 		"/Users/joshuar/Projects/jr-xv-ii/app/styles/content/code.css",
@@ -853,8 +849,7 @@
 		"/Users/joshuar/Projects/react-base/node_modules/webpack-dev-middleware/package.json",
 		"/Users/joshuar/Projects/react-base/.eslintrc",
 		"/Users/joshuar/Projects/react-base/app/content/about.jsx",
-		"/Users/joshuar/Projects/react-base/node_modules/stylelint/src/rules/value-no-vendor-prefix/README.md",
-		"/Users/joshuar/Projects/react-base/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/plugins/_collections.js"
+		"/Users/joshuar/Projects/react-base/node_modules/stylelint/src/rules/value-no-vendor-prefix/README.md"
 	],
 	"find":
 	{
@@ -927,6 +922,26 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"this",
+			"c",
+			"generate",
+			"ind",
+			"let",
+			"var",
+			"return",
+			"setState",
+			"this",
+			"var",
+			" _loadMoreItems",
+			"this",
+			"let",
+			"this",
+			"setState",
+			"this",
+			"'img-wrap ' + ",
+			"line-height",
+			"main",
+			"conte",
 			"content",
 			"store",
 			"page-",
@@ -1034,27 +1049,7 @@
 			"VelocityTransitionGroup",
 			"this",
 			"item",
-			"this",
-			"<Locations",
-			"this",
-			"veloc",
-			"../",
-			"file-lo",
-			"file0lo",
-			"filelo",
-			"file",
-			"{",
-			"-",
-			"width",
-			"m ",
-			"m",
-			"mq",
-			"b",
-			"mq",
-			"this",
-			"__dirname",
-			"2",
-			"postcss"
+			"this"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1258,12 +1253,44 @@
 		"selected_items":
 		[
 			[
+				"waypo",
+				"node_modules/react-waypoint/build/npm/waypoint.js"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"cove",
+				"app/content/components/covers.jsx"
+			],
+			[
 				"home",
 				"app/content/home.jsx"
 			],
 			[
-				"pagew",
-				"app/content/components/page-wrapper.jsx"
+				"main",
+				"app/main.js"
+			],
+			[
+				"code",
+				"app/content/code.jsx"
+			],
+			[
+				"design",
+				"app/styles/content/design.css"
+			],
+			[
+				"covers",
+				"app/content/components/covers.jsx"
+			],
+			[
+				"image",
+				"app/content/components/responsive-image.jsx"
+			],
+			[
+				"typo",
+				"app/styles/elements/typography.css"
 			],
 			[
 				"page",
@@ -1274,8 +1301,8 @@
 				"app/styles/app.css"
 			],
 			[
-				"main",
-				"app/main.js"
+				"pagew",
+				"app/content/components/page-wrapper.jsx"
 			],
 			[
 				"inde",
@@ -1288,10 +1315,6 @@
 			[
 				"webp",
 				"webpack.config.dev.js"
-			],
-			[
-				"covers",
-				"app/content/components/covers.jsx"
 			],
 			[
 				"hero",
@@ -1382,16 +1405,8 @@
 				"node_modules/autoprefixer/node_modules/caniuse-db/features-json/css3-colors.json"
 			],
 			[
-				"design",
-				"app/data/design.js"
-			],
-			[
 				"trailer",
 				"app/styles/mixins/trailer.css"
-			],
-			[
-				"code",
-				"app/styles/content/code.css"
 			],
 			[
 				"border",
@@ -1408,10 +1423,6 @@
 			[
 				"logo",
 				"app/content/components/logo.jsx"
-			],
-			[
-				"typo",
-				"app/styles/elements/typography.css"
 			],
 			[
 				"nav.css",
@@ -1540,10 +1551,6 @@
 			[
 				"reset",
 				"app/styles/elements/reset.css"
-			],
-			[
-				"index",
-				"index.html"
 			],
 			[
 				"redbox-reactsrcstyl",
@@ -1756,18 +1763,6 @@
 			[
 				"bun",
 				"build/bundle.js"
-			],
-			[
-				"header.",
-				"app/components/header.jsx"
-			],
-			[
-				"transitionchi",
-				"node_modules/velocitytransitiongroup/scripts/TransitionChildMapping.jsx"
-			],
-			[
-				"veloityt",
-				"node_modules/velocitytransitiongroup/scripts/VelocityTransitionGroup.jsx"
 			]
 		],
 		"width": 0.0
@@ -1801,8 +1796,8 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 235.0,
+	"side_bar_visible": false,
+	"side_bar_width": 205.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
