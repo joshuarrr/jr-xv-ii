@@ -1,5 +1,14 @@
 export default [
 	{
+		title: 'Colorpen.io',
+		description: ``,
+		role: 'Design & development',
+		tech: 'Webpack, React.js, jsx, es6, PostCSS',
+		file: 'Colorpen.jpg',
+		class: 'border',
+		id: 'colorpen'
+	},
+	{
 		title: 'Idealist',
 		description: `<p>
 										I've been working at <a href='http://www.idealist.org'>Idealist</a> since the beginning of 2012, where we employ an agile software development strategy against a broad and oftentimes daunting challenge: <em>how can we help more people do more good in the world</em>?
@@ -67,15 +76,6 @@ export default [
 				id: 'manifesto'
 			}
 		]
-	},
-	{
-		title: 'Colorpen.io',
-		description: ``,
-		role: 'Design & development',
-		tech: 'Webpack, React.js, jsx, es6, PostCSS',
-		file: 'Colorpen.jpg',
-		class: 'border',
-		id: 'colorpen'
 	},
 	{
 		title: 'Produce Row',

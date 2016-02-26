@@ -17,7 +17,7 @@ export class Design extends Component {
 					<h2 className="project-title">{ p.title }</h2>
 					<ResponsiveContainer>
 						<ResponsiveImage
-							class={ 'img-wrap ' + p.class }
+							class={ p.class }
 							key={ p.id }
 							src={ p.file }
 						/>

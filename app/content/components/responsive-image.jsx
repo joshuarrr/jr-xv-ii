@@ -26,7 +26,7 @@ export class ResponsiveImage extends Component {
 
 
 		return (
-			<img src={ src } />
+			<img src={ src } className={ this.props.class} />
 		);
 	}
 }

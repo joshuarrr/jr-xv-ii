@@ -34,15 +34,8 @@
 		margin-bottom: 2vh;
 	}
 
-	.imageloader img {
+	img.border {
 		border: $border;
-		width: 100%;
-	}
-
-	&:last-of-type {
-		.imageloader img {
-			border: initial;
-		}
 	}
 }
 
