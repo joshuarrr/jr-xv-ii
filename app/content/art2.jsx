@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { PageWrapper } from "./components/page-wrapper";
 import Helmet from "react-helmet";
 import { ProjectGroups } from './components/project-groups';
-import artData from '../data/art.js';
+import designData from '../data/design.js';
 
-export class Art extends Component {
+export class Art2 extends Component {
 
 	render() {
 		return (
@@ -15,11 +15,11 @@ export class Art extends Component {
 			>
 				<Helmet title="Art" />
 				<h1 className="page-title">
-					art
+					art2: design
 				</h1>
 				<ProjectGroups
-					category="art"
-					data={ artData }
+					category="design"
+					data={ designData }
 				/>
 			</PageWrapper>
 			);
