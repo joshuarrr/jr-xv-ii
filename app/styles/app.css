@@ -8,6 +8,7 @@
 @import "./components/responsive-image.css";
 @import "./components/nav.css";
 @import "./content/home.css";
+@import "./content/projects.css";
 
 body {
   background-color: gray(245);

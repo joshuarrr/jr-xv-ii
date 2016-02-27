@@ -1,0 +1,78 @@
+/*! Design Page -------------------------------------------------------------*/
+@import "../@lib.css";
+
+.group,
+.project {
+	position: relative;
+	z-index: 0;
+
+	&:before {
+		background: black(.1);
+		border-bottom: 1px solid rgba(255, 255, 255, .9);
+		content: "";
+		height: 1px;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+.group .border {
+	&:before {
+		content: none;
+	}
+}
+
+.project {
+	@mixin trailer;
+
+	&.border .responsive-container {
+		line-height: 0;
+
+		&:before {
+			box-shadow: inset 0 0 0 1px black(.1);
+			background-color: transparent;
+			content: "";
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+	}
+}
+
+.project-title,
+.group-title {
+	background-color: $background-color;
+	display: inline-block;
+	line-height: 1;
+	letter-spacing: .05rem;
+	margin: 0;
+	padding: 0 1rem;
+	position: relative;
+	transform: translateY(-50%);
+	z-index: 1;
+	}
+
+.project-caption {
+	margin-top: 2vh;
+
+	dl {
+		display: block;
+		width: 100%;
+		letter-spacing: .05rem;
+	}
+
+	dt {
+		display: inline-block;
+		margin-right: .5rem;
+	}
+
+	dd {
+		display: inline-block;
+	}
+}

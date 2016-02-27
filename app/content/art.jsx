@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { PageWrapper } from "./components/page-wrapper";
 import Helmet from "react-helmet";
-import { ProjectGroups } from './components/project-groups';
+import { PageWrapper } from "./components/page-wrapper";
+import { Projects } from './components/projects';
 import artData from '../data/art.js';
 
 export class Art extends Component {
@@ -17,7 +17,7 @@ export class Art extends Component {
 				<h1 className="page-title">
 					art
 				</h1>
-				<ProjectGroups
+				<Projects
 					category="art"
 					data={ artData }
 				/>

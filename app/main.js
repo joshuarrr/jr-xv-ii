@@ -5,7 +5,6 @@ import { Router, Route, IndexRoute } from "react-router";
 import { Home } from "./content/home";
 import { Code } from "./content/code";
 import { Art } from "./content/art";
-import { Art2 } from "./content/art2";
 import { Design } from "./content/design";
 import { Photography } from "./content/photography";
 require("./styles/app.css");
@@ -31,7 +30,6 @@ render((
     <Route path="/" component={ App }>
     <IndexRoute component={ Home } />
     <Route path="/art" component={ Art } />
-    <Route path="/art2" component={ Art2 } />
     <Route path="/design" component={ Design } />
     <Route path="/photography" component={ Photography } />
     <Route path="/code" component={ Code } />

@@ -8,6 +8,7 @@ var autoprefixer = require('autoprefixer');
 var calc = require('postcss-calc');
 var colorFunction = require('postcss-color-function');
 var colorGray = require('postcss-color-gray');
+var colorAlpha = require('postcss-color-alpha');
 var conditionals = require('postcss-conditionals');
 var cssVariables = require('postcss-css-variables');
 var customMedia = require('postcss-custom-media');
@@ -19,6 +20,7 @@ var mixins = require('postcss-mixins');
 var nested = require('postcss-nested');
 var browserReporter = require('postcss-browser-reporter');
 var reporter = require('postcss-reporter');
+var responsiveType = require('postcss-responsive-type');
 var simpleExtend = require('postcss-simple-extend');
 var simpleVars = require('postcss-simple-vars');
 var stylelint = require('stylelint');
@@ -89,6 +91,7 @@ var config = {
       discardComments,
       colorFunction,
       colorGray,
+      colorAlpha,
       mixins({
         mixinsFiles: path.join(__dirname, 'app/styles/mixins', '*.css')
       }),
@@ -101,6 +104,7 @@ var config = {
       nested,
       calc,
       conditionals,
+      responsiveType,
       functions({
         glob: path.join(__dirname, 'app/styles/functions', '*.js')
       }),

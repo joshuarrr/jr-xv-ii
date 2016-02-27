@@ -3,7 +3,7 @@ import { PageWrapper } from "./components/page-wrapper";
 import Helmet from "react-helmet";
 import { VelocityTransitionGroup } from 'velocity-react';
 // import { Waypoint } from 'react-waypoint';
-require("../styles/app.css");
+// require("../styles/app.css");
 
 // jQuery for ajax
 const $ = window.jQuery;
