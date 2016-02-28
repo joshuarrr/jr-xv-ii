@@ -1,0 +1,97 @@
+/*! Photography Page --------------------------------------------------------*/
+@import "../@lib.css";
+
+$ig-border-color: #f5f5f5;
+
+.photography {
+	z-index: initial;
+	width: 100vw;
+}
+
+/* Infinigram */
+.infinigram {
+	position: relative;
+	top: -17vh;
+}
+
+.infinigram-count {
+	position: fixed;
+	left: 10vw;
+	top: 30vh;
+}
+
+.infinigram-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.infinigram-item {
+	box-sizing: border-box;
+	line-height: 0;
+	overflow: hidden;
+	border-bottom: 1px solid $ig-border-color;
+
+	@media w(667) {
+		height: 50vw;
+		width: 50vw;
+
+		&:nth-of-type(odd) {
+			border-right: 1px solid $ig-border-color;
+		}
+	}
+
+	@media w(1200) {
+		height: 33.3vw;
+		width: 33.3vw;
+
+		&:nth-of-type(1n) {
+			border-right: 1px solid $ig-border-color;
+		}
+
+		&:nth-of-type(3n+3) {
+			border-right: none;
+		}
+	}
+
+	@media w(1400) {
+		height: 25vw;
+		width: 25vw;
+
+		&:nth-of-type(1n) {
+			border-right: 1px solid $ig-border-color;
+		}
+
+		&:nth-of-type(4n+4) {
+			border-right: none;
+		}
+	}
+}
+
+.infinigram-picture,
+.infinigram-video {
+	width: 100%;
+	opacity: 0;
+}
+
+/* Loader */
+.infinigram-loading-message {
+	position: fixed;
+	left: 50%;
+	bottom: 1.5rem;
+	transform: translate(-50%, -50%);
+	background: color(white a(50%));
+	color: gray(100);
+	font-weight: 300;
+	letter-spacing: 1px;
+	padding: .5rem 1rem;
+	border-radius: .2rem;
+	text-rendering: geometricPrecision;
+	z-index: 100;
+}
+
+.ig-waypoint {
+	height: 1px;
+	width: 100%;
+	float: left;
+}

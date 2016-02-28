@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import createBrowserHistory from "history/lib/createBrowserHistory";
 import { Router, Route, IndexRoute } from "react-router";
+import createBrowserHistory from "history/lib/createBrowserHistory";
 import { Home } from "./content/home";
 import { Code } from "./content/code";
 import { Art } from "./content/art";
