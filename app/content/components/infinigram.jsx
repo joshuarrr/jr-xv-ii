@@ -160,9 +160,6 @@ export class Infinigram extends Component {
 	render() {
 		return (
 			<div className="infinigram">
-				<p className="infinigram-count">
-					Items Loaded: { this.state.items.length }
-				</p>
 				<div className="infinigram-list">
 					{ this.renderItems() }
 					{ this.renderWaypoint() }
