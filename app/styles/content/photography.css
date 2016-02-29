@@ -11,7 +11,8 @@ $ig-border-color: #f5f5f5;
 /* Infinigram */
 .infinigram {
 	position: relative;
-	top: -17vh;
+	/* TODO - match main  */
+	top: -20vh;
 }
 
 .infinigram-count {
