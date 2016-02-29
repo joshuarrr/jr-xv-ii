@@ -15,7 +15,8 @@
 	transition: filter, .5s, opacity .5s, transform .5s $bounce-in;
 	transform: scale(.65, .65);
 
-	&:hover {
+	&:hover,
+	&:focus {
 		cursor: pointer;
 		filter: saturate(100%);
 		opacity: 1;
@@ -25,7 +26,8 @@
 	@media w(768) {
 		transform: scale(.7, .7);
 
-		&:hover {
+		&:hover,
+		&:focus {
 			transform: scale(1, 1);
 		}
 	}
@@ -33,7 +35,8 @@
 	@media w(1024) {
 		transform: scale(.75, .75);
 
-		&:hover {
+		&:hover,
+		&:focus {
 			transform: scale(1.1, 1.1);
 		}
 	}
@@ -41,7 +44,8 @@
 	@media w(1440) {
 		transform: scale(.8, .8);
 
-		&:hover {
+		&:hover,
+		&:focus {
 			transform: scale(1.1, 1.1);
 		}
 	}

@@ -4,8 +4,8 @@
 
 .site-header {
   background-color: black(.03);
-  backdrop-filter: blur(3px);
   border-bottom: 1px solid black(.1);
+  backdrop-filter: blur(3px);
   position: fixed;
   top: 0;
   left: 0;

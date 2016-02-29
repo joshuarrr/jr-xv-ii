@@ -5,11 +5,9 @@ import { Projects } from './components/projects';
 import designData from '../data/design.js';
 
 export class Design extends Component {
-
 	render() {
 		return (
 			<PageWrapper
-				hasNav={ false }
 				hasHero={ false }
 				mainClass="info"
 			>

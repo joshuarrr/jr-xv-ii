@@ -5,11 +5,9 @@ import { Projects } from './components/projects';
 import artData from '../data/art.js';
 
 export class Art extends Component {
-
 	render() {
 		return (
 			<PageWrapper
-				hasNav={ false }
 				hasHero={ false }
 				mainClass="info"
 			>

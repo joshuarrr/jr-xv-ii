@@ -16,6 +16,12 @@ const store = window.store = {
   get isInfinigramming() { return this._isInfinigramming; },
   set isInfinigramming(yes) { this._isInfinigramming = yes; this.notify(); },
 
+  // Nav
+  _isNavExpanded: false,
+  get isNavExpanded() { return this._isNavExpanded; },
+  set isNavExpanded(expanded) { this._isNavExpanded = expanded; this.notify(); },
+
+
   // Watch
   register(watcher) { this._watchers.push(watcher); },
   notify() { this._watchers.forEach(w => w()); }

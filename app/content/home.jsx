@@ -1,26 +1,18 @@
 import React, { Component } from "react";
-import { PageWrapper } from "./components/page-wrapper";
 import Helmet from "react-helmet";
+import { PageWrapper } from "./components/page-wrapper";
 import { Covers } from "./components/covers";
 require("../styles/content/home.css");
 
 export class Home extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			showProjects: false,
-			hasNav: true
-		};
-	}
 
-	render = () => {
+	render() {
 		return (
 			<PageWrapper
-				hasNav={ false }
 				hasHero
 				mainClass="home"
 			>
-				<Helmet title="Home" />
+				<Helmet title="Ugh." />
 				<h1 className="page-title">joshuar</h1>
         <Covers />
 			</PageWrapper>

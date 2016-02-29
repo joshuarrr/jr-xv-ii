@@ -5,6 +5,7 @@ import { Logo } from "./logo";
 import { Nav } from "./nav";
 import { Hero } from "./hero";
 import { SocialLinks } from "./social-links";
+import { NavToggle } from "./nav-toggle";
 import { VelocityTransitionGroup } from 'velocity-react';
 require("../../styles/components/page-wrapper.css");
 import store from '../../store';
@@ -28,19 +29,19 @@ export class PageWrapper extends Component {
 
   componentDidMount() {
     store.isLoaded = true;
-
+    store.register(() => this.forceUpdate());
     this.setState({
       loading: false
     });
   }
 
   render = () => {
-    const hasNav = this.props.hasNav;
     const hasHero = this.props.hasHero;
+    const isExpanded = store.isNavExpanded ? ' nav-is-expanded' : '';
 
     return (
       <div className="grid">
-        <Helmet titleTemplate="Joshuar has a website. - %s" />
+        <Helmet titleTemplate="Joshuar has a website. %s" />
 
         {/* Header */}
         { !store.isLoaded ?
@@ -53,18 +54,20 @@ export class PageWrapper extends Component {
                 delay: 500
               }
             }
-            className="row header"
+            className="row header "
             runOnMount
           >
             <header className="site-header init">
-              { hasNav && <Nav /> }
+              <NavToggle />
+              <Nav />
             </header>
           </VelocityTransitionGroup>
           :
           <div className="row header">
             <Logo />
-            <header className="site-header">
-              { hasNav && <Nav /> }
+            <header className={ 'site-header' + isExpanded }>
+              <NavToggle />
+              <Nav />
             </header>
           </div>
         }

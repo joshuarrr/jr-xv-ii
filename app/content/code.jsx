@@ -5,11 +5,9 @@ import Helmet from "react-helmet";
 require("../styles/content/code.css");
 
 export class Code extends Component {
-
 	render() {
 		return (
 			<PageWrapper
-				hasNav={ false }
 				hasHero={ false }
 				mainClass="code"
 			>

@@ -1,27 +1,39 @@
 /*! Nav ----------------------------------------------------------------------*/
-.site-nav {
-  margin-bottom: 1rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
 @import "../@lib.css";
 
-/*! Nav ---------------------------------------------------------------------*/
+.site-nav {
+  pointer-events: none;
+  transform: translateY(-100vh);
+  transition: transform .4s;
 
-.nav-links {
-  text-align: center;
-  position: relative;
-  width: 100%;
+  .nav-links {
+    align-items: center;
+    background: white(.8);
+    box-shadow: 0 0 1px 0 black(.2);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+
+    width: 100%;
+  }
+
+  &.expanded {
+    pointer-events: initial;
+    transform: translateY(0);
+  }
 }
 
 .nav-link {
-	line-height: 2;
+	line-height: 3;
   position: relative;
-  color: gray(120);
+  color: gray(50);
   letter-spacing: .1rem;
   user-select: none;
+  font-size: responsive 20px 26px;
+  font-range: 320px 1400px;
 
   &.active {
     color: gray(100);
