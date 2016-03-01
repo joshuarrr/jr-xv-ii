@@ -15,7 +15,6 @@ export class NavToggle extends Component {
     store.register(() => this.forceUpdate());
   }
 
-
   toggleNav = () => {
     store.isNavExpanded = !store.isNavExpanded;
     console.log('\n * click. \n');
