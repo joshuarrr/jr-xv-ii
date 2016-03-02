@@ -57,7 +57,7 @@ export class PageWrapper extends Component {
             className="row header "
             runOnMount
           >
-            <header className="site-header init">
+            <header className={'site-header init' + this.props.mainClass }>
               <NavToggle />
               <Nav />
             </header>
@@ -65,7 +65,7 @@ export class PageWrapper extends Component {
           :
           <div className="row header">
             <Logo />
-            <header className={ 'site-header' + isExpanded }>
+            <header className={ 'site-header' + isExpanded + ' ' + this.props.mainClass }>
               <NavToggle />
               <Nav />
             </header>

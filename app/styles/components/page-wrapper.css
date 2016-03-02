@@ -15,6 +15,10 @@
   z-index: 10;
   height: 20vh;
 
+  &.photography {
+    background-color: black(.2);
+  }
+
   @media h(481) {
     height: 10vh;
   }
