@@ -16,7 +16,8 @@
   height: 20vh;
 
   &.photography {
-    background-color: black(.2);
+    background-color: white(.7);
+    border-bottom: 1px solid black(.125);
   }
 
   @media h(481) {
