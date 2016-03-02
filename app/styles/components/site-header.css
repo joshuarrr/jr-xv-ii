@@ -1,1 +1,54 @@
 
+/* Headroom - Hide the header on scroll */
+.headroom {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: transform 350ms linear;
+  z-index: 5;
+  /* matches site-header height */
+	height: 20vh;
+
+  @media h(481) {
+    height: 10vh;
+  }
+}
+
+/* TODO: Only show/hide the header when the nav is not expanded */
+.headroom--pinned {
+  transform: translateY(0%);
+}
+
+.headroom--unpinned {
+  transform: translateY(-150%);
+}
+
+.show-header {
+  .headroom--unpinned {
+    transform: translateY(0%);
+  }
+
+  .nav-toggle .inner {
+    opacity: 1;
+  }
+}
+
+/* header toggle hotspot */
+.header-toggle {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+
+  /* matches site-header height */
+	height: 20vh;
+
+  @media h(481) {
+    height: 10vh;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,3 +1,4 @@
+
 const store = window.store = {
   _watchers: [],
 
@@ -16,11 +17,15 @@ const store = window.store = {
   get isInfinigramming() { return this._isInfinigramming; },
   set isInfinigramming(yes) { this._isInfinigramming = yes; this.notify(); },
 
+  // Nav - headroom
+  _isNavShowing: false,
+  get isNavShowing() { return this._isNavShowing; },
+  set isNavShowing(showing) { this._isNavShowing = showing; this.notify(); },
+
   // Nav
   _isNavExpanded: false,
   get isNavExpanded() { return this._isNavExpanded; },
   set isNavExpanded(expanded) { this._isNavExpanded = expanded; this.notify(); },
-
 
   // Watch
   register(watcher) { this._watchers.push(watcher); },

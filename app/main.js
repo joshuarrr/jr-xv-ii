@@ -14,6 +14,7 @@ export class App extends Component {
   static propTypes = {
     children: React.PropTypes.node
   }
+
   render = () => {
     return (
      <div className="react-wrapper">

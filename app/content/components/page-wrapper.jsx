@@ -7,7 +7,9 @@ import { Hero } from "./hero";
 import { SocialLinks } from "./social-links";
 import { NavToggle } from "./nav-toggle";
 import { VelocityTransitionGroup } from 'velocity-react';
+import Headroom from 'react-headroom';
 require("../../styles/components/page-wrapper.css");
+require("../../styles/components/site-header.css");
 import store from '../../store';
 
 export class PageWrapper extends Component {
@@ -35,6 +37,10 @@ export class PageWrapper extends Component {
     });
   }
 
+  toggleHeader() {
+    store.isNavShowing = !store.isNavShowing;
+  }
+
   render = () => {
     const hasHero = this.props.hasHero;
     const isExpanded = store.isNavExpanded ? ' nav-is-expanded' : '';
@@ -57,19 +63,33 @@ export class PageWrapper extends Component {
             className="row header "
             runOnMount
           >
-            <header className={'site-header init' + this.props.mainClass }>
-              <NavToggle />
-              <Nav />
-            </header>
+            <Headroom
+              disableInlineStyles
+              upTolerance={ 15 }
+              downTolerance={ 10 }
+              wrapperStyle={ {height: 'auto'} }
+            >
+              <header className={'site-header init' + this.props.mainClass }>
+                <NavToggle />
+                <Nav />
+              </header>
+            </Headroom>
           </VelocityTransitionGroup>
           :
-          <div className="row header">
-            <Logo />
-            <header className={ 'site-header' + isExpanded + ' ' + this.props.mainClass }>
-              <NavToggle />
-              <Nav />
-            </header>
-          </div>
+          <Headroom
+            disableInlineStyles
+            upTolerance={ 15 }
+            downTolerance={ 10 }
+            wrapperStyle={ {height: 'auto'} }
+          >
+            <div className="row header">
+              <Logo />
+              <header className={ 'site-header' + isExpanded + ' ' + this.props.mainClass }>
+                <NavToggle />
+                <Nav />
+              </header>
+            </div>
+          </Headroom>
         }
 
         {/* Hero */}

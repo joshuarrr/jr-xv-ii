@@ -15,9 +15,6 @@ export class Nav extends Component {
   componentDidMount() {
     // listen for escape key
     window.addEventListener('keyup', this.handleKeyup);
-
-    // force update when nav-toggle toggles isNavExpanded
-    store.register(() => this.forceUpdate());
   }
 
   componentWillUnmount() {

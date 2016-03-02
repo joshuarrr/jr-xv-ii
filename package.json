@@ -75,6 +75,7 @@
     "react": "^0.14.0",
     "react-codepen": "^0.1.0",
     "react-dom": "^0.14.0",
+    "react-headroom": "^1.7.3",
     "react-helmet": "^2.1.1",
     "react-imageloader": "^2.1.0",
     "react-router": "^2.0.0",

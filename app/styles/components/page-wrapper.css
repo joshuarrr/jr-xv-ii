@@ -23,16 +23,12 @@
   @media h(481) {
     height: 10vh;
   }
-
-  @media h(628) {
-    height: 10vh;
-  }
 }
 
 .site-logo {
   position: fixed;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   top: 20vh;
   z-index: 11;
   /* iOS disable selection on tap */
