@@ -3,22 +3,14 @@ import store from '../../store';
 require("../../styles/components/nav-toggle.css");
 
 export class NavToggle extends Component {
-  constructor() {
-    super();
-    this.state = {
-      toggled: false
-    };
-  }
 
-  componentDidMount() {
-    // force update when nav toggles isNavExpanded
+  componentDidMount= () => {
     store.register(() => this.forceUpdate());
   }
 
   toggleNav = () => {
     store.isNavExpanded = !store.isNavExpanded;
     console.log('\n * click. \n');
-    this.setState({ toggled: true });
   }
 
   render() {
