@@ -15,7 +15,6 @@ const apiUrl = 'https://api.instagram.com/v1/users/5335790/media/recent/';
 const token = '5335790.ab103e5.bcdfe72e51244666a63a238b13eb902c';
 const url = apiUrl + '?access_token=' + token + '&count=' + count + '&callback=?';
 
-
 export class Infinigram extends Component {
 	constructor() {
 		super();
@@ -71,6 +70,7 @@ export class Infinigram extends Component {
 
 	/* Render Items */
 	renderItems = () => {
+		const self = this;
 		console.log('renderItems this.state.items = ' + this.state.items);
 		return this.state.items.map(function results(p, index) {
 			if (p.type === 'video') {
@@ -87,6 +87,11 @@ export class Infinigram extends Component {
 						className="infinigram-item"
 						runOnMount
 					>
+						{ p.caption &&
+							<div className="img-title-text">
+							{ p.caption ? p.caption.text : "" }
+							</div>
+						}
 						<video
 							width="100%"
 							height="100%"
@@ -118,11 +123,15 @@ export class Infinigram extends Component {
 					className="infinigram-item"
 					runOnMount
 				>
+					{ p.caption &&
+						<div className="img-title-text">
+						{ p.caption ? p.caption.text : "" }
+						</div>
+					}
 					<img
 						src={ p.images.standard_resolution.url }
 						alt="image"
 						link={ p.link }
-						title={ p.caption ? p.caption.text : "" }
 						className="infinigram-picture"
 					/>
 				</VelocityTransitionGroup>
@@ -158,6 +167,7 @@ export class Infinigram extends Component {
 
 	/* Render */
 	render() {
+		console.log('* Render - infinigram');
 		return (
 			<div className="infinigram">
 				<div className="infinigram-list">

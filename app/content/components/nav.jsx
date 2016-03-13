@@ -42,6 +42,7 @@ export class Nav extends Component {
         >
           <Link
             className="nav-link"
+            activeClassName=" active"
             to={ l.to }
             tabIndex="3"
           >
