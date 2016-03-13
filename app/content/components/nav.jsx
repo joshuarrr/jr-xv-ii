@@ -5,6 +5,13 @@ import store from '../../store';
 require("../../styles/components/nav.css");
 
 export class Nav extends Component {
+  constructor() {
+    super();
+    this.state = {
+      navUpdate: false
+    };
+  }
+
   componentDidMount() {
     // listen for escape key
     window.addEventListener('keyup', this.handleKeyup);
@@ -26,6 +33,7 @@ export class Nav extends Component {
   }
 
   render() {
+    const self = this;
     const isNavExpanded = store.isNavExpanded ? ' nav-is-expanded' : '';
     const links = navData.map(function exp(l) {
       return (
@@ -49,13 +57,13 @@ export class Nav extends Component {
           className={ 'site-nav' + isNavExpanded }
           onClick={ this.handleClick }
         >
-            <ul
-              key="navLinks"
-              className="nav-links"
-            >
-              { links }
-            </ul>
-        </nav>
+          <ul
+            key="navLinks"
+            className="nav-links"
+          >
+            { links }
+          </ul>
+      </nav>
     );
   }
 }
