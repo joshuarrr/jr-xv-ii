@@ -12,15 +12,12 @@
   text-align: center;
   margin: 0;
   z-index: 2;
-  transition:
-    background-color 1s $default-ease,
-    transform .5s $default-ease;
+  transition: background-color 1s $default-ease;
   transform: scale(.9) translate(-50%, -50%);
   transform-origin: left center;
 
   &:hover {
     background-color: black(.9);
-    transform: scale(1) translate(-50%, -50%);
   }
 }
 

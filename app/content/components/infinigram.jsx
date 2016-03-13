@@ -70,7 +70,6 @@ export class Infinigram extends Component {
 
 	/* Render Items */
 	renderItems = () => {
-		const self = this;
 		console.log('renderItems this.state.items = ' + this.state.items);
 		return this.state.items.map(function results(p, index) {
 			if (p.type === 'video') {

@@ -32,4 +32,4 @@ const store = window.store = {
   notify() { this._watchers.forEach(w => w()); }
 };
 
-  export default store;
+export default store;

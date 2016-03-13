@@ -10,7 +10,6 @@ export class NavToggle extends Component {
 
   toggleNav = () => {
     store.isNavExpanded = !store.isNavExpanded;
-    console.log('\n * click. \n');
   }
 
   render() {

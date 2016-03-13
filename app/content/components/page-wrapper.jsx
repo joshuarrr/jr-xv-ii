@@ -21,91 +21,55 @@ export class PageWrapper extends Component {
     route: React.PropTypes.object
   }
 
-  constructor() {
-    super();
-
-    this.state = {
-      loading: true
-    };
-  }
-
   componentDidMount() {
     store.isLoaded = true;
     store.register(() => this.forceUpdate());
-    this.setState({
-      loading: false
-    });
-  }
-
-  toggleHeader() {
-    store.isNavShowing = !store.isNavShowing;
+    // console.log('* CDU');
   }
 
   render = () => {
+    // console.log('* Render');
     const hasHero = this.props.hasHero;
-    const isExpanded = store.isNavExpanded ? ' nav-is-expanded' : '';
+    const isLoadedClass = store.isLoaded ? ' initialized ' : ' initializing ';
+    const isNavExpanded = store.isNavExpanded ? ' nav-is-expanded' : '';
 
     return (
       <div className="grid">
         <Helmet titleTemplate="Joshuar has a website. %s" />
 
         {/* Header */}
-        { !store.isLoaded ?
-          <VelocityTransitionGroup
-            enter={{
-              animation: {
-                opacity: [1, 0]
-              },
-                duration: 500,
-                delay: 500
-              }
-            }
-            className="row header "
-            runOnMount
-          >
-            <Headroom
-              disableInlineStyles
-              upTolerance={ 15 }
-              downTolerance={ 10 }
-              wrapperStyle={ {height: 'auto'} }
-            >
-              <header className={'site-header init' + this.props.mainClass }>
-                <NavToggle />
-                <Nav />
-              </header>
-            </Headroom>
-          </VelocityTransitionGroup>
-          :
-          <Headroom
-            disableInlineStyles
-            upTolerance={ 15 }
-            downTolerance={ 10 }
-            wrapperStyle={ {height: 'auto'} }
-          >
-            <div className="row header">
-              <Logo />
-              <header className={ 'site-header' + isExpanded + ' ' + this.props.mainClass }>
-                <NavToggle />
-                <Nav />
-              </header>
-            </div>
-          </Headroom>
-        }
+        <Headroom
+          disableInlineStyles
+          upTolerance={ 15 }
+          downTolerance={ 10 }
+          wrapperStyle={{
+            height: 'auto'
+          }}
+          extraClasses={ isLoadedClass + isNavExpanded}
+        >
+          <Logo />
+          <NavToggle />
+          <header className={'site-header ' + this.props.mainClass + isNavExpanded }>
+            <Nav />
+          </header>
+        </Headroom>
+
 
         {/* Hero */}
         <VelocityTransitionGroup
           enter={{
             animation: {
-              opacity: [0.5, 0]
+              opacity: [0.4, 0]
             },
-              duration: 10000
+              duration: 10000,
+              delay: 2000
             }
           }
           leave={{
             animation: {
-              opacity: [0, 0.5]
+              opacity: [0, 0.4]
             },
-              duration: 3000
+              duration: 500
             }
           }
           className="hero"

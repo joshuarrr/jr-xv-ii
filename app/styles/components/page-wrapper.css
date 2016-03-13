@@ -2,29 +2,6 @@
 @import "../@lib.css";
 @import "./grid.css";
 
-.site-header {
-  background-color: black(.03);
-  border-bottom: 1px solid black(.1);
-  backdrop-filter: blur(3px);
-  position: fixed;
-  top: 0;
-  left: 0;
-  transition: height 1s cubic-bezier(.16, .035, .24, 1.295),
-    background-color 1s cubic-bezier(.16, .035, .24, 1.295);
-  width: 100%;
-  z-index: 10;
-  height: 20vh;
-
-  &.photography {
-    background-color: white(.7);
-    border-bottom: 1px solid black(.125);
-  }
-
-  @media h(481) {
-    height: 10vh;
-  }
-}
-
 .site-logo {
   position: fixed;
   left: 50%;

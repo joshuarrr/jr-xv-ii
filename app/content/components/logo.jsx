@@ -1,8 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router";
 require("../../styles/components/logo.css");
+import store from '../../store';
 
 export class Logo extends Component {
+  toggleNav = () => {
+    if (store.isNavExpanded) {
+      store.isNavExpanded = false;
+    }
+  }
 
   render() {
     return (
@@ -12,6 +18,7 @@ export class Logo extends Component {
           className="site-logo-link"
           activeClassName="active"
           tabIndex="-1"
+          onClick={this.toggleNav}
         >
           <span className="site-logo-link-text">
             Joshuar
