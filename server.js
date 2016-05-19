@@ -100,17 +100,21 @@ var OSServer = function() {
     self.createRoutes = function() {
         self.routes = { };
 
-        self.routes['/asciimo'] = function(req, res) {
+        self.routes['/ascii*'] = function(req, res) {
             var link = "http://i.imgur.com/kmbjB.png";
             res.send("<html><body><img src='" + link + "'></body></html>");
         };
 
-        self.routes['/'] = function(req, res) {
-            res.setHeader('Content-Type', 'text/html');
-            res.send(self.cache_get('index.html') );
-        };
+        //  Create an array of routes
+        ['/', '/art', '/design', '/code', '/photography', '/home'
+        ].map(function(element) {
+            self.routes[element] = function(req, res) {
+                res.setHeader('Content-Type', 'text/html');
+                res.send(self.cache_get('index.html') );
+            };
+        });
 
-        Object.keys(self.zcache).forEach(function(assetName) {
+        Object.keys(self.zcache).map(function(assetName) {
             if (assetName !== 'index.html') {
                 self.routes['/' + assetName] = function(req, res) {
                     res.send(self.cache_get(assetName));
