@@ -14,7 +14,7 @@ export class Logo extends Component {
     return (
       <h1 className="site-logo">
         <Link
-          to="/home"
+          to="/"
           className="site-logo-link"
           activeClassName="active"
           tabIndex="-1"

@@ -34,7 +34,6 @@ render((
     <Route path="/design" component={ Design } />
     <Route path="/photography" component={ Photography } />
     <Route path="/code" component={ Code } />
-    <Route path="/home" component={ Home } />
     </Route>
   </Router>
 ),
