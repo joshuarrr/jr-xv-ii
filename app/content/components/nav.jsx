@@ -33,7 +33,6 @@ export class Nav extends Component {
   }
 
   render() {
-    const self = this;
     const isNavExpanded = store.isNavExpanded ? ' nav-is-expanded' : '';
     const links = navData.map(function exp(l) {
       return (
