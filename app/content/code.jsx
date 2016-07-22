@@ -21,6 +21,13 @@ export class Code extends Component {
 					height="400"
 				/>
 
+				<h2>Form validation UX + UI</h2>
+				<Codepen
+					user="joshuar"
+					hash="WxREON"
+					height="400"
+				/>
+
 				<h2>Section Breaks</h2>
 				<Codepen
 					user="joshuar"
