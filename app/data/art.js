@@ -4,10 +4,12 @@ export default [
     groupDescription: ``,
     pieces: [
       {
-        title: 'untitled 1',
-        class: 'border',
-        description: ``,
         id: 'lines-u1',
+        title: 'untitled 1',
+        description: ``,
+        role: ``,
+        tech: ``,
+        class: 'border',
         date: 'August, 2015',
         file: 'lines-01.jpg'
       },

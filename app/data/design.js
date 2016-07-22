@@ -1,12 +1,13 @@
 export default [
 	{
+		id: 'colorpen',
 		title: 'Colorpen.io',
 		description: ``,
 		role: 'Design & development',
 		tech: 'Webpack, React.js, jsx, es6, PostCSS',
-		file: 'Colorpen.jpg',
 		class: 'border',
-		id: 'colorpen'
+		date: ``,
+		file: 'Colorpen.jpg'
 	},
 	{
 		title: 'Idealist',
