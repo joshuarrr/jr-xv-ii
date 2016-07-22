@@ -21,3 +21,6 @@ node_modules
 _process
 react-base.sublime-project
 react-base.sublime-workspace
+
+# jrr process
+_src

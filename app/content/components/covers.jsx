@@ -27,25 +27,6 @@ export class Covers extends Component {
           </h2>
         </Link>
 
-        {/* Photography */}
-        <Link
-          to="/photography"
-          className="cover"
-        >
-          <ResponsiveContainer
-            key={ "rc-2" }
-            ref="imgContainer"
-          >
-            <ResponsiveImage
-              ref="imgContainer"
-              src="mask.jpg"
-            />
-          </ResponsiveContainer>
-          <h2 className="cover-title">
-            Photography
-          </h2>
-        </Link>
-
         {/* Design */}
         <Link
           to="/design"
@@ -62,6 +43,25 @@ export class Covers extends Component {
           </ResponsiveContainer>
           <h2 className="cover-title">
             Design
+          </h2>
+        </Link>
+
+        {/* Photography */}
+        <Link
+          to="/photography"
+          className="cover"
+        >
+          <ResponsiveContainer
+            key={ "rc-2" }
+            ref="imgContainer"
+          >
+            <ResponsiveImage
+              ref="imgContainer"
+              src="mask.jpg"
+            />
+          </ResponsiveContainer>
+          <h2 className="cover-title">
+            Photography
           </h2>
         </Link>
 
