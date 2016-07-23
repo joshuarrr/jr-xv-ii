@@ -15,25 +15,25 @@ export default [
 		pieces: [
 			{
 				id: null,
+				class: null,
 				title: null,
 				description: null,
 				role: null,
 				tech: null,
-				class: null,
 				date: null,
 				file: null
 			}
 		],
 		subprojects: [
 			{
-				id: null,
-				title: null,
-				description: null,
-				role: null,
-				tech: null,
-				class: null,
+				id: 'subproject-1',
+				title: 'subtitle',
+				description: `<p>Idealist gets around 25 million pageviews a month, and about 20% of that traffic is mobile. Developing a responsive home page and wrapper was our first step towards providing an equally rewarding mobile experience.</p>`,
+				role: 'sub role',
+				tech: 'sub tech',
+				class: 'sub class',
 				date: null,
-				file: null
+				file: 'sample.jpg'
 			}
 		]
 	},
@@ -60,14 +60,14 @@ export default [
 		],
 		subprojects: [
 			{
-				id: 'subproject-1',
-				title: 'subtitle',
-				description: `<p>Idealist gets around 25 million pageviews a month, and about 20% of that traffic is mobile. Developing a responsive home page and wrapper was our first step towards providing an equally rewarding mobile experience.</p>`,
-				role: 'sub role',
-				tech: 'sub tech',
-				class: 'sub class',
+				id: null,
+				title: null,
+				description: null,
+				role: null,
+				tech: null,
+				class: null,
 				date: null,
-				file: 'sample.jpg'
+				file: null
 			}
 		]
 	}

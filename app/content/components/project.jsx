@@ -13,7 +13,8 @@ export class Project extends Component {
 		src: React.PropTypes.string,
 		title: React.PropTypes.string,
 		role: React.PropTypes.string,
-		tech: React.PropTypes.string
+		tech: React.PropTypes.string,
+		data: React.PropTypes.array
 	}
 
 	constructor() {
@@ -65,56 +66,57 @@ export class Project extends Component {
 				{/* Project content */}
 				{ this.state.isProjectExpanded &&
 						<div className="project-content">
-						<VelocityTransitionGroup
-							enter={{
-								animation: {
-									opacity: [1, 0],
-									maxHeight: '10000px'
-								},
-									duration: 1000
+							<VelocityTransitionGroup
+								enter={{
+									animation: {
+										opacity: [1, 0],
+										maxHeight: '10000px'
+									},
+										duration: 1000
+									}
 								}
+								leave={{
+									animation: {
+										opacity: [0, 1],
+										maxHeight: '0'
+									},
+										duration: 1000
+									}
+								}
+								runOnMount
+							>
+							{ this.props.description &&
+								<div
+									className="project-description text-measure"
+									dangerouslySetInnerHTML={{__html: this.props.description}}
+								/>
 							}
-							leave={{
-								animation: {
-									opacity: [0, 1],
-									maxHeight: '0'
-								},
-									duration: 1000
-								}
+
+							{/* Caption */}
+							{ (this.props.role || this.props.tech) &&
+								<div className="project-caption">
+
+									{/* Role */}
+									{ this.props.role &&
+									<dl className="project-role">
+										<dt>Role:</dt>
+										<dd>{ this.props.role }</dd>
+									</dl>
+									}
+
+									{/* Tech */}
+									{ this.props.tech &&
+									<dl className="project-tech">
+										<dt>Tech:</dt>
+										<dd>{ this.props.tech }</dd>
+									</dl>
+									}
+
+								</div>
+
 							}
-							runOnMount
-						>
-						{ this.props.description &&
-							<div
-								className="project-description text-measure"
-								dangerouslySetInnerHTML={{__html: this.props.description}}
-							/>
-						}
-
-						{/* Caption */}
-						{ (this.props.role || this.props.tech) &&
-							<div className="project-caption">
-
-								{/* Role */}
-								{ this.props.role &&
-								<dl className="project-role">
-									<dt>Role:</dt>
-									<dd>{ this.props.role }</dd>
-								</dl>
-								}
-
-								{/* Tech */}
-								{ this.props.tech &&
-								<dl className="project-tech">
-									<dt>Tech:</dt>
-									<dd>{ this.props.tech }</dd>
-								</dl>
-								}
-
-							</div>
-						}
-					</VelocityTransitionGroup>
-						</div>
+						</VelocityTransitionGroup>
+					</div>
 				}
 
 			</div>
