@@ -2,8 +2,8 @@
 @import "../lib/type.css";
 
 body {
-  font-size: responsive 14px 16px;
-  font-range: 320px 1400px;
+  font-size: responsive 14px 18px;
+  font-range: 320px 1440px;
   font-weight: 300;
   color: $body-color;
 }
@@ -27,6 +27,7 @@ h2 {
   @mixin font-family sans-serif;
 }
 
+p,
 .page-title {
   @mixin font-family serif;
 }
@@ -57,6 +58,15 @@ h2 {
     width: 50vw;
     max-width: 41rem;
   }
+}
+
+.text-measure {
+  margin: auto;
+  width: 100%;
+
+  @media w(400) { width: 90%; }
+  @media w(920) { width: 80%; }
+  @media w(1280) { width: 75%; }
 }
 
 .nav-links {

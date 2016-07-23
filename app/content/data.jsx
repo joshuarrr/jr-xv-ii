@@ -16,7 +16,7 @@ export class Data extends Component {
 					data test
 				</h1>
 				<Projects
-					category="design"
+					category="data"
 					data={ dataFormatData }
 				/>
 			</PageWrapper>

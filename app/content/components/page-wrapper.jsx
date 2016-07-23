@@ -54,7 +54,6 @@ export class PageWrapper extends Component {
           </header>
         </Headroom>
 
-
         {/* Hero */}
         <VelocityTransitionGroup
           enter={{
