@@ -1,19 +1,9 @@
 /*! Design Page -------------------------------------------------------------*/
 @import "../@lib.css";
 
-.group .border {
-	&:before {
-		content: none;
-	}
-}
-
 .project {
 	@mixin trailer;
 	position: relative;
-
-	&.border .responsive-container {
-		line-height: 0;
-	}
 
 	&.has-title {
 		&:before {
@@ -33,14 +23,28 @@
 	margin-bottom: 2rem;
 }
 
-.project-description {
+.img-wrap.border img {
+  border: $default-border;
+}
+
+.project-content {
+  margin: auto;
+  text-align: left;
+  width: 100%;
+
+  @media w(400) { width: 90%; }
+  @media w(920) { width: 80%; }
+  @media w(1280) { width: 75%; }
+}
+
+.project-description,
+.subproject-description {
 	text-align: left;
 }
 
 .project-title {
 	background-color: $background-color;
 	display: inline-block;
-	line-height: 1;
 	letter-spacing: .05rem;
 	margin: 0;
 	padding: 0 1rem;
@@ -48,46 +52,91 @@
 	z-index: 1;
 }
 
-
 .project-caption {
 	margin-top: 2vh;
-
-	dl {
-		display: block;
-		width: 100%;
-		letter-spacing: .05rem;
-	}
-
-	dt {
-		display: inline-block;
-		margin-right: .5rem;
-	}
-
-	dd {
-		display: inline-block;
-	}
 }
 
-
-/* Project content */
-/* .project-content {
-	max-height: 0;
-	opacity: 0;
+/* Sub Projects --------------------------------------------------------------*/
+.sub-projects {
+  margin-top: 5vh;
+  width: 100%;
 }
 
-.expanded .project-content {
-	animation: expand 1s ease-in-out forwards;
-}
+.sub-project {
+  width: 100%;
 
-@keyframes expand {
-  to {
-    max-height: 20000px;
-    opacity: 1;
+  .img-link {
+    display: inherit;
+  }
+
+  .responsive-container {
+    clear: both;
+    position: relative;
+    width: 200px;
+    margin: 8rem auto 4rem;
+
+    @media w(568) {
+      clear: none;
+      margin-top: 1rem;
+    }
+
+    &.mobile {
+      height: 420px;
+      width: 200px;
+
+      &:before {
+        background-image: url('../img/content/iphone-6.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        pointer-events: none;
+        z-index: 5;
+      }
+
+      .imageloader p {
+        position: relative;
+        text-align: center;
+        top: 45%;
+      }
+
+      .img-wrap {
+        cursor: all-scroll;
+        height: 300px;
+        left: 13px;
+        overflow: auto;
+        position: absolute;
+        top: 62px;
+        width: 174px;
+        z-index: 4;
+      }
+    }
   }
 }
-@keyframes collapse {
-  to {
-    max-height: 0;
-    opacity: 0;
+
+.sub-project-details {
+  display: flex;
+}
+
+.sub-project-title {
+  letter-spacing: .05rem;
+  border-bottom: $default-border;
+}
+
+.sub-project-description {
+  width: 100%;
+  font-size: 90%;
+  padding-right: 1rem;
+
+	@media w(568) {
+    width: 55%;
   }
-} */
+
+  @media w(1440) {
+    width: 60%;
+  }
+}

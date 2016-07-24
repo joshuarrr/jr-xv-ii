@@ -34,6 +34,13 @@ export class Project extends Component {
 		const hasTitle = this.props.title ? ' has-title' : '';
 		const isExpanded = this.state.isProjectExpanded ? ' expanded' : ' collapsed';
 
+		const data = this.props.data;
+		// const str = JSON.stringify(data, null, 4);
+		// console.log('* data = ', str + '\n');
+
+		const thisProject = this.props.index;
+		const subProject = data[thisProject].subprojects;
+
 		return (
 			<div className={ 'project ' + this.props.class + hasTitle + isExpanded }>
 
@@ -85,6 +92,8 @@ export class Project extends Component {
 								}
 								runOnMount
 							>
+
+							{/* description */}
 							{ this.props.description &&
 								<div
 									className="project-description text-measure"
@@ -111,14 +120,40 @@ export class Project extends Component {
 										<dd>{ this.props.tech }</dd>
 									</dl>
 									}
-
 								</div>
-
 							}
+
+							{/* SubProjects */}
+							{ subProject &&
+								subProject.map(function exp(p, i) {
+									const isMoblie = p.class === 'mobile' ? ' mobile' : '';
+									return (
+										<div className="sub-projects" key={ p.id }>
+											<div className="sub-project">
+													<h3 className="sub-project-title">
+														{ p.title }
+													</h3>
+												<div className="sub-project-details">
+													<div
+														className="sub-project-description"
+														dangerouslySetInnerHTML={{__html: p.description}}
+													/>
+													<ResponsiveContainer class={ isMoblie }>
+														<ResponsiveImage
+															class={ 'img-wrap ' + p.class + ' img-' + i}
+															src={ p.file }
+														/>
+													</ResponsiveContainer>
+												</div>
+											</div>
+										</div>
+									);
+								})
+							}
+
 						</VelocityTransitionGroup>
 					</div>
 				}
-
 			</div>
 		);
 	}

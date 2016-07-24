@@ -8,8 +8,9 @@ export default [
                   <p>
                     As their first full-time designer, I've championed design driven product development, user research, analytics tracking and a/b testing for data driven design decisions, and brought a clean design aesthetic and modern interface to the new responsive incarnation of the site.
                   </p>
-                  `,		class: 'border',
+                  `,
 		cover: 'sample.jpg',
+    class: 'border',
 		role: 'role, design',
 		tech: 'tech, css, html, javascript',
 		pieces: [
@@ -27,13 +28,13 @@ export default [
 		subprojects: [
 			{
 				id: 'subproject-1',
-				title: 'subtitle',
+				title: 'subproject  title',
 				description: `<p>Idealist gets around 25 million pageviews a month, and about 20% of that traffic is mobile. Developing a responsive home page and wrapper was our first step towards providing an equally rewarding mobile experience.</p>`,
+				file: 'sample.jpg',
+				class: 'mobile',
 				role: 'sub role',
 				tech: 'sub tech',
-				class: 'sub class',
-				date: null,
-				file: 'sample.jpg'
+				date: null
 			}
 		]
 	},
@@ -58,17 +59,6 @@ export default [
 				file: null
 			}
 		],
-		subprojects: [
-			{
-				id: null,
-				title: null,
-				description: null,
-				role: null,
-				tech: null,
-				class: null,
-				date: null,
-				file: null
-			}
-		]
+		subprojects: null
 	}
 ];

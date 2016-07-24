@@ -2,9 +2,10 @@
 @import "../lib/type.css";
 
 body {
-  font-size: responsive 14px 18px;
+  font-size: responsive 16px 20px;
   font-range: 320px 1440px;
   font-weight: 300;
+  line-height: 1.5;
   color: $body-color;
 }
 
@@ -21,6 +22,36 @@ h1 {
 h2 {
   font-size: responsive 18px 20px;
   font-range: 320px 1400px;
+}
+
+h3 {
+  font-size: responsive 16px 18px;
+  font-range: 320px 1400px;
+  font-weight: 400;
+}
+
+dl {
+  display: flex;
+  text-align: left;
+  align-items: baseline;
+}
+
+dl {
+  font-size: 80%;
+}
+
+dt {
+  color: gray(110);
+  margin-right: .5rem;
+  display: inline-block;
+  clear: both;
+  font-weight: 400;
+}
+
+dd {
+  text-rendering: geometricPrecision;
+  display: inline;
+  width: 80%;
 }
 
 .main  {
@@ -58,15 +89,6 @@ p,
     width: 50vw;
     max-width: 41rem;
   }
-}
-
-.text-measure {
-  margin: auto;
-  width: 100%;
-
-  @media w(400) { width: 90%; }
-  @media w(920) { width: 80%; }
-  @media w(1280) { width: 75%; }
 }
 
 .nav-links {
