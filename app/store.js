@@ -12,11 +12,6 @@ const store = window.store = {
   get isDevMode() { return this._isDevMode; },
   set isDevMode(devMode) { this._isDevMode = devMode; this.notify(); },
 
-  // Infinigram
-  _isInfinigramming: false,
-  get isInfinigramming() { return this._isInfinigramming; },
-  set isInfinigramming(yes) { this._isInfinigramming = yes; this.notify(); },
-
   // Nav - headroom
   _isNavShowing: false,
   get isNavShowing() { return this._isNavShowing; },
@@ -26,6 +21,11 @@ const store = window.store = {
   _isNavExpanded: false,
   get isNavExpanded() { return this._isNavExpanded; },
   set isNavExpanded(expanded) { this._isNavExpanded = expanded; this.notify(); },
+
+  // Project state
+  _isProjectExpanded: false,
+  get isProjectExpanded() { return this._isProjectExpanded; },
+  set isProjectExpanded(expanded) { this._isProjectExpanded = expanded; this.notify(); },
 
   // Watch
   register(watcher) { this._watchers.push(watcher); },

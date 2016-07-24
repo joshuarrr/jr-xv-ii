@@ -2,9 +2,10 @@
 @import "../lib/type.css";
 
 body {
-  font-size: responsive 14px 16px;
-  font-range: 320px 1400px;
+  font-size: responsive 16px 20px;
+  font-range: 320px 1440px;
   font-weight: 300;
+  line-height: 1.5;
   color: $body-color;
 }
 
@@ -23,10 +24,41 @@ h2 {
   font-range: 320px 1400px;
 }
 
+h3 {
+  font-size: responsive 16px 18px;
+  font-range: 320px 1400px;
+  font-weight: 400;
+}
+
+dl {
+  display: flex;
+  text-align: left;
+  align-items: baseline;
+}
+
+dl {
+  font-size: 80%;
+}
+
+dt {
+  color: gray(110);
+  margin-right: .5rem;
+  display: inline-block;
+  clear: both;
+  font-weight: 400;
+}
+
+dd {
+  text-rendering: geometricPrecision;
+  display: inline;
+  width: 80%;
+}
+
 .main  {
   @mixin font-family sans-serif;
 }
 
+p,
 .page-title {
   @mixin font-family serif;
 }

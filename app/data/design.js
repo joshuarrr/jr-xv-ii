@@ -1,37 +1,35 @@
 export default [
 	{
-		title: 'Colorpen.io',
-		description: ``,
+		id: 'colorpen',
+		projectTitle: 'Colorpen.io',
+		projectDescription: null,
+		cover: 'Colorpen.jpg',
+		class: 'border',
 		role: 'Design & development',
 		tech: 'Webpack, React.js, jsx, es6, PostCSS',
-		file: 'Colorpen.jpg',
-		class: 'border',
-		id: 'colorpen'
+		subprojects: null
 	},
 	{
-		title: 'Idealist',
-		description: `<p>
-										I've been working at <a href='http://www.idealist.org'>Idealist</a> since the beginning of 2012, where we employ an agile software development strategy against a broad and oftentimes daunting challenge: <em>how can we help more people do more good in the world</em>?
-									</p>
-									<p>
-										As their first full-time designer, I've championed design driven product development, user research, analytics tracking and a/b testing for data driven design decisions, and brought a clean design aesthetic and modern interface to the new responsive incarnation of the site.
-									</p>
-									`,
+		id: 'idealist',
+		projectTitle: 'Idealist',
+		projectDescription: `<p>I've been working at <a href='http://www.idealist.org'>Idealist</a> since the beginning of 2012, where we employ an agile software development strategy against a broad and oftentimes daunting challenge: <em>how can we help more people do more good in the world</em>?</p>
+			<p>As their first full-time designer, I've championed design driven product development, user research, analytics tracking and a/b testing for data driven design decisions, and brought a clean design aesthetic and modern interface to the new responsive incarnation of the site.</p>`,
+		cover: 'idealist-homepage.jpg',
+		class: 'border',
 		role: 'Web design, UX, UI, & front-end development',
 		tech: 'Sketch, Marvel, HTML, CSS, Sass, Git, React.js',
-		file: 'idealist-homepage.jpg',
-		class: 'border',
-		id: 'idealist',
 		subprojects: [
 			{
+				id: 'idealist-mobile',
 				title: 'mobile homepage',
-				description: 'Idealist gets around 25 million pageviews a month, and about 20% of that traffic is mobile. Developing a responsive home page and wrapper was our first step towards providing an equally rewarding mobile experience.',
-				role: 'Mobile UX, UI, Web Design, Front-end Development',
+				description: '<p>Idealist gets around 25 million pageviews a month, and about 20% of that traffic is mobile. Developing a responsive home page and wrapper was our first step towards providing an equally rewarding mobile experience.</p>',
 				file: 'idealist-homepage-mobile.jpg',
 				class: 'mobile',
-				id: 'idealist-mobile'
+				role: 'Mobile UX, UI, Web Design, Front-end Development',
+				tech: null
 			},
 			{
+				id: 'idealist-about',
 				title: 'about us',
 				description: `<p>
 												For years, the Idealist ‘about us’ page was <a href="https://web.archive.org/web/20141128135648/http://www.idealist.org/info/About" target="_blank">not very appealing or engaging</a>. Traffic was particularly poor and exit rates particularly high for this section of the site.
@@ -46,10 +44,10 @@ export default [
 											Our next tests will bring paralax and animations to the page to determine their effectiveness.
 											</p>
 											`,
-				role: 'UX, UI, Web Design',
 				file: 'idealist-about.jpg',
 				class: 'border',
-				id: 'idealist-about'
+				role: 'UX, UI, Web Design',
+				tech: null
 			}
 		],
 		etcTitle: 'more',
@@ -61,7 +59,7 @@ export default [
 											</p>`,
 				role: 'UX, UI, Web Design, Front-end Development',
 				file: 'sample.jpg',
-				class: '',
+				class: null,
 				id: 'working-here'
 			},
 			{
@@ -78,17 +76,19 @@ export default [
 		]
 	},
 	{
-		title: 'Produce Row',
-		description: ``,
-		file: 'prc.png',
-		class: '',
+		id: 'prc',
+		projectTitle: 'Produce Row',
+		projectDescription: null,
+		cover: 'prc.png',
+		class: null,
 		role: 'Identity / Brand, web, & collateral design.',
-		id: 'prc'
+		tech: null,
+		subprojects: null
 	},
 	{
-		title: 'Grand Canyon Association',
-		description: ``,
-		file: 'GCA.jpg',
+		projectTitle: 'Grand Canyon Association',
+		projectDescription: null,
+		cover: 'GCA.jpg',
 		class: 'border',
 		id: 'gca',
 		role: 'Product design, photography, product management, & front-end Development',
@@ -104,43 +104,53 @@ export default [
 		]
 	},
 	{
-		title: 'Chali2na',
-		description: ``,
-		file: 'Chali2Na.jpg',
+		id: 'chali',
+		projectTitle: 'Chali2na',
+		projectDescription: null,
+		cover: 'Chali2Na.jpg',
 		class: 'border',
 		role: 'Web design',
-		id: 'chali'
+		tech: null,
+		subprojects: null
 	},
 	{
-		title: 'Skydance Productions',
-		description: ``,
-		file: 'flyboys-02.jpg',
+		id: 'skydance',
+		projectTitle: 'Skydance Productions',
+		projectDescription: null,
+		cover: 'flyboys-02.jpg',
 		class: 'border',
 		role: 'Brand identity & collateral design',
-		id: 'skydance'
+		tech: null,
+		subprojects: null
 	},
 	{
-		title: 'Polar Express',
-		description: ``,
-		file: 'polar-express-01.jpg',
+		id: 'polar',
+		projectTitle: 'Polar Express',
+		projectDescription: null,
+		cover: 'polar-express-01.jpg',
 		class: 'border',
 		role: 'Key art',
-		id: 'polar'
+		tech: null,
+		subprojects: null
 	},
 	{
-		title: 'California College of the Arts',
-		description: ``,
-		file: 'CCA-01.jpg',
+		id: 'cca',
+		projectTitle: 'California College of the Arts',
+		projectDescription: null,
+		cover: 'CCA-01.jpg',
 		class: 'border',
 		role: 'Collateral design',
-		id: 'cca'
+		tech: null,
+		subprojects: null
 	},
 	{
-		title: 'Pink Floyd',
-		description: ``,
-		file: 'pink-floyd-logo.png',
-		class: '',
+		id: 'pinkfloyd',
+		projectTitle: 'Pink Floyd',
+		projectDescription: null,
+		cover: 'pink-floyd-logo.png',
+		class: null,
 		role: 'Brand identity & collateral design.',
-		id: 'pinkfloyd'
+		tech: null,
+		subprojects: null
 	}
 ];

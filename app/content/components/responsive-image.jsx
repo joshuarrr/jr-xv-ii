@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ImageLoader from 'react-imageloader';
 
 const connection = navigator.connection;
 const slow = connection && /(^([23]g?)$)/.test(connection.type);
@@ -24,9 +25,23 @@ export class ResponsiveImage extends Component {
 		const dpr = '1.0';
 		const src = `${ baseURL }/w_${ width },dpr_${ dpr }/${ this.props.src }`;
 
+    function preloader() {
+      return (
+        <p>loading</p>
+      );
+    }
 
 		return (
-			<img src={ src } className={ this.props.class} />
+			// <img src={ src } className={ this.props.class} />
+
+      // render with ImageLoader instead
+      <ImageLoader
+        src={src}
+        className={this.props.class}
+        preloader={preloader}
+      >
+        Image load failed!
+      </ImageLoader>
 		);
 	}
 }
