@@ -1,7 +1,15 @@
 export default [
   {
-    groupTitle: 'lines',
-    groupDescription: ``,
+    projectTitle: 'lines',
+    projectDescription: null,
+        id: 'lines-u1',
+        title: 'untitled 1',
+        description: ``,
+        role: ``,
+        tech: ``,
+        class: 'border',
+        date: 'August, 2015',
+        cover: 'lines-01.jpg',
     pieces: [
       {
         id: 'lines-u1',
@@ -62,5 +70,29 @@ export default [
         file: 'lines-05.jpg'
       }
     ]
+  },
+  {
+    cover: 'lines-07.jpg',
+    class: 'border'
+  },
+  {
+    cover: 'lines-02.jpg',
+    class: 'border'
+  },
+  {
+    cover: 'lines-09.jpg',
+    class: 'border'
+  },
+  {
+    cover: 'lines-08.jpg',
+    class: 'border'
+  },
+  {
+    cover: 'lines-06.jpg',
+    class: 'border'
+  },
+  {
+    cover: 'lines-05.jpg',
+    class: 'border'
   }
 ];
