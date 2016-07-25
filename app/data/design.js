@@ -2,18 +2,18 @@ export default [
 	{
 		id: 'colorpen',
 		projectTitle: 'Colorpen.io',
-		projectDescription: null,
+		projectDescription: '<p><a class="external-link" href="http://colorpen.io" target="_blank">Colorpen.io</a> is a react app that lets you copy html/css/svg colors to your clipboard so that you can more readily ditch hex codes and instead use the friendlier and more semantic color names such as LightGoldenrodYellow and NavajoWhite.</p>',
 		cover: 'Colorpen.jpg',
 		class: 'border',
-		role: 'Design & development',
+		role: 'Product design & development',
 		tech: 'Webpack, React.js, jsx, es6, PostCSS',
 		subprojects: null
 	},
 	{
 		id: 'idealist',
 		projectTitle: 'Idealist',
-		projectDescription: `<p>I've been working at <a href='http://www.idealist.org'>Idealist</a> since the beginning of 2012, where we employ an agile software development strategy against a broad and oftentimes daunting challenge: <em>how can we help more people do more good in the world</em>?</p>
-			<p>As their first full-time designer, I've championed design driven product development, user research, analytics tracking and a/b testing for data driven design decisions, and brought a clean design aesthetic and modern interface to the new responsive incarnation of the site.</p>`,
+		projectDescription: `<p>I've been working at <a href='http://www.idealist.org'>Idealist</a> since the beginning of 2012. We employ an agile software development strategy against a broad and oftentimes daunting challenge: <em>how can we help more people do more good in the world</em>?</p>
+			<p>As their first full-time designer, I've championed user-centered design and design driven product development including user research, analytics tracking and a/b testing for data driven design decisions, rapid prototyping, and user testing. As a bonus I brought a clean design aesthetic and modern interface to the new responsive incarnation of the site.</p>`,
 		cover: 'idealist-homepage.jpg',
 		class: 'border',
 		role: 'Web design, UX, UI, & front-end development',
@@ -22,56 +22,33 @@ export default [
 			{
 				id: 'idealist-mobile',
 				title: 'mobile homepage',
-				description: '<p>Idealist gets around 25 million pageviews a month, and about 20% of that traffic is mobile. Developing a responsive home page and wrapper was our first step towards providing an equally rewarding mobile experience.</p>',
-				file: 'idealist-homepage-mobile.jpg',
-				class: 'mobile',
+				description: `<p>Idealist gets around 25 million pageviews a month, and about 20% of that traffic is mobile. Developing a responsive home page and wrapper was our first step towards providing an equally rewarding mobile experience.</p>
+					<p class="small">(Click the prototype to enable interactivity.)</p>`,
+				file: null,
+				prototype: '<iframe src="https://marvelapp.com/28a514e?emb=1" width="300" height="550" allowTransparency="true" frameborder="0"></iframe>',
 				role: 'Mobile UX, UI, Web Design, Front-end Development',
+				tech: null
+			},
+			{
+				id: 'idealist-search',
+				title: 'search reskin',
+				description: `<p>A mobile friendly search page completes the primary user flow for Idealist job seekers. </p>`,
+				file: null,
+				prototype: '<iframe src="https://marvelapp.com/3bibh79?emb=1" width="300" height="600" allowTransparency="true" frameborder="0"></iframe>',
+				class: null,
+				role: null,
 				tech: null
 			},
 			{
 				id: 'idealist-about',
 				title: 'about us',
-				description: `<p>
-												For years, the Idealist ‘about us’ page was <a href="https://web.archive.org/web/20141128135648/http://www.idealist.org/info/About" target="_blank">not very appealing or engaging</a>. Traffic was particularly poor and exit rates particularly high for this section of the site.
-											</p>
-											<p>
-												With the release of this new iteration, we wanted to validate the design. We were especially curious if people would scroll through the long introductory section. We employed <a href="http://scrolldepth.parsnip.io/" target="_blank">Scroll Depth</a>, a plugin that lets us analyze scroll behavior in Google Analytics. It turned out that most people do scroll through on desktop, but mobile visitors were far less likely to do so.
-											</p>
-											<p>
-												In order to improve the mobile scroll rate, we employed <a href="http://optimizely.com" targt="_blank">Optimizely</a> to run an a/b test on a scroll arrow at the bottom of the first impression. It worked dramatically, bringing our initial mobile scroll rates up to about 85% from about 50%.
-											</p>
-											<p>
-											Our next tests will bring paralax and animations to the page to determine their effectiveness.
-											</p>
-											`,
+				description: `<p>For years the Idealist ‘about us’ page was <a href="https://web.archive.org/web/20141128135648/http://www.idealist.org/info/About" target="_blank">not very appealing or engaging</a>. Traffic was nonexistent and exit rates were super high for this section of the site.</p>
+					<p>With the release of this new iteration, we wanted to validate the design — we were especially curious if people would scroll through the long introductory section. As well as user-testing this, we employed <a href="http://scrolldepth.parsnip.io/" target="_blank">Scroll Depth</a> to analyze scroll behavior in Google Analytics. It turned out that most people do scroll through on desktop, but mobile visitors were far less likely to do so.</p>
+					<p>In order to improve the mobile scroll rate, we employed <a href="http://optimizely.com" targt="_blank">Optimizely</a> to run an a/b test on a scroll arrow at the bottom of the first impression. It worked dramatically, bringing our initial mobile scroll rates up to about 90% from about 60%.</p>`,
 				file: 'idealist-about.jpg',
 				class: 'border',
 				role: 'UX, UI, Web Design',
 				tech: null
-			}
-		],
-		etcTitle: 'more',
-		etcetera: [
-			{
-				title: 'working here',
-				description: `<p>
-												We\'re growing rapidly and needed a page that invites the type of candidates we\'re looking for: talented individuals with the greater good at heart. We went a bit nuts and threw out every trick in the book - paralax, scroll events, and more paralax.
-											</p>`,
-				role: 'UX, UI, Web Design, Front-end Development',
-				file: 'sample.jpg',
-				class: null,
-				id: 'working-here'
-			},
-			{
-				title: 'Manifesto',
-				description: `<p>
-												The Idealist Manifesto is at the heart of our mission. This treatment attempts to inspire like-minded individuals.
-											</p>
-											`,
-				role: 'Graphic Design',
-				file: 'sample.jpg',
-				class: 'border',
-				id: 'manifesto'
 			}
 		]
 	},
@@ -83,7 +60,13 @@ export default [
 		class: null,
 		role: 'Identity / Brand, web, & collateral design.',
 		tech: null,
-		subprojects: null
+		subprojects: [
+			{
+				file: 'cold-girl',
+				class: 'border',
+				role: 'Design, copy'
+			}
+		]
 	},
 	{
 		projectTitle: 'Grand Canyon Association',
@@ -121,7 +104,14 @@ export default [
 		class: 'border',
 		role: 'Brand identity & collateral design',
 		tech: null,
-		subprojects: null
+		subprojects: [
+		{
+			file: 'Flyboys-01.jpg'
+		},
+		{
+			file: 'Skydance-logo.png'
+		}
+		]
 	},
 	{
 		id: 'polar',
@@ -129,9 +119,14 @@ export default [
 		projectDescription: null,
 		cover: 'polar-express-01.jpg',
 		class: 'border',
-		role: 'Key art',
+		role: 'Key art design',
 		tech: null,
-		subprojects: null
+		subprojects: [
+			{
+				file: 'polar-express.jpg',
+				class: ' border'
+			}
+		]
 	},
 	{
 		id: 'cca',
@@ -141,7 +136,11 @@ export default [
 		class: 'border',
 		role: 'Collateral design',
 		tech: null,
-		subprojects: null
+		subprojects: [
+			{
+				file: 'CCA2'
+			}
+		]
 	},
 	{
 		id: 'pinkfloyd',
@@ -151,6 +150,18 @@ export default [
 		class: null,
 		role: 'Brand identity & collateral design.',
 		tech: null,
-		subprojects: null
+		subprojects: [
+			{
+				title: '2005 Pink Floyd wall calendar',
+				file: 'pink-floyd-cal-front.jpg'
+			},
+			{
+				file: 'pink-floyd-cal-back.jpg'
+			},
+			{
+				file: 'pink-floyd-cal-august.jpg',
+				class: 'border'
+			}
+		]
 	}
 ];

@@ -130,21 +130,65 @@ export class Project extends Component {
 									return (
 										<div className="sub-projects" key={ p.id }>
 											<div className="sub-project">
+												{/* Title */}
+												{ p.title &&
 													<h3 className="sub-project-title">
 														{ p.title }
 													</h3>
-												<div className="sub-project-details">
-													<div
-														className="sub-project-description"
-														dangerouslySetInnerHTML={{__html: p.description}}
-													/>
-													<ResponsiveContainer class={ isMoblie }>
-														<ResponsiveImage
-															class={ 'img-wrap ' + p.class + ' img-' + i}
-															src={ p.file }
-														/>
-													</ResponsiveContainer>
+												}
+												<div className="sub-project-content">
+													{/* Details */}
+													<div className="sub-project-details">
+														{/* Description */}
+														{ p.description &&
+															<div
+																className="sub-project-description"
+																dangerouslySetInnerHTML={{__html: p.description}}
+															/>
+														}
+
+														{/* Caption */}
+														{ (p.role || p.tech) &&
+															<div className="project-caption">
+
+																{/* Role */}
+																{ p.role &&
+																<dl className="project-role">
+																	<dt>Role:</dt>
+																	<dd>{ p.role }</dd>
+																</dl>
+																}
+
+																{/* Tech */}
+																{ p.tech &&
+																<dl className="project-tech">
+																	<dt>Tech:</dt>
+																	<dd>{ p.tech }</dd>
+																</dl>
+																}
+															</div>
+														}
+													</div>
+
+														{/* Image */}
+														{ p.file &&
+															<ResponsiveContainer class={ isMoblie }>
+																<ResponsiveImage
+																	class={ 'img-wrap ' + p.class + ' img-' + i}
+																	src={ p.file }
+																/>
+															</ResponsiveContainer>
+														}
+
+														{/* Prototype */}
+														{ p.prototype &&
+															<div
+																className="sub-project-prototype"
+																dangerouslySetInnerHTML={{__html: p.prototype}}
+															/>
+														}
 												</div>
+
 											</div>
 										</div>
 									);

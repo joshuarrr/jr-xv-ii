@@ -80,3 +80,9 @@ a img,
   color: Gainsboro;
   background: SlateGray;
 }
+
+/* Mobile --------------------------------------------------------------------*/
+a:link {
+  /* -webkit-tap-highlight-color: rgba(0, 20, 100, .3); */
+  -webkit-tap-highlight-color: transparent;
+}

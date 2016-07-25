@@ -22,7 +22,7 @@
 }
 
 .site-logo-link {
-  color: white;
+  color: white !important;
   display: block;
   font-weight: 400;
   line-height: 0;

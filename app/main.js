@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import { Router, Route, IndexRoute } from "react-router";
-import { browserHistory } from 'react-router';
+import { Router, Route, browserHistory, IndexRoute } from "react-router";
 import { Home } from "./content/home";
 import { Code } from "./content/code";
 import { Art } from "./content/art";
