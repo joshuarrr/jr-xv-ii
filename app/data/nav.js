@@ -4,12 +4,12 @@ export default [
     title: 'art'
   },
   {
-    to: 'photography',
-    title: 'photography'
-  },
-  {
     to: 'design',
     title: 'design'
+  },
+  {
+    to: 'photography',
+    title: 'photography'
   },
   {
     to: 'code',

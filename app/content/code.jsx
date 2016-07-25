@@ -17,14 +17,29 @@ export class Code extends Component {
 				<h2>Hello</h2>
 				<Codepen
 					user="joshuar"
-					hash="GpWJMV"
+					hash="WQpXxE"
 					height="400"
 				/>
 
-				<h2>Form validation UX + UI</h2>
+				<h2>Form validation UX / UI</h2>
 				<Codepen
 					user="joshuar"
 					hash="WxREON"
+					height="600"
+					class="border"
+				/>
+
+				<h2>Expandy Search fields prototype</h2>
+				<Codepen
+					user="joshuar"
+					hash="gaxNBY"
+					height="400"
+				/>
+
+				<h2>Flexgrid</h2>
+				<Codepen
+					user="joshuar"
+					hash="bEPVEL"
 					height="400"
 				/>
 
@@ -40,13 +55,6 @@ export class Code extends Component {
 					user="joshuar"
 					hash="RWVKgP"
 					height="300"
-				/>
-
-				<h2>Flexgrid</h2>
-				<Codepen
-					user="joshuar"
-					hash="bEPVEL"
-					height="400"
 				/>
 
 			</PageWrapper>

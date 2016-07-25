@@ -2,7 +2,7 @@
 @import "../lib/type.css";
 
 body {
-  font-size: responsive 16px 20px;
+  font-size: responsive 14px 20px;
   font-range: 320px 1440px;
   font-weight: 300;
   line-height: 1.5;
@@ -70,7 +70,7 @@ p,
 }
 
 .intro-text {
-  font-size: responsive 16px 20px;
+  font-size: responsive 14px 20px;
   font-range: 320px 1400px;
   line-height: 1.5;
   margin: auto;
@@ -86,7 +86,7 @@ p,
   }
 
   @media w(768) {
-    width: 50vw;
+    width: 70vw;
     max-width: 41rem;
   }
 }
