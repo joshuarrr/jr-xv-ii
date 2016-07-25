@@ -9,7 +9,6 @@ export class Home extends Component {
 	render() {
 		return (
 			<PageWrapper
-				hasHero
 				mainClass="home"
 			>
 				<Helmet title="Ugh." />
