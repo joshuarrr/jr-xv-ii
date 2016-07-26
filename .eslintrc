@@ -19,6 +19,7 @@
     "indent": [0],
     "quotes": [0],
     "id-length": [0],
-    "react/no-did-mount-set-state": [0]
+    "react/no-did-mount-set-state": [0],
+    "jsx-boolean-value": [0]
     }
 }
