@@ -4,11 +4,11 @@
 .main.photography {
 	z-index: initial;
 	width: 100vw;
+  padding: 0;
 }
 
 .full-frame-images {
   position: relative;
-  top: -17vh;
 }
 
 .responsive-container.ff-image {

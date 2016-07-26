@@ -17,7 +17,7 @@ export class Home extends Component {
 {/*					<p>Hi! Welcome to my internet place where I show you things.</p>
 					<p>Like most designers, I'm fascinated by the juncture of form and function, the balance of usability and surprise, and the nuances of ideation and implementation. In other words, I make it look nice.</p>
 */}
-					<p>AKA Josh, or Joshua Richey. A designer, front-end developer, artist, and visual&nbsp;craftsman. Beyond design, I like to draw, take photographs, and walk my greyhound.</p>
+					<p>AKA Josh, or Joshua Richey. A designer, front-end developer, artist, and visual&nbsp;craftsman.</p>
 					</div>
         <Covers />
 			</PageWrapper>
