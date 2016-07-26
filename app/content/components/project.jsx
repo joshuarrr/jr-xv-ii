@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactDOM from "react-dom";
 import { ResponsiveContainer } from "./responsive-container";
 import { ResponsiveImage } from "./responsive-image";
 import { VelocityTransitionGroup } from "velocity-react";
@@ -20,8 +21,14 @@ export class Project extends Component {
 	constructor() {
 		super();
 		this.state = {
-			isProjectExpanded: false
+			isProjectExpanded: false,
+			updated: false,
+			imageHeight: ''
 		};
+	}
+
+	componentDidUpdate = () => {
+		ReactDOM.findDOMNode(this).addEventListener('transitionend', this.updateImg, false);
 	}
 
 	handleClick = () => {
@@ -30,10 +37,22 @@ export class Project extends Component {
 		});
 	}
 
+	updateImg = () => {
+		this.setState({
+			updated: true
+		});
+
+		const img = ReactDOM.findDOMNode(this.refs.imgContainer);
+
+		// Set a min height on the imagewrapper
+		this.setState({
+			imageHeight: img.offsetHeight
+		});
+	}
+
 	render() {
 		const hasTitle = this.props.title ? ' has-title' : '';
 		const isExpanded = this.state.isProjectExpanded ? ' expanded' : ' collapsed';
-
 		const data = this.props.data;
 		// const str = JSON.stringify(data, null, 4);
 		// console.log('* data = ', str + '\n');
@@ -42,7 +61,10 @@ export class Project extends Component {
 		const subProject = data[thisProject].subprojects;
 
 		return (
-			<div className={ 'project ' + this.props.class + hasTitle + isExpanded }>
+			<div
+				className={ 'project ' + this.props.class + hasTitle + isExpanded }
+				key={ 'proj-' + this.props.id }
+			>
 
 				{/* Title */}
 				{ this.props.title &&
@@ -61,12 +83,26 @@ export class Project extends Component {
 						<ResponsiveContainer
 							class="project-cover-image"
 							key={'rc-' + this.props.index}
+							ref="imgContainer"
 						>
 							<ResponsiveImage
 								class={ 'img-wrap ' + this.props.class + ' ' + ' img-' + this.props.index}
 								src={ this.props.cover }
 							/>
 						</ResponsiveContainer>
+						{
+							this.state.updated &&
+							<ResponsiveContainer
+								class={ 'expanded rc rc-' + this.props.index + ' ' }
+								key={'big-rc-' + this.props.index}
+								ref="bigImgContainer"
+							>
+								<ResponsiveImage
+									class={ 'img-wrap ' + this.props.class + ' img-' + this.props.index}
+									src={ this.props.src }
+								/>
+							</ResponsiveContainer>
+						}
 					</a>
 				}
 
@@ -127,9 +163,14 @@ export class Project extends Component {
 							{ subProject &&
 								subProject.map(function exp(p, i) {
 									const isMoblie = p.class === 'mobile' ? ' mobile' : '';
+									const projectClass = p.projectClass === 'halfsies' ? 'halfsies ' : '';
+
 									return (
-										<div className="sub-projects" key={ p.id }>
-											<div className="sub-project">
+										<div className="sub-projects" key={p.id + '-subprojects'}>
+											<div
+												className={'sub-project ' + projectClass}
+												key={'subproject-' + p.id}
+											>
 												{/* Title */}
 												{ p.title &&
 													<h3 className="sub-project-title">
@@ -147,8 +188,9 @@ export class Project extends Component {
 															/>
 														}
 
-														{/* Caption */}
-														{ (p.role || p.tech) &&
+														{/* Caption on the left if there's 2 columns */}
+														{ (p.projectClass === 'halfsies') &&
+															(p.role || p.tech) &&
 															<div className="project-caption">
 
 																{/* Role */}
@@ -172,7 +214,7 @@ export class Project extends Component {
 
 														{/* Image */}
 														{ p.file &&
-															<ResponsiveContainer class={ isMoblie }>
+															<ResponsiveContainer class={ "sub-project-image " + isMoblie }>
 																<ResponsiveImage
 																	class={ 'img-wrap ' + p.class + ' img-' + i}
 																	src={ p.file }
@@ -187,8 +229,30 @@ export class Project extends Component {
 																dangerouslySetInnerHTML={{__html: p.prototype}}
 															/>
 														}
-												</div>
 
+														{/* Caption below image if theres 1 column */}
+														{ !p.projectClass &&
+															(p.role || p.tech) &&
+															<div className="project-caption">
+
+																{/* Role */}
+																{ p.role &&
+																<dl className="project-role">
+																	<dt>Role:</dt>
+																	<dd>{ p.role }</dd>
+																</dl>
+																}
+
+																{/* Tech */}
+																{ p.tech &&
+																<dl className="project-tech">
+																	<dt>Tech:</dt>
+																	<dd>{ p.tech }</dd>
+																</dl>
+																}
+															</div>
+														}
+												</div>
 											</div>
 										</div>
 									);

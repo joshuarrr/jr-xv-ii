@@ -25,23 +25,25 @@ export class ResponsiveImage extends Component {
 		const dpr = '1.0';
 		const src = `${ baseURL }/w_${ width },dpr_${ dpr }/${ this.props.src }`;
 
-    function preloader() {
-      return (
-        <p>loading</p>
-      );
-    }
+		function preloader() {
+			return (
+				<svg height="50" width="50" ng-show="showpreloader" className="circular">
+					<circle cx="25" cy="25" r="20" fill="none" strokeWidth="2" strokeMiterlimit="10" className="path"></circle>
+				</svg>
+			);
+		}
 
 		return (
 			// <img src={ src } className={ this.props.class} />
 
-      // render with ImageLoader instead
-      <ImageLoader
-        src={src}
-        className={this.props.class}
-        preloader={preloader}
-      >
-        Image load failed!
-      </ImageLoader>
+			// render with ImageLoader instead
+			<ImageLoader
+				src={src}
+				className={this.props.class}
+				preloader={preloader}
+			>
+				Image load failed!
+			</ImageLoader>
 		);
 	}
 }

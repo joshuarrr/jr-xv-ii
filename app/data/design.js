@@ -24,8 +24,8 @@ export default [
 				title: 'mobile homepage',
 				description: `<p>Idealist gets around 25 million pageviews a month, and about 20% of that traffic is mobile. Developing a responsive home page and wrapper was our first step towards providing an equally rewarding mobile experience.</p>
 					<p class="small">(Click the prototype to enable interactivity.)</p>`,
-				file: null,
 				prototype: '<iframe src="https://marvelapp.com/28a514e?emb=1" width="300" height="550" allowTransparency="true" frameborder="0"></iframe>',
+				projectClass: 'halfsies',
 				role: 'Mobile UX, UI, Web Design, Front-end Development',
 				tech: null
 			},
@@ -35,8 +35,8 @@ export default [
 				description: `<p>A mobile friendly search page completes the primary user flow for Idealist job seekers. </p>`,
 				file: null,
 				prototype: '<iframe src="https://marvelapp.com/3bibh79?emb=1" width="300" height="600" allowTransparency="true" frameborder="0"></iframe>',
-				class: null,
-				role: null,
+				projectClass: 'halfsies',
+				role: 'UI design, UX, User testing, prototyping',
 				tech: null
 			},
 			{
@@ -47,6 +47,7 @@ export default [
 					<p>In order to improve the mobile scroll rate, we employed <a href="http://optimizely.com" targt="_blank">Optimizely</a> to run an a/b test on a scroll arrow at the bottom of the first impression. It worked dramatically, bringing our initial mobile scroll rates up to about 90% from about 60%.</p>`,
 				file: 'idealist-about.jpg',
 				class: 'border',
+				projectClass: 'halfsies',
 				role: 'UX, UI, Web Design',
 				tech: null
 			}
@@ -62,6 +63,7 @@ export default [
 		tech: null,
 		subprojects: [
 			{
+				id: 'cold-girl',
 				file: 'cold-girl',
 				class: 'border',
 				role: 'Design, copy'
@@ -75,16 +77,7 @@ export default [
 		class: 'border',
 		id: 'gca',
 		role: 'Product design, photography, product management, & front-end Development',
-		tech: 'Drupal, HTML, CSS, Sass',
-		subprojects: [
-			{
-				title: 'store',
-				description: 'GCA Store.',
-				file: 'gca-store.jpg',
-				class: 'border',
-				id: 'gca-store'
-			}
-		]
+		tech: 'Drupal, HTML, CSS, Sass'
 	},
 	{
 		id: 'chali',
@@ -106,9 +99,11 @@ export default [
 		tech: null,
 		subprojects: [
 		{
+			id: 'flyboys-plane',
 			file: 'Flyboys-01.jpg'
 		},
 		{
+			id: 'skydance-logo',
 			file: 'Skydance-logo.png'
 		}
 		]
@@ -123,6 +118,7 @@ export default [
 		tech: null,
 		subprojects: [
 			{
+				id: 'polar-express-poster-2',
 				file: 'polar-express.jpg',
 				class: ' border'
 			}
@@ -138,6 +134,7 @@ export default [
 		tech: null,
 		subprojects: [
 			{
+				id: 'cca-2',
 				file: 'CCA2'
 			}
 		]
@@ -152,13 +149,16 @@ export default [
 		tech: null,
 		subprojects: [
 			{
+				id: 'pfwc-1',
 				title: '2005 Pink Floyd wall calendar',
 				file: 'pink-floyd-cal-front.jpg'
 			},
 			{
+				id: 'pfwc-2',
 				file: 'pink-floyd-cal-back.jpg'
 			},
 			{
+				id: 'pfwc-3',
 				file: 'pink-floyd-cal-august.jpg',
 				class: 'border'
 			}

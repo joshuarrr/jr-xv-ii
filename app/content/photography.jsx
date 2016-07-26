@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
 import { PageWrapper } from "./components/page-wrapper";
+import { ResponsiveContainer } from "./components/responsive-container";
+import { ResponsiveImage } from "./components/responsive-image";
 require("../styles/content/photography.css");
 
 export class Photography extends Component {
@@ -11,7 +13,32 @@ export class Photography extends Component {
 				mainClass="photography"
 			>
 				<Helmet title="Photography" />
-				<p className="intro-text no-photos">There are no photos here right now because stupid Instagram changed their stupid api the day after I spent like a month trying to figure out how to write a decent lazy-loading infinite scrolling photo viewer. It was pretty cool, but now I don't have a photo section. I'll make something new pretty soon. I guess.</p>
+					{/* Full Frame Photos */}
+					<div className="full-frame-images">
+						<ResponsiveContainer class="ff-image">
+							<ResponsiveImage class="full-frame-image" src="aro.jpg" />
+						</ResponsiveContainer>
+						<ResponsiveContainer class="ff-image">
+							<ResponsiveImage class="full-frame-image" src="mask.jpg" />
+						</ResponsiveContainer>
+						<ResponsiveContainer class="ff-image">
+							<ResponsiveImage class="full-frame-image" src="conquer.jpg" />
+						</ResponsiveContainer>
+						<ResponsiveContainer class="ff-image">
+							<ResponsiveImage class="full-frame-image" src="deepestBlue.jpg" />
+						</ResponsiveContainer>
+						<ResponsiveContainer class="ff-image">
+							<ResponsiveImage class="full-frame-image" src="santa-monica.jpg" />
+						</ResponsiveContainer>
+						<ResponsiveContainer class="ff-image">
+							<ResponsiveImage class="full-frame-image" src="beach.jpg" />
+						</ResponsiveContainer>
+						<ResponsiveContainer class="ff-image">
+							<ResponsiveImage class="full-frame-image" src="paint.jpg" />
+						</ResponsiveContainer>
+					</div>
+				{/* Half Screen Photos */}
+
 			</PageWrapper>
 		);
 	}

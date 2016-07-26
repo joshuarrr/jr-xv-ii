@@ -1,9 +1,18 @@
 /*! Design Page -------------------------------------------------------------*/
 @import "../@lib.css";
 
+.projects {
+  .circular {
+    display: none;
+  }
+}
+
 .project {
 	@mixin trailer;
 	position: relative;
+  max-width: 290px;
+  margin: 0 auto;
+  transition: max-width .6s;
 
 	&.has-title {
 		&:before {
@@ -17,6 +26,36 @@
 			width: 100%;
 		}
 	}
+
+  @media w(1280){
+    max-width: 320px;
+  }
+
+  @media w(1680){
+    max-width: 400px;
+  }
+
+  &.expanded {
+    @media w(568)  {
+      width: 80vw;
+      max-width: 500px;
+    }
+
+    @media w(768)  {
+      width: 70vw;
+      max-width: 500px;
+    }
+
+    @media w(1024)  {
+      width: 70vw;
+      max-width: 700px;
+    }
+
+    @media w(1280)  {
+      width: 60vw;
+      max-width: 800px;
+    }
+  }
 }
 
 .project-cover-image {
@@ -24,7 +63,7 @@
 }
 
 .img-wrap.border img {
-  border: $default-border;
+  border: 1px solid #ddd;
 }
 
 .project-content {
@@ -68,6 +107,19 @@
 	z-index: 1;
 }
 
+/* Responsive project expanded, the duplicate that reloads the high res version */
+.rc.expanded {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.img-link {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
 /* Sub Projects --------------------------------------------------------------*/
 .sub-projects {
   margin-top: 5vh;
@@ -81,62 +133,70 @@
   .img-link {
     display: inherit;
   }
+}
 
-  .responsive-container {
-    position: relative;
-    width: 100%;
+.sub-project-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+  @media w(568) {
+    margin: 8rem auto 2rem;
+    margin-top: 1rem;
+  }
+
+  &.mobile {
     height: auto;
-    margin: 0 auto;
+    min-height: 600px;
+    min-width: 200px;
+    width: 91%;
+    margin-bottom: 0;
 
-    @media w(568) {
-      margin: 8rem auto 4rem;
-      margin-top: 1rem;
+    &:before {
+      background-image: url('../img/content/iphone-6.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      pointer-events: none;
+      z-index: 5;
     }
 
-    &.mobile {
-      height: auto;
-      min-height: 600px;
-      min-width: 200px;
-      width: 91%;
-      margin-bottom: 0;
+    .imageloader p {
+      position: relative;
+      text-align: center;
+      top: 45%;
+    }
 
-      &:before {
-        background-image: url('../img/content/iphone-6.png');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        content: '';
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        pointer-events: none;
-        z-index: 5;
-      }
-
-      .imageloader p {
-        position: relative;
-        text-align: center;
-        top: 45%;
-      }
-
-      .img-wrap {
-        cursor: all-scroll;
-        height: 400px;
-        left: 13px;
-        overflow: auto;
-        position: absolute;
-        top: 74px;
-        /* width: 174px; */
-        z-index: 4;
-      }
+    .img-wrap {
+      cursor: all-scroll;
+      height: 400px;
+      left: 13px;
+      overflow: auto;
+      position: absolute;
+      top: 74px;
+      /* width: 174px; */
+      z-index: 4;
     }
   }
 }
 
+.halfsies .sub-project-image {
+    @media w(768) {
+      width: 45%;
+      margin: 0;
+    }
+  }
+
 .sub-project-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   @media w(568) {
     flex-direction: row;
@@ -149,14 +209,23 @@
   }
 }
 
-.sub-project-prototype,
-.sub-project-details {
+.halfsies .sub-project-details {
   width: 100%;
 
   @media w(568) {
     width: 50%;
   }
 }
+
+.halfsies .sub-project-prototype,
+.halfsies .sub-project-image {
+  width: 100%;
+
+  @media w(568) {
+    width: 45%;
+  }
+}
+
 
 
 .sub-project-title {
@@ -172,7 +241,6 @@
     font-size: 90%;
   }
 }
-
 
 .sub-project-prototype {
   z-index: 2;

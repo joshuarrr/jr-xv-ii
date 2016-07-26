@@ -23,6 +23,7 @@ export class Projects extends Component {
 					role={ project.role }
 					tech={ project.tech }
 					data={ data }
+					src={project.cover}
 				/>
 			);
 		});
