@@ -1,17 +1,23 @@
 export default [
   {
-    projectTitle: 'some photos',
-    pieces: [
-      {
-        id: 'lines-u1',
-        title: 'untitled 1',
-        description: ``,
-        role: ``,
-        tech: ``,
-        class: 'border',
-        date: 'August, 2015',
-        file: 'lines-01.jpg'
-      }
-    ]
+    file: 'aro'
+  },
+  {
+    file: 'mask'
+  },
+  {
+    file: 'conquer'
+  },
+  {
+    file: 'deepestBlue'
+  },
+  {
+    file: 'santa-monica'
+  },
+  {
+    file: 'beach'
+  },
+  {
+    file: 'paint'
   }
 ];
