@@ -10,7 +10,7 @@ based on http://callmenick.com/post/animating-css-only-hamburger-menu-icons */
   appearance: none;
   border: none;
   box-shadow: none;
-  position: absolute;
+  position: fixed;
   z-index: 11;
 
   /* TODO = update w real measurements based off main and site-header */

@@ -37,6 +37,7 @@ export class PageWrapper extends Component {
       <div className="grid">
         <Helmet titleTemplate="Joshuar has a website. %s" />
 
+        <NavToggle />
         {/* Header */}
         <Headroom
           disableInlineStyles
@@ -48,7 +49,6 @@ export class PageWrapper extends Component {
           extraClasses={ isLoadedClass + isNavExpanded}
         >
           <Logo />
-          <NavToggle />
           <header className={'site-header ' + this.props.mainClass + isNavExpanded }>
             <Nav />
           </header>
