@@ -65,7 +65,6 @@ export class Photography extends Component {
 				mainClass="photography"
 			>
 				<Helmet title="Photography" />
-				{fullFrameImages}
 					{/* Full Frame Photos */}
 					<div className="full-frame-images">
 						{ fullFrameImages }

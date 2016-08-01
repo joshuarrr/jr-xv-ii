@@ -2,7 +2,7 @@ export default [
   {
     projectTitle: 'lines',
     projectDescription: null,
-        id: 'lines-u1',
+        id: 'lines-1',
         title: 'untitled 1',
         description: ``,
         role: ``,
@@ -72,27 +72,33 @@ export default [
     ]
   },
   {
-    cover: 'lines-07.jpg',
-    class: 'border'
-  },
-  {
+    id: 'lines-2.jpg',
     cover: 'lines-02.jpg',
     class: 'border'
   },
   {
-    cover: 'lines-09.jpg',
+    id: 'lines-3',
+    cover: 'lines-03.jpg',
     class: 'border'
   },
   {
-    cover: 'lines-08.jpg',
+    id: 'lines-4',
+    cover: 'lines-04.jpg',
     class: 'border'
   },
   {
+    id: 'lines-5',
+    cover: 'lines-05.jpg',
+    class: 'border'
+  },
+  {
+    id: 'lines-6',
     cover: 'lines-06.jpg',
     class: 'border'
   },
   {
-    cover: 'lines-05.jpg',
+    id: 'lines-7',
+    cover: 'lines-07.jpg',
     class: 'border'
   }
 ];

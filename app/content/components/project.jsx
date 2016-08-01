@@ -22,13 +22,16 @@ export class Project extends Component {
 		super();
 		this.state = {
 			isProjectExpanded: false,
-			updated: false,
-			imageHeight: ''
+			updated: false
 		};
 	}
 
 	componentDidUpdate = () => {
-		ReactDOM.findDOMNode(this).addEventListener('transitionend', this.updateImg, false);
+		window.requestAnimationFrame(() => {
+			if (this.state.isProjectExpanded) {
+				ReactDOM.findDOMNode(this).addEventListener('transitionend', this.updateImg, false);
+			}
+		});
 	}
 
 	handleClick = () => {
@@ -40,13 +43,6 @@ export class Project extends Component {
 	updateImg = () => {
 		this.setState({
 			updated: true
-		});
-
-		const img = ReactDOM.findDOMNode(this.refs.imgContainer);
-
-		// Set a min height on the imagewrapper
-		this.setState({
-			imageHeight: img.offsetHeight
 		});
 	}
 
