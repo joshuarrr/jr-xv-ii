@@ -10,7 +10,7 @@ export class Home extends Component {
 			<PageWrapper
 				mainClass="home"
 			>
-				<Helmet title="Ugh." />
+				<Helmet title="See?" />
 				<h1 className="page-title">joshuar</h1>
 				<div className="intro-text">
 					<p>AKA Josh, or Joshua Richey. A designer, front-end developer, artist, and visual&nbsp;craftsman.</p>
