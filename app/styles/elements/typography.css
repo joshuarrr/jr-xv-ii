@@ -72,21 +72,13 @@ p,
 .intro-text {
   font-range: 320px 1400px;
   line-height: 1.5;
-  margin: -2vh auto 5vh;
+  margin: -2vh auto calc(10vh + 2rem);
   width: 100%;
   max-width: 700px;
-/*   @media w(400) {
-    width: 70vw;
-  }
 
-  @media w(500) {
-    width: 60vw;
+  @media w(568) {
+    margin-bottom: 10vh;
   }
-
-  @media w(768) {
-    width: 70vw;
-    max-width: 41rem;
-  } */
 }
 
 .nav-links {
