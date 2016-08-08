@@ -81,22 +81,6 @@
   text-align: left;
 }
 
-/* .external-link {
-  padding-right: 2rem;
-  position: relative;
-
-  &:after {
-    content: '';
-    width: 1rem;
-    height: 1rem;
-    background-color: red;
-    position: absolute;
-    background: url(../img/ico/external-link.svg) no-repeat;
-    right: 5px;
-    top: 2px;
-  }
-} */
-
 .project-title {
 	background-color: $background-color;
 	display: inline-block;

@@ -7,6 +7,7 @@ import { Art } from "./content/art";
 import { Design } from "./content/design";
 import { Photography } from "./content/photography";
 import { Data } from "./content/data";
+import { Blog } from "./content/blog";
 require("./styles/app.css");
 require('file?name=favicon.png!./favicon.png');
 
@@ -35,6 +36,7 @@ render((
     <Route path="/photography" component={ Photography } />
     <Route path="/code" component={ Code } />
     <Route path="/data" component={ Data } />
+    <Route path="/blog" component={ Blog } />
     </Route>
   </Router>
 ),

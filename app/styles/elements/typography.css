@@ -59,8 +59,33 @@ dd {
 }
 
 p,
-.page-title {
+.page-title,
+blockquote,
+ol,
+ul {
   @mixin font-family serif;
+}
+
+ol {
+  margin: 0 3rem;
+  list-style: decimal outside;
+
+  li {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+.bulleted-list {
+  margin: 3rem;
+  list-style: disc outside;
+}
+
+blockquote {
+  margin: 1rem 3rem 1rem 3rem;
+  font-style: italic;
+  letter-spacing: .05rem;
+  color: gray(100);
 }
 
 .site-logo-link {
@@ -92,4 +117,77 @@ p,
   font-size: 95%;
   font-style: italic;
   color: gray(120);
+}
+
+.external-link {
+  padding-right: 1.5rem;
+  position: relative;
+
+  @media w(880) {
+    padding-right: 1.6rem;
+  }
+
+  @media w(1220) {
+    padding-right: 1.7rem;
+  }
+
+  &:after {
+    content: '';
+    width: .8rem;
+    height: .8rem;
+    background-color: red;
+    position: absolute;
+    background: url(../img/ico/external-link.svg) no-repeat;
+    margin: 7px 0 0 5px;
+
+    @media w(510) {
+      margin: 8px 0 0 5px;
+    }
+
+    @media w(880) {
+      width: .9rem;
+      height: .9rem;
+    }
+
+    @media w(1220) {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    @media w(1220) {
+      margin: 9px 0 0 5px;
+    }
+  }
+}
+
+.section-break {
+  border: 0;
+  height: 3px;
+  margin: 3rem auto;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  &:before {
+    color: gray(100);
+    content: '...';
+    width: 100%;
+  }
+
+  @media w(768) {
+    margin: 3.5rem auto;
+  }
+
+  @media w(1120) {
+    margin: 4rem auto;
+  }
+
+  @media w(1280) {
+    margin: 4.5rem auto;
+  }
+
+  @media w(1440) {
+    margin: 5rem auto;
+  }
 }
