@@ -106,7 +106,7 @@ var OSServer = function() {
         };
 
         //  Create an array of routes
-        ['/', '/art', '/design', '/code', '/photography', '/home'
+        ['/', '/art', '/design', '/code', '/photography', '/home', '/blog'
         ].map(function(element) {
             self.routes[element] = function(req, res) {
                 res.setHeader('Content-Type', 'text/html');
