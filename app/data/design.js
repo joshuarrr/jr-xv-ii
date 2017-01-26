@@ -24,7 +24,7 @@ export default [
 				title: 'mobile homepage',
 				description: `<p>Idealist gets around 25 million pageviews a month, and about 20% of that traffic is mobile. Developing a responsive home page and wrapper was our first step towards providing an equally rewarding mobile experience.</p>
 					<p class="small">(Click the prototype to enable interactivity.)</p>`,
-				prototype: '<iframe src="https://marvelapp.com/28a514e?emb=1" width="300" height="550" allowTransparency="true" frameborder="0"></iframe>',
+				prototype: '<iframe src="https://marvelapp.com/28a514e?emb=1" width="300" height="500" allowTransparency="true" frameborder="0"></iframe>',
 				projectClass: 'halfsies',
 				role: 'Mobile UX, UI, Web Design, Front-end Development',
 				tech: null
@@ -32,9 +32,10 @@ export default [
 			{
 				id: 'idealist-search',
 				title: 'search reskin',
-				description: `<p>A mobile friendly search page completes the primary user flow for Idealist job seekers. </p>`,
+				description: `<p>A mobile friendly search page completes the primary user flow for Idealist job seekers. </p>
+											<p class="small">(Click the prototype to enable interactivity.)</p>`,
 				file: null,
-				prototype: '<iframe src="https://marvelapp.com/3bibh79?emb=1" width="300" height="600" allowTransparency="true" frameborder="0"></iframe>',
+				prototype: '<iframe src="https://marvelapp.com/3bibh79?emb=1" width="300" height="500" allowTransparency="true" frameborder="0"></iframe>',
 				projectClass: 'halfsies',
 				role: 'UI design, UX, User testing, prototyping',
 				tech: null
